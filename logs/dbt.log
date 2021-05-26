@@ -173,3 +173,200 @@ where id = 1
 Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
 2021-05-26 13:37:49.701577 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8678c86610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8678de4580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8679229d30>]}
 2021-05-26 13:37:49.701840 (MainThread): Flushing usage events
+2021-05-26 14:10:43.207212 (MainThread): Running with dbt=0.19.1
+2021-05-26 14:10:44.422418 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.test.TestTask'>, data=False, debug=False, defer=None, exclude=None, fail_fast=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/dhirajpatra/.dbt', project_dir=None, record_timing_info=None, rpc_method='test', schema=False, selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='test', write_json=True)
+2021-05-26 14:10:44.424138 (MainThread): Tracking: tracking
+2021-05-26 14:10:44.424663 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb980107d30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb98484e550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb98484e5e0>]}
+2021-05-26 14:10:44.434064 (MainThread): Partial parsing not enabled
+2021-05-26 14:10:44.435453 (MainThread): Parsing macros/catalog.sql
+2021-05-26 14:10:44.438017 (MainThread): Parsing macros/adapters.sql
+2021-05-26 14:10:44.464684 (MainThread): Parsing macros/materializations/merge.sql
+2021-05-26 14:10:44.466660 (MainThread): Parsing macros/materializations/view.sql
+2021-05-26 14:10:44.468116 (MainThread): Parsing macros/materializations/table.sql
+2021-05-26 14:10:44.471888 (MainThread): Parsing macros/materializations/incremental.sql
+2021-05-26 14:10:44.481140 (MainThread): Parsing macros/core.sql
+2021-05-26 14:10:44.485249 (MainThread): Parsing macros/materializations/helpers.sql
+2021-05-26 14:10:44.493357 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-05-26 14:10:44.495025 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-05-26 14:10:44.510644 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-05-26 14:10:44.539696 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-05-26 14:10:44.557912 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-05-26 14:10:44.559596 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-05-26 14:10:44.564867 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-05-26 14:10:44.581069 (MainThread): Parsing macros/materializations/table/table.sql
+2021-05-26 14:10:44.588548 (MainThread): Parsing macros/materializations/view/view.sql
+2021-05-26 14:10:44.595801 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-05-26 14:10:44.600905 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-05-26 14:10:44.601892 (MainThread): Parsing macros/etc/query.sql
+2021-05-26 14:10:44.602929 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-05-26 14:10:44.604500 (MainThread): Parsing macros/etc/datetime.sql
+2021-05-26 14:10:44.612312 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-05-26 14:10:44.614114 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-05-26 14:10:44.615741 (MainThread): Parsing macros/adapters/common.sql
+2021-05-26 14:10:44.653172 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-05-26 14:10:44.654991 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-05-26 14:10:44.656438 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-05-26 14:10:44.658030 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-05-26 14:10:44.664142 (MainThread): Partial parsing not enabled
+2021-05-26 14:10:44.681555 (MainThread): Acquiring new snowflake connection "model.demo_dbt.my_first_dbt_model".
+2021-05-26 14:10:44.689239 (MainThread): Acquiring new snowflake connection "model.demo_dbt.my_second_dbt_model".
+2021-05-26 14:10:44.797652 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a4caddf6-e02a-4b8b-b059-0f03fe8974d3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb97fa696d0>]}
+2021-05-26 14:10:44.802765 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a4caddf6-e02a-4b8b-b059-0f03fe8974d3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb97fa6be20>]}
+2021-05-26 14:10:44.803041 (MainThread): Found 2 models, 4 tests, 0 snapshots, 0 analyses, 143 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-05-26 14:10:44.803999 (MainThread): 
+2021-05-26 14:10:44.804370 (MainThread): Acquiring new snowflake connection "master".
+2021-05-26 14:10:44.805695 (ThreadPoolExecutor-1_0): Acquiring new snowflake connection "list_DEMO_DB_PUBLIC".
+2021-05-26 14:10:44.822724 (ThreadPoolExecutor-1_0): Using snowflake connection "list_DEMO_DB_PUBLIC".
+2021-05-26 14:10:44.822896 (ThreadPoolExecutor-1_0): On list_DEMO_DB_PUBLIC: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_DEMO_DB_PUBLIC"} */
+
+    show terse objects in DEMO_DB.PUBLIC
+2021-05-26 14:10:44.822996 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state init
+2021-05-26 14:10:46.703550 (ThreadPoolExecutor-1_0): SQL status: SUCCESS 2 in 1.88 seconds
+2021-05-26 14:10:46.708173 (ThreadPoolExecutor-1_0): On list_DEMO_DB_PUBLIC: Close
+2021-05-26 14:10:47.442137 (MainThread): 19:40:47 | Concurrency: 10 threads (target='dev')
+2021-05-26 14:10:47.442354 (MainThread): 19:40:47 | 
+2021-05-26 14:10:47.445145 (Thread-1): Began running node test.demo_dbt.not_null_my_first_dbt_model_id
+2021-05-26 14:10:47.445376 (Thread-1): 19:40:47 | 1 of 4 START test not_null_my_first_dbt_model_id..................... [RUN]
+2021-05-26 14:10:47.445580 (Thread-2): Began running node test.demo_dbt.not_null_my_second_dbt_model_id
+2021-05-26 14:10:47.445808 (Thread-2): 19:40:47 | 2 of 4 START test not_null_my_second_dbt_model_id.................... [RUN]
+2021-05-26 14:10:47.446009 (Thread-3): Began running node test.demo_dbt.unique_my_first_dbt_model_id
+2021-05-26 14:10:47.446274 (Thread-4): Began running node test.demo_dbt.unique_my_second_dbt_model_id
+2021-05-26 14:10:47.446445 (Thread-3): 19:40:47 | 3 of 4 START test unique_my_first_dbt_model_id....................... [RUN]
+2021-05-26 14:10:47.446766 (Thread-1): Acquiring new snowflake connection "test.demo_dbt.not_null_my_first_dbt_model_id".
+2021-05-26 14:10:47.446964 (Thread-4): 19:40:47 | 4 of 4 START test unique_my_second_dbt_model_id...................... [RUN]
+2021-05-26 14:10:47.447265 (Thread-2): Acquiring new snowflake connection "test.demo_dbt.not_null_my_second_dbt_model_id".
+2021-05-26 14:10:47.447639 (Thread-3): Acquiring new snowflake connection "test.demo_dbt.unique_my_first_dbt_model_id".
+2021-05-26 14:10:47.447810 (Thread-1): Compiling test.demo_dbt.not_null_my_first_dbt_model_id
+2021-05-26 14:10:47.448157 (Thread-4): Acquiring new snowflake connection "test.demo_dbt.unique_my_second_dbt_model_id".
+2021-05-26 14:10:47.448306 (Thread-2): Compiling test.demo_dbt.not_null_my_second_dbt_model_id
+2021-05-26 14:10:47.448506 (Thread-3): Compiling test.demo_dbt.unique_my_first_dbt_model_id
+2021-05-26 14:10:47.457263 (Thread-1): Writing injected SQL for node "test.demo_dbt.not_null_my_first_dbt_model_id"
+2021-05-26 14:10:47.457473 (Thread-4): Compiling test.demo_dbt.unique_my_second_dbt_model_id
+2021-05-26 14:10:47.461216 (Thread-2): Writing injected SQL for node "test.demo_dbt.not_null_my_second_dbt_model_id"
+2021-05-26 14:10:47.469095 (Thread-3): Writing injected SQL for node "test.demo_dbt.unique_my_first_dbt_model_id"
+2021-05-26 14:10:47.472508 (Thread-4): Writing injected SQL for node "test.demo_dbt.unique_my_second_dbt_model_id"
+2021-05-26 14:10:47.473410 (Thread-2): finished collecting timing info
+2021-05-26 14:10:47.474017 (Thread-2): Using snowflake connection "test.demo_dbt.not_null_my_second_dbt_model_id".
+2021-05-26 14:10:47.474165 (Thread-1): finished collecting timing info
+2021-05-26 14:10:47.474285 (Thread-3): finished collecting timing info
+2021-05-26 14:10:47.474451 (Thread-2): On test.demo_dbt.not_null_my_second_dbt_model_id: BEGIN
+2021-05-26 14:10:47.475027 (Thread-1): Using snowflake connection "test.demo_dbt.not_null_my_first_dbt_model_id".
+2021-05-26 14:10:47.475218 (Thread-4): finished collecting timing info
+2021-05-26 14:10:47.475825 (Thread-3): Using snowflake connection "test.demo_dbt.unique_my_first_dbt_model_id".
+2021-05-26 14:10:47.475956 (Thread-2): Opening a new connection, currently in state init
+2021-05-26 14:10:47.476058 (Thread-1): On test.demo_dbt.not_null_my_first_dbt_model_id: BEGIN
+2021-05-26 14:10:47.476643 (Thread-4): Using snowflake connection "test.demo_dbt.unique_my_second_dbt_model_id".
+2021-05-26 14:10:47.476756 (Thread-3): On test.demo_dbt.unique_my_first_dbt_model_id: BEGIN
+2021-05-26 14:10:47.478313 (Thread-1): Opening a new connection, currently in state closed
+2021-05-26 14:10:47.478577 (Thread-4): On test.demo_dbt.unique_my_second_dbt_model_id: BEGIN
+2021-05-26 14:10:47.478724 (Thread-3): Opening a new connection, currently in state init
+2021-05-26 14:10:47.479679 (Thread-4): Opening a new connection, currently in state init
+2021-05-26 14:10:48.904831 (Thread-4): SQL status: SUCCESS 1 in 1.43 seconds
+2021-05-26 14:10:48.905068 (Thread-4): Using snowflake connection "test.demo_dbt.unique_my_second_dbt_model_id".
+2021-05-26 14:10:48.905202 (Thread-4): On test.demo_dbt.unique_my_second_dbt_model_id: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "test.demo_dbt.unique_my_second_dbt_model_id"} */
+
+    
+    
+
+
+
+select count(*) as validation_errors
+from (
+
+    select
+        id
+
+    from DEMO_DB.PUBLIC.my_second_dbt_model
+    where id is not null
+    group by id
+    having count(*) > 1
+
+) validation_errors
+2021-05-26 14:10:49.075811 (Thread-1): SQL status: SUCCESS 1 in 1.60 seconds
+2021-05-26 14:10:49.076038 (Thread-1): Using snowflake connection "test.demo_dbt.not_null_my_first_dbt_model_id".
+2021-05-26 14:10:49.076198 (Thread-1): On test.demo_dbt.not_null_my_first_dbt_model_id: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "test.demo_dbt.not_null_my_first_dbt_model_id"} */
+
+    
+    
+
+
+
+select count(*) as validation_errors
+from DEMO_DB.PUBLIC.my_first_dbt_model
+where id is null
+2021-05-26 14:10:49.135401 (Thread-3): SQL status: SUCCESS 1 in 1.66 seconds
+2021-05-26 14:10:49.135630 (Thread-3): Using snowflake connection "test.demo_dbt.unique_my_first_dbt_model_id".
+2021-05-26 14:10:49.135763 (Thread-3): On test.demo_dbt.unique_my_first_dbt_model_id: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "test.demo_dbt.unique_my_first_dbt_model_id"} */
+
+    
+    
+
+
+
+select count(*) as validation_errors
+from (
+
+    select
+        id
+
+    from DEMO_DB.PUBLIC.my_first_dbt_model
+    where id is not null
+    group by id
+    having count(*) > 1
+
+) validation_errors
+2021-05-26 14:10:49.154922 (Thread-2): SQL status: SUCCESS 1 in 1.68 seconds
+2021-05-26 14:10:49.155153 (Thread-2): Using snowflake connection "test.demo_dbt.not_null_my_second_dbt_model_id".
+2021-05-26 14:10:49.155283 (Thread-2): On test.demo_dbt.not_null_my_second_dbt_model_id: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "test.demo_dbt.not_null_my_second_dbt_model_id"} */
+
+    
+    
+
+
+
+select count(*) as validation_errors
+from DEMO_DB.PUBLIC.my_second_dbt_model
+where id is null
+2021-05-26 14:10:50.214760 (Thread-1): SQL status: SUCCESS 1 in 1.14 seconds
+2021-05-26 14:10:50.215401 (Thread-1): finished collecting timing info
+2021-05-26 14:10:50.216136 (Thread-1): On test.demo_dbt.not_null_my_first_dbt_model_id: ROLLBACK
+2021-05-26 14:10:50.224351 (Thread-4): SQL status: SUCCESS 1 in 1.32 seconds
+2021-05-26 14:10:50.224854 (Thread-4): finished collecting timing info
+2021-05-26 14:10:50.225067 (Thread-4): On test.demo_dbt.unique_my_second_dbt_model_id: ROLLBACK
+2021-05-26 14:10:50.244397 (Thread-3): SQL status: SUCCESS 1 in 1.11 seconds
+2021-05-26 14:10:50.244886 (Thread-3): finished collecting timing info
+2021-05-26 14:10:50.245099 (Thread-3): On test.demo_dbt.unique_my_first_dbt_model_id: ROLLBACK
+2021-05-26 14:10:50.277877 (Thread-2): SQL status: SUCCESS 1 in 1.12 seconds
+2021-05-26 14:10:50.278367 (Thread-2): finished collecting timing info
+2021-05-26 14:10:50.278581 (Thread-2): On test.demo_dbt.not_null_my_second_dbt_model_id: ROLLBACK
+2021-05-26 14:10:50.564936 (Thread-1): On test.demo_dbt.not_null_my_first_dbt_model_id: Close
+2021-05-26 14:10:50.624136 (Thread-3): On test.demo_dbt.unique_my_first_dbt_model_id: Close
+2021-05-26 14:10:50.674150 (Thread-2): On test.demo_dbt.not_null_my_second_dbt_model_id: Close
+2021-05-26 14:10:50.764181 (Thread-4): On test.demo_dbt.unique_my_second_dbt_model_id: Close
+2021-05-26 14:10:51.162453 (Thread-1): 19:40:51 | 1 of 4 FAIL 1 not_null_my_first_dbt_model_id......................... [FAIL 1 in 3.72s]
+2021-05-26 14:10:51.162682 (Thread-1): Finished running node test.demo_dbt.not_null_my_first_dbt_model_id
+2021-05-26 14:10:51.205609 (Thread-3): 19:40:51 | 3 of 4 PASS unique_my_first_dbt_model_id............................. [PASS in 3.76s]
+2021-05-26 14:10:51.205835 (Thread-3): Finished running node test.demo_dbt.unique_my_first_dbt_model_id
+2021-05-26 14:10:51.235278 (Thread-2): 19:40:51 | 2 of 4 PASS not_null_my_second_dbt_model_id.......................... [PASS in 3.79s]
+2021-05-26 14:10:51.235726 (Thread-2): Finished running node test.demo_dbt.not_null_my_second_dbt_model_id
+2021-05-26 14:10:51.366222 (Thread-4): 19:40:51 | 4 of 4 PASS unique_my_second_dbt_model_id............................ [PASS in 3.92s]
+2021-05-26 14:10:51.366437 (Thread-4): Finished running node test.demo_dbt.unique_my_second_dbt_model_id
+2021-05-26 14:10:51.368106 (MainThread): Acquiring new snowflake connection "master".
+2021-05-26 14:10:51.368470 (MainThread): 19:40:51 | 
+2021-05-26 14:10:51.368666 (MainThread): 19:40:51 | Finished running 4 tests in 6.56s.
+2021-05-26 14:10:51.368936 (MainThread): Connection 'master' was properly closed.
+2021-05-26 14:10:51.369040 (MainThread): Connection 'test.demo_dbt.not_null_my_first_dbt_model_id' was properly closed.
+2021-05-26 14:10:51.369129 (MainThread): Connection 'test.demo_dbt.not_null_my_second_dbt_model_id' was properly closed.
+2021-05-26 14:10:51.369213 (MainThread): Connection 'test.demo_dbt.unique_my_first_dbt_model_id' was properly closed.
+2021-05-26 14:10:51.369295 (MainThread): Connection 'test.demo_dbt.unique_my_second_dbt_model_id' was properly closed.
+2021-05-26 14:10:51.373635 (MainThread): 
+2021-05-26 14:10:51.373864 (MainThread): Completed with 1 error and 0 warnings:
+2021-05-26 14:10:51.374060 (MainThread): 
+2021-05-26 14:10:51.374291 (MainThread): Failure in test not_null_my_first_dbt_model_id (models/example/schema.yml)
+2021-05-26 14:10:51.374442 (MainThread):   Got 1 result, expected 0.
+2021-05-26 14:10:51.374599 (MainThread): 
+2021-05-26 14:10:51.374720 (MainThread):   compiled SQL at target/compiled/demo_dbt/models/example/schema.yml/schema_test/not_null_my_first_dbt_model_id.sql
+2021-05-26 14:10:51.374949 (MainThread): 
+Done. PASS=3 WARN=0 ERROR=1 SKIP=0 TOTAL=4
+2021-05-26 14:10:51.375202 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb9849c96a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb9849d2220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb98384e460>]}
+2021-05-26 14:10:51.375546 (MainThread): Flushing usage events
