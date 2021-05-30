@@ -2,4 +2,4 @@
 
 select *
 from DEMO_DB.PUBLIC.my_first_dbt_model
-where id = 1
+where id > 0

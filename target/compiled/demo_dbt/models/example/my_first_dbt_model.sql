@@ -10,9 +10,10 @@
 
 with source_data as (
 
-    select 1 as id
+
+    select 1 as id, 'google.com' as url
     union all
-    select null as id
+    select null as id, 'abc.com' as url
 
 )
 
