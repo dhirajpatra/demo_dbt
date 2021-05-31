@@ -3,24 +3,13 @@
       create or replace transient table DEMO_DB.PUBLIC.customers  as
       (with customers as (
 
-    select
-        id as customer_id,
-        first_name,
-        last_name
-
-    from customers
+    select * from DEMO_DB.PUBLIC.stg_customers
 
 ),
 
 orders as (
 
-    select
-        id as order_id,
-        user_id as customer_id,
-        order_date,
-        status
-
-    from orders
+    select * from DEMO_DB.PUBLIC.stg_orders
 
 ),
 
