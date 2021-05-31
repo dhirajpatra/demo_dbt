@@ -9626,3 +9626,2122 @@ where id > 0
 Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
 2021-05-30 14:48:06.957659 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f938a9d7670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f938ad85610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f938ad850a0>]}
 2021-05-30 14:48:06.957865 (MainThread): Flushing usage events
+2021-05-31 04:47:53.732091 (MainThread): Running with dbt=0.19.1
+2021-05-31 04:47:55.143142 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/dhirajpatra/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-05-31 04:47:55.145248 (MainThread): Tracking: tracking
+2021-05-31 04:47:55.145913 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feba4407d30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feba7750550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feba77505e0>]}
+2021-05-31 04:47:55.158914 (MainThread): Partial parsing not enabled
+2021-05-31 04:47:55.160339 (MainThread): Parsing macros/catalog.sql
+2021-05-31 04:47:55.163522 (MainThread): Parsing macros/adapters.sql
+2021-05-31 04:47:55.197851 (MainThread): Parsing macros/materializations/merge.sql
+2021-05-31 04:47:55.200232 (MainThread): Parsing macros/materializations/view.sql
+2021-05-31 04:47:55.201897 (MainThread): Parsing macros/materializations/table.sql
+2021-05-31 04:47:55.205779 (MainThread): Parsing macros/materializations/incremental.sql
+2021-05-31 04:47:55.215787 (MainThread): Parsing macros/core.sql
+2021-05-31 04:47:55.219733 (MainThread): Parsing macros/materializations/helpers.sql
+2021-05-31 04:47:55.228075 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-05-31 04:47:55.229888 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-05-31 04:47:55.247746 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-05-31 04:47:55.280359 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-05-31 04:47:55.300487 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-05-31 04:47:55.302312 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-05-31 04:47:55.307896 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-05-31 04:47:55.321695 (MainThread): Parsing macros/materializations/table/table.sql
+2021-05-31 04:47:55.332367 (MainThread): Parsing macros/materializations/view/view.sql
+2021-05-31 04:47:55.339879 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-05-31 04:47:55.345618 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-05-31 04:47:55.346926 (MainThread): Parsing macros/etc/query.sql
+2021-05-31 04:47:55.348241 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-05-31 04:47:55.350174 (MainThread): Parsing macros/etc/datetime.sql
+2021-05-31 04:47:55.359312 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-05-31 04:47:55.361274 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-05-31 04:47:55.362923 (MainThread): Parsing macros/adapters/common.sql
+2021-05-31 04:47:55.402601 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-05-31 04:47:55.405033 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-05-31 04:47:55.407000 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-05-31 04:47:55.408982 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-05-31 04:47:55.417011 (MainThread): Partial parsing not enabled
+2021-05-31 04:47:55.436537 (MainThread): Acquiring new snowflake connection "model.demo_dbt.customers".
+2021-05-31 04:47:55.478329 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd94edbba-c5cd-4778-aa1f-08cdd00de2a2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feba79b3d60>]}
+2021-05-31 04:47:55.482464 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd94edbba-c5cd-4778-aa1f-08cdd00de2a2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feba7a570d0>]}
+2021-05-31 04:47:55.482697 (MainThread): Found 1 model, 0 tests, 0 snapshots, 0 analyses, 143 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-05-31 04:47:55.483373 (MainThread): 
+2021-05-31 04:47:55.483665 (MainThread): Acquiring new snowflake connection "master".
+2021-05-31 04:47:55.484420 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_DEMO_DB".
+2021-05-31 04:47:55.497457 (ThreadPoolExecutor-0_0): Using snowflake connection "list_DEMO_DB".
+2021-05-31 04:47:55.497566 (ThreadPoolExecutor-0_0): On list_DEMO_DB: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_DEMO_DB"} */
+
+    show terse schemas in database DEMO_DB
+    limit 10000
+2021-05-31 04:47:55.497650 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-05-31 04:47:58.109929 (ThreadPoolExecutor-0_0): SQL status: SUCCESS 2 in 2.61 seconds
+2021-05-31 04:47:58.114123 (ThreadPoolExecutor-0_0): On list_DEMO_DB: Close
+2021-05-31 04:47:58.868682 (ThreadPoolExecutor-1_0): Acquiring new snowflake connection "list_DEMO_DB_PUBLIC".
+2021-05-31 04:47:58.876369 (ThreadPoolExecutor-1_0): Using snowflake connection "list_DEMO_DB_PUBLIC".
+2021-05-31 04:47:58.876511 (ThreadPoolExecutor-1_0): On list_DEMO_DB_PUBLIC: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_DEMO_DB_PUBLIC"} */
+
+    show terse objects in DEMO_DB.PUBLIC
+2021-05-31 04:47:58.876614 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2021-05-31 04:48:00.436898 (ThreadPoolExecutor-1_0): SQL status: SUCCESS 2 in 1.56 seconds
+2021-05-31 04:48:00.438071 (ThreadPoolExecutor-1_0): On list_DEMO_DB_PUBLIC: Close
+2021-05-31 04:48:01.089556 (MainThread): Using snowflake connection "master".
+2021-05-31 04:48:01.089721 (MainThread): On master: BEGIN
+2021-05-31 04:48:01.089817 (MainThread): Opening a new connection, currently in state init
+2021-05-31 04:48:02.444688 (MainThread): SQL status: SUCCESS 1 in 1.35 seconds
+2021-05-31 04:48:02.444909 (MainThread): On master: COMMIT
+2021-05-31 04:48:02.445082 (MainThread): Using snowflake connection "master".
+2021-05-31 04:48:02.445175 (MainThread): On master: COMMIT
+2021-05-31 04:48:03.065780 (MainThread): SQL status: SUCCESS 1 in 0.62 seconds
+2021-05-31 04:48:03.066005 (MainThread): On master: Close
+2021-05-31 04:48:03.763734 (MainThread): 10:18:03 | Concurrency: 10 threads (target='dev')
+2021-05-31 04:48:03.763969 (MainThread): 10:18:03 | 
+2021-05-31 04:48:03.766167 (Thread-1): Began running node model.demo_dbt.customers
+2021-05-31 04:48:03.766501 (Thread-1): 10:18:03 | 1 of 1 START table model PUBLIC.customers............................ [RUN]
+2021-05-31 04:48:03.766848 (Thread-1): Acquiring new snowflake connection "model.demo_dbt.customers".
+2021-05-31 04:48:03.766998 (Thread-1): Compiling model.demo_dbt.customers
+2021-05-31 04:48:03.768563 (Thread-1): Writing injected SQL for node "model.demo_dbt.customers"
+2021-05-31 04:48:03.770705 (Thread-1): finished collecting timing info
+2021-05-31 04:48:03.801642 (Thread-1): Writing runtime SQL for node "model.demo_dbt.customers"
+2021-05-31 04:48:03.803955 (Thread-1): Using snowflake connection "model.demo_dbt.customers".
+2021-05-31 04:48:03.804175 (Thread-1): On model.demo_dbt.customers: BEGIN
+2021-05-31 04:48:03.804281 (Thread-1): Opening a new connection, currently in state closed
+2021-05-31 04:48:05.317450 (Thread-1): SQL status: SUCCESS 1 in 1.51 seconds
+2021-05-31 04:48:05.317704 (Thread-1): Using snowflake connection "model.demo_dbt.customers".
+2021-05-31 04:48:05.317842 (Thread-1): On model.demo_dbt.customers: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.demo_dbt.customers"} */
+
+
+      create or replace transient table DEMO_DB.PUBLIC.customers  as
+      (with customers as (
+
+    select
+        id as customer_id,
+        first_name,
+        last_name
+
+    from `dbt-tutorial`.jaffle_shop.customers
+
+),
+
+orders as (
+
+    select
+        id as order_id,
+        user_id as customer_id,
+        order_date,
+        status
+
+    from `dbt-tutorial`.jaffle_shop.orders
+
+),
+
+customer_orders as (
+
+    select
+        customer_id,
+
+        min(order_date) as first_order_date,
+        max(order_date) as most_recent_order_date,
+        count(order_id) as number_of_orders
+
+    from orders
+
+    group by 1
+
+),
+
+
+final as (
+
+    select
+        customers.customer_id,
+        customers.first_name,
+        customers.last_name,
+        customer_orders.first_order_date,
+        customer_orders.most_recent_order_date,
+        coalesce(customer_orders.number_of_orders, 0) as number_of_orders
+
+    from customers
+
+    left join customer_orders using (customer_id)
+
+)
+
+select * from final
+      );
+2021-05-31 04:48:05.726493 (Thread-1): Snowflake query id: 019c9b60-0000-43db-0000-b0b10001b00e
+2021-05-31 04:48:05.726722 (Thread-1): Snowflake error: 002003 (02000): SQL compilation error:
+Database '"`DBT-TUTORIAL`"' does not exist or not authorized.
+2021-05-31 04:48:05.726952 (Thread-1): finished collecting timing info
+2021-05-31 04:48:05.727168 (Thread-1): On model.demo_dbt.customers: ROLLBACK
+2021-05-31 04:48:06.137633 (Thread-1): On model.demo_dbt.customers: Close
+2021-05-31 04:48:06.753033 (Thread-1): Database Error in model customers (models/customers.sql)
+  002003 (02000): SQL compilation error:
+  Database '"`DBT-TUTORIAL`"' does not exist or not authorized.
+  compiled SQL at target/run/demo_dbt/models/customers.sql
+Traceback (most recent call last):
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 162, in exception_handler
+    yield
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 80, in add_query
+    cursor.execute(sql, bindings)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/cursor.py", line 603, in execute
+    Error.errorhandler_wrapper(self.connection, self,
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/errors.py", line 125, in errorhandler_wrapper
+    cursor.errorhandler(connection, cursor, error_class, error_value)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/errors.py", line 85, in default_errorhandler
+    raise error_class(
+snowflake.connector.errors.ProgrammingError: 002003 (02000): SQL compilation error:
+Database '"`DBT-TUTORIAL`"' does not exist or not authorized.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/task/base.py", line 344, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/task/base.py", line 287, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/task/base.py", line 389, in run
+    return self.execute(compiled_node, manifest)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/task/run.py", line 248, in execute
+    result = MacroGenerator(materialization_macro, context)()
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 332, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 259, in call_macro
+    return macro(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 67, in macro
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 332, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 259, in call_macro
+    return macro(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 41, in macro
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/base/impl.py", line 227, in execute
+    return self.connections.execute(
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 124, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 314, in add_query
+    connection, cursor = super().add_query(
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 87, in add_query
+    return connection, cursor
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 179, in exception_handler
+    raise DatabaseException(msg)
+dbt.exceptions.DatabaseException: Database Error in model customers (models/customers.sql)
+  002003 (02000): SQL compilation error:
+  Database '"`DBT-TUTORIAL`"' does not exist or not authorized.
+  compiled SQL at target/run/demo_dbt/models/customers.sql
+2021-05-31 04:48:06.763535 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd94edbba-c5cd-4778-aa1f-08cdd00de2a2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feba7b67cd0>]}
+2021-05-31 04:48:06.763981 (Thread-1): 10:18:06 | 1 of 1 ERROR creating table model PUBLIC.customers................... [ERROR in 3.00s]
+2021-05-31 04:48:06.764157 (Thread-1): Finished running node model.demo_dbt.customers
+2021-05-31 04:48:06.765690 (MainThread): Acquiring new snowflake connection "master".
+2021-05-31 04:48:06.765952 (MainThread): Using snowflake connection "master".
+2021-05-31 04:48:06.766052 (MainThread): On master: BEGIN
+2021-05-31 04:48:06.766144 (MainThread): Opening a new connection, currently in state closed
+2021-05-31 04:48:08.182233 (MainThread): SQL status: SUCCESS 1 in 1.42 seconds
+2021-05-31 04:48:08.182464 (MainThread): On master: COMMIT
+2021-05-31 04:48:08.182645 (MainThread): Using snowflake connection "master".
+2021-05-31 04:48:08.182750 (MainThread): On master: COMMIT
+2021-05-31 04:48:08.594207 (MainThread): SQL status: SUCCESS 1 in 0.41 seconds
+2021-05-31 04:48:08.594502 (MainThread): On master: Close
+2021-05-31 04:48:09.135220 (MainThread): 10:18:09 | 
+2021-05-31 04:48:09.135455 (MainThread): 10:18:09 | Finished running 1 table model in 13.65s.
+2021-05-31 04:48:09.135597 (MainThread): Connection 'master' was properly closed.
+2021-05-31 04:48:09.135698 (MainThread): Connection 'model.demo_dbt.customers' was properly closed.
+2021-05-31 04:48:09.140298 (MainThread): 
+2021-05-31 04:48:09.140486 (MainThread): Completed with 1 error and 0 warnings:
+2021-05-31 04:48:09.140704 (MainThread): 
+2021-05-31 04:48:09.140946 (MainThread): Database Error in model customers (models/customers.sql)
+2021-05-31 04:48:09.141100 (MainThread):   002003 (02000): SQL compilation error:
+2021-05-31 04:48:09.141199 (MainThread):   Database '"`DBT-TUTORIAL`"' does not exist or not authorized.
+2021-05-31 04:48:09.141289 (MainThread):   compiled SQL at target/run/demo_dbt/models/customers.sql
+2021-05-31 04:48:09.141385 (MainThread): 
+Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+2021-05-31 04:48:09.141558 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feba79e24c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feba771fd00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feba79a9700>]}
+2021-05-31 04:48:09.141775 (MainThread): Flushing usage events
+2021-05-31 04:48:32.819535 (MainThread): Running with dbt=0.19.1
+2021-05-31 04:48:33.734323 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/dhirajpatra/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-05-31 04:48:33.735716 (MainThread): Tracking: tracking
+2021-05-31 04:48:33.736279 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff05ec0fb20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff060f8d6d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff060f8d760>]}
+2021-05-31 04:48:33.748190 (MainThread): Partial parsing not enabled
+2021-05-31 04:48:33.749363 (MainThread): Parsing macros/catalog.sql
+2021-05-31 04:48:33.752187 (MainThread): Parsing macros/adapters.sql
+2021-05-31 04:48:33.783391 (MainThread): Parsing macros/materializations/merge.sql
+2021-05-31 04:48:33.785197 (MainThread): Parsing macros/materializations/view.sql
+2021-05-31 04:48:33.786824 (MainThread): Parsing macros/materializations/table.sql
+2021-05-31 04:48:33.790651 (MainThread): Parsing macros/materializations/incremental.sql
+2021-05-31 04:48:33.801933 (MainThread): Parsing macros/core.sql
+2021-05-31 04:48:33.807604 (MainThread): Parsing macros/materializations/helpers.sql
+2021-05-31 04:48:33.817198 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-05-31 04:48:33.819103 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-05-31 04:48:33.837127 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-05-31 04:48:33.869638 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-05-31 04:48:33.889194 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-05-31 04:48:33.891125 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-05-31 04:48:33.896593 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-05-31 04:48:33.909746 (MainThread): Parsing macros/materializations/table/table.sql
+2021-05-31 04:48:33.915818 (MainThread): Parsing macros/materializations/view/view.sql
+2021-05-31 04:48:33.922154 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-05-31 04:48:33.926540 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-05-31 04:48:33.927363 (MainThread): Parsing macros/etc/query.sql
+2021-05-31 04:48:33.928261 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-05-31 04:48:33.929668 (MainThread): Parsing macros/etc/datetime.sql
+2021-05-31 04:48:33.937438 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-05-31 04:48:33.939134 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-05-31 04:48:33.940594 (MainThread): Parsing macros/adapters/common.sql
+2021-05-31 04:48:33.980711 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-05-31 04:48:33.982407 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-05-31 04:48:33.983733 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-05-31 04:48:33.985220 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-05-31 04:48:33.992300 (MainThread): Partial parsing not enabled
+2021-05-31 04:48:34.010911 (MainThread): Acquiring new snowflake connection "model.demo_dbt.customers".
+2021-05-31 04:48:34.051540 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd41a2b26-134f-4809-b00d-375c01ac8f42', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff0611e61f0>]}
+2021-05-31 04:48:34.055103 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd41a2b26-134f-4809-b00d-375c01ac8f42', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff0611bd400>]}
+2021-05-31 04:48:34.055340 (MainThread): Found 1 model, 0 tests, 0 snapshots, 0 analyses, 143 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-05-31 04:48:34.055992 (MainThread): 
+2021-05-31 04:48:34.056253 (MainThread): Acquiring new snowflake connection "master".
+2021-05-31 04:48:34.057191 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_DEMO_DB".
+2021-05-31 04:48:34.070115 (ThreadPoolExecutor-0_0): Using snowflake connection "list_DEMO_DB".
+2021-05-31 04:48:34.070262 (ThreadPoolExecutor-0_0): On list_DEMO_DB: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_DEMO_DB"} */
+
+    show terse schemas in database DEMO_DB
+    limit 10000
+2021-05-31 04:48:34.070353 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-05-31 04:48:35.729454 (ThreadPoolExecutor-0_0): SQL status: SUCCESS 2 in 1.66 seconds
+2021-05-31 04:48:35.733756 (ThreadPoolExecutor-0_0): On list_DEMO_DB: Close
+2021-05-31 04:48:36.457069 (ThreadPoolExecutor-1_0): Acquiring new snowflake connection "list_DEMO_DB_PUBLIC".
+2021-05-31 04:48:36.464862 (ThreadPoolExecutor-1_0): Using snowflake connection "list_DEMO_DB_PUBLIC".
+2021-05-31 04:48:36.464993 (ThreadPoolExecutor-1_0): On list_DEMO_DB_PUBLIC: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_DEMO_DB_PUBLIC"} */
+
+    show terse objects in DEMO_DB.PUBLIC
+2021-05-31 04:48:36.465095 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2021-05-31 04:48:37.991378 (ThreadPoolExecutor-1_0): SQL status: SUCCESS 2 in 1.53 seconds
+2021-05-31 04:48:37.992575 (ThreadPoolExecutor-1_0): On list_DEMO_DB_PUBLIC: Close
+2021-05-31 04:48:38.532418 (MainThread): Using snowflake connection "master".
+2021-05-31 04:48:38.532606 (MainThread): On master: BEGIN
+2021-05-31 04:48:38.532720 (MainThread): Opening a new connection, currently in state init
+2021-05-31 04:48:39.733977 (MainThread): SQL status: SUCCESS 1 in 1.20 seconds
+2021-05-31 04:48:39.734268 (MainThread): On master: COMMIT
+2021-05-31 04:48:39.734511 (MainThread): Using snowflake connection "master".
+2021-05-31 04:48:39.734661 (MainThread): On master: COMMIT
+2021-05-31 04:48:40.087973 (MainThread): SQL status: SUCCESS 1 in 0.35 seconds
+2021-05-31 04:48:40.088250 (MainThread): On master: Close
+2021-05-31 04:48:40.658332 (MainThread): 10:18:40 | Concurrency: 10 threads (target='dev')
+2021-05-31 04:48:40.658567 (MainThread): 10:18:40 | 
+2021-05-31 04:48:40.661033 (Thread-1): Began running node model.demo_dbt.customers
+2021-05-31 04:48:40.661463 (Thread-1): 10:18:40 | 1 of 1 START table model PUBLIC.customers............................ [RUN]
+2021-05-31 04:48:40.661902 (Thread-1): Acquiring new snowflake connection "model.demo_dbt.customers".
+2021-05-31 04:48:40.662045 (Thread-1): Compiling model.demo_dbt.customers
+2021-05-31 04:48:40.663700 (Thread-1): Writing injected SQL for node "model.demo_dbt.customers"
+2021-05-31 04:48:40.664207 (Thread-1): finished collecting timing info
+2021-05-31 04:48:40.694370 (Thread-1): Writing runtime SQL for node "model.demo_dbt.customers"
+2021-05-31 04:48:40.696675 (Thread-1): Using snowflake connection "model.demo_dbt.customers".
+2021-05-31 04:48:40.696912 (Thread-1): On model.demo_dbt.customers: BEGIN
+2021-05-31 04:48:40.697030 (Thread-1): Opening a new connection, currently in state closed
+2021-05-31 04:48:41.925016 (Thread-1): SQL status: SUCCESS 1 in 1.23 seconds
+2021-05-31 04:48:41.925268 (Thread-1): Using snowflake connection "model.demo_dbt.customers".
+2021-05-31 04:48:41.925405 (Thread-1): On model.demo_dbt.customers: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.demo_dbt.customers"} */
+
+
+      create or replace transient table DEMO_DB.PUBLIC.customers  as
+      (with customers as (
+
+    select
+        id as customer_id,
+        first_name,
+        last_name
+
+    from customers
+
+),
+
+orders as (
+
+    select
+        id as order_id,
+        user_id as customer_id,
+        order_date,
+        status
+
+    from orders
+
+),
+
+customer_orders as (
+
+    select
+        customer_id,
+
+        min(order_date) as first_order_date,
+        max(order_date) as most_recent_order_date,
+        count(order_id) as number_of_orders
+
+    from orders
+
+    group by 1
+
+),
+
+
+final as (
+
+    select
+        customers.customer_id,
+        customers.first_name,
+        customers.last_name,
+        customer_orders.first_order_date,
+        customer_orders.most_recent_order_date,
+        coalesce(customer_orders.number_of_orders, 0) as number_of_orders
+
+    from customers
+
+    left join customer_orders using (customer_id)
+
+)
+
+select * from final
+      );
+2021-05-31 04:48:42.259585 (Thread-1): Snowflake query id: 019c9b60-0000-43cf-0000-b0b10001c01a
+2021-05-31 04:48:42.259808 (Thread-1): Snowflake error: 001100 (42601): SQL compilation error:
+'CUSTOMERS' is an invalid Recursive CTE
+2021-05-31 04:48:42.260029 (Thread-1): finished collecting timing info
+2021-05-31 04:48:42.260243 (Thread-1): On model.demo_dbt.customers: ROLLBACK
+2021-05-31 04:48:42.637628 (Thread-1): On model.demo_dbt.customers: Close
+2021-05-31 04:48:43.527902 (Thread-1): Database Error in model customers (models/customers.sql)
+  001100 (42601): SQL compilation error:
+  'CUSTOMERS' is an invalid Recursive CTE
+  compiled SQL at target/run/demo_dbt/models/customers.sql
+Traceback (most recent call last):
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 162, in exception_handler
+    yield
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 80, in add_query
+    cursor.execute(sql, bindings)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/cursor.py", line 603, in execute
+    Error.errorhandler_wrapper(self.connection, self,
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/errors.py", line 125, in errorhandler_wrapper
+    cursor.errorhandler(connection, cursor, error_class, error_value)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/errors.py", line 85, in default_errorhandler
+    raise error_class(
+snowflake.connector.errors.ProgrammingError: 001100 (42601): SQL compilation error:
+'CUSTOMERS' is an invalid Recursive CTE
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/task/base.py", line 344, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/task/base.py", line 287, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/task/base.py", line 389, in run
+    return self.execute(compiled_node, manifest)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/task/run.py", line 248, in execute
+    result = MacroGenerator(materialization_macro, context)()
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 332, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 259, in call_macro
+    return macro(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 67, in macro
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 332, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 259, in call_macro
+    return macro(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 41, in macro
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/base/impl.py", line 227, in execute
+    return self.connections.execute(
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 124, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 314, in add_query
+    connection, cursor = super().add_query(
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 87, in add_query
+    return connection, cursor
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 179, in exception_handler
+    raise DatabaseException(msg)
+dbt.exceptions.DatabaseException: Database Error in model customers (models/customers.sql)
+  001100 (42601): SQL compilation error:
+  'CUSTOMERS' is an invalid Recursive CTE
+  compiled SQL at target/run/demo_dbt/models/customers.sql
+2021-05-31 04:48:43.531192 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd41a2b26-134f-4809-b00d-375c01ac8f42', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff0613a88b0>]}
+2021-05-31 04:48:43.531626 (Thread-1): 10:18:43 | 1 of 1 ERROR creating table model PUBLIC.customers................... [ERROR in 2.87s]
+2021-05-31 04:48:43.531794 (Thread-1): Finished running node model.demo_dbt.customers
+2021-05-31 04:48:43.533354 (MainThread): Acquiring new snowflake connection "master".
+2021-05-31 04:48:43.533597 (MainThread): Using snowflake connection "master".
+2021-05-31 04:48:43.533704 (MainThread): On master: BEGIN
+2021-05-31 04:48:43.533799 (MainThread): Opening a new connection, currently in state closed
+2021-05-31 04:48:44.858047 (MainThread): SQL status: SUCCESS 1 in 1.32 seconds
+2021-05-31 04:48:44.858311 (MainThread): On master: COMMIT
+2021-05-31 04:48:44.858538 (MainThread): Using snowflake connection "master".
+2021-05-31 04:48:44.858681 (MainThread): On master: COMMIT
+2021-05-31 04:48:45.205245 (MainThread): SQL status: SUCCESS 1 in 0.35 seconds
+2021-05-31 04:48:45.205513 (MainThread): On master: Close
+2021-05-31 04:48:45.778280 (MainThread): 10:18:45 | 
+2021-05-31 04:48:45.778498 (MainThread): 10:18:45 | Finished running 1 table model in 11.72s.
+2021-05-31 04:48:45.778633 (MainThread): Connection 'master' was properly closed.
+2021-05-31 04:48:45.778727 (MainThread): Connection 'model.demo_dbt.customers' was properly closed.
+2021-05-31 04:48:45.783032 (MainThread): 
+2021-05-31 04:48:45.783233 (MainThread): Completed with 1 error and 0 warnings:
+2021-05-31 04:48:45.783371 (MainThread): 
+2021-05-31 04:48:45.783496 (MainThread): Database Error in model customers (models/customers.sql)
+2021-05-31 04:48:45.783606 (MainThread):   001100 (42601): SQL compilation error:
+2021-05-31 04:48:45.783704 (MainThread):   'CUSTOMERS' is an invalid Recursive CTE
+2021-05-31 04:48:45.783798 (MainThread):   compiled SQL at target/run/demo_dbt/models/customers.sql
+2021-05-31 04:48:45.783900 (MainThread): 
+Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+2021-05-31 04:48:45.784083 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff06128dd30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff061256820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff0611077c0>]}
+2021-05-31 04:48:45.784332 (MainThread): Flushing usage events
+2021-05-31 04:48:51.774532 (MainThread): The 'warn' method is deprecated, use 'warning' instead
+2021-05-31 04:48:51.774780 (MainThread): Error sending message, disabling tracking
+2021-05-31 04:53:26.307970 (MainThread): Running with dbt=0.19.1
+2021-05-31 04:53:27.220163 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/dhirajpatra/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-05-31 04:53:27.221616 (MainThread): Tracking: tracking
+2021-05-31 04:53:27.222177 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd271f0faf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd27434c6d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd27434c760>]}
+2021-05-31 04:53:27.233263 (MainThread): Partial parsing not enabled
+2021-05-31 04:53:27.234485 (MainThread): Parsing macros/catalog.sql
+2021-05-31 04:53:27.237101 (MainThread): Parsing macros/adapters.sql
+2021-05-31 04:53:27.265759 (MainThread): Parsing macros/materializations/merge.sql
+2021-05-31 04:53:27.267610 (MainThread): Parsing macros/materializations/view.sql
+2021-05-31 04:53:27.269097 (MainThread): Parsing macros/materializations/table.sql
+2021-05-31 04:53:27.272688 (MainThread): Parsing macros/materializations/incremental.sql
+2021-05-31 04:53:27.281828 (MainThread): Parsing macros/core.sql
+2021-05-31 04:53:27.285247 (MainThread): Parsing macros/materializations/helpers.sql
+2021-05-31 04:53:27.293531 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-05-31 04:53:27.295126 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-05-31 04:53:27.311579 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-05-31 04:53:27.343451 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-05-31 04:53:27.362437 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-05-31 04:53:27.364105 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-05-31 04:53:27.369456 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-05-31 04:53:27.382396 (MainThread): Parsing macros/materializations/table/table.sql
+2021-05-31 04:53:27.388630 (MainThread): Parsing macros/materializations/view/view.sql
+2021-05-31 04:53:27.394249 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-05-31 04:53:27.398561 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-05-31 04:53:27.399419 (MainThread): Parsing macros/etc/query.sql
+2021-05-31 04:53:27.400330 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-05-31 04:53:27.401760 (MainThread): Parsing macros/etc/datetime.sql
+2021-05-31 04:53:27.409819 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-05-31 04:53:27.411548 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-05-31 04:53:27.413014 (MainThread): Parsing macros/adapters/common.sql
+2021-05-31 04:53:27.452762 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-05-31 04:53:27.454448 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-05-31 04:53:27.455780 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-05-31 04:53:27.457306 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-05-31 04:53:27.463770 (MainThread): Partial parsing not enabled
+2021-05-31 04:53:27.482343 (MainThread): Acquiring new snowflake connection "model.demo_dbt.stg_customers".
+2021-05-31 04:53:27.489725 (MainThread): Acquiring new snowflake connection "model.demo_dbt.customers".
+2021-05-31 04:53:27.525534 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e838fed3-8b02-4510-b5a2-fffef7822c6a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd2745a26a0>]}
+2021-05-31 04:53:27.529025 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e838fed3-8b02-4510-b5a2-fffef7822c6a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd274681fd0>]}
+2021-05-31 04:53:27.529209 (MainThread): Found 2 models, 0 tests, 0 snapshots, 0 analyses, 143 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-05-31 04:53:27.529797 (MainThread): 
+2021-05-31 04:53:27.530036 (MainThread): Acquiring new snowflake connection "master".
+2021-05-31 04:53:27.530702 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_DEMO_DB".
+2021-05-31 04:53:27.603189 (ThreadPoolExecutor-0_0): Using snowflake connection "list_DEMO_DB".
+2021-05-31 04:53:27.603373 (ThreadPoolExecutor-0_0): On list_DEMO_DB: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_DEMO_DB"} */
+
+    show terse schemas in database DEMO_DB
+    limit 10000
+2021-05-31 04:53:27.603482 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-05-31 04:53:29.427119 (ThreadPoolExecutor-0_0): SQL status: SUCCESS 2 in 1.82 seconds
+2021-05-31 04:53:29.431470 (ThreadPoolExecutor-0_0): On list_DEMO_DB: Close
+2021-05-31 04:53:30.043486 (ThreadPoolExecutor-1_0): Acquiring new snowflake connection "list_DEMO_DB_PUBLIC".
+2021-05-31 04:53:30.051321 (ThreadPoolExecutor-1_0): Using snowflake connection "list_DEMO_DB_PUBLIC".
+2021-05-31 04:53:30.051450 (ThreadPoolExecutor-1_0): On list_DEMO_DB_PUBLIC: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_DEMO_DB_PUBLIC"} */
+
+    show terse objects in DEMO_DB.PUBLIC
+2021-05-31 04:53:30.051551 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2021-05-31 04:53:31.158972 (ThreadPoolExecutor-1_0): SQL status: SUCCESS 2 in 1.11 seconds
+2021-05-31 04:53:31.160158 (ThreadPoolExecutor-1_0): On list_DEMO_DB_PUBLIC: Close
+2021-05-31 04:53:31.784814 (MainThread): Using snowflake connection "master".
+2021-05-31 04:53:31.785004 (MainThread): On master: BEGIN
+2021-05-31 04:53:31.785118 (MainThread): Opening a new connection, currently in state init
+2021-05-31 04:53:33.214598 (MainThread): SQL status: SUCCESS 1 in 1.43 seconds
+2021-05-31 04:53:33.214883 (MainThread): On master: COMMIT
+2021-05-31 04:53:33.215119 (MainThread): Using snowflake connection "master".
+2021-05-31 04:53:33.215227 (MainThread): On master: COMMIT
+2021-05-31 04:53:33.726761 (MainThread): SQL status: SUCCESS 1 in 0.51 seconds
+2021-05-31 04:53:33.727038 (MainThread): On master: Close
+2021-05-31 04:53:34.547412 (MainThread): 10:23:34 | Concurrency: 10 threads (target='dev')
+2021-05-31 04:53:34.547646 (MainThread): 10:23:34 | 
+2021-05-31 04:53:34.549887 (Thread-1): Began running node model.demo_dbt.stg_customers
+2021-05-31 04:53:34.550229 (Thread-1): 10:23:34 | 1 of 2 START table model PUBLIC.stg_customers........................ [RUN]
+2021-05-31 04:53:34.550557 (Thread-1): Acquiring new snowflake connection "model.demo_dbt.stg_customers".
+2021-05-31 04:53:34.550704 (Thread-1): Compiling model.demo_dbt.stg_customers
+2021-05-31 04:53:34.552247 (Thread-1): Writing injected SQL for node "model.demo_dbt.stg_customers"
+2021-05-31 04:53:34.552716 (Thread-1): finished collecting timing info
+2021-05-31 04:53:34.582342 (Thread-1): Writing runtime SQL for node "model.demo_dbt.stg_customers"
+2021-05-31 04:53:34.583199 (Thread-1): Using snowflake connection "model.demo_dbt.stg_customers".
+2021-05-31 04:53:34.583305 (Thread-1): On model.demo_dbt.stg_customers: BEGIN
+2021-05-31 04:53:34.583397 (Thread-1): Opening a new connection, currently in state closed
+2021-05-31 04:53:35.774667 (Thread-1): SQL status: SUCCESS 1 in 1.19 seconds
+2021-05-31 04:53:35.774926 (Thread-1): Using snowflake connection "model.demo_dbt.stg_customers".
+2021-05-31 04:53:35.775064 (Thread-1): On model.demo_dbt.stg_customers: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.demo_dbt.stg_customers"} */
+
+
+      create or replace transient table DEMO_DB.PUBLIC.stg_customers  as
+      (select 
+    id as customer_id,
+    first_name,
+    last_name
+
+from customers
+      );
+2021-05-31 04:53:36.183878 (Thread-1): Snowflake query id: 019c9b65-0000-43dd-0000-b0b10001a03a
+2021-05-31 04:53:36.184106 (Thread-1): Snowflake error: 002003 (42S02): SQL compilation error:
+Object 'CUSTOMERS' does not exist or not authorized.
+2021-05-31 04:53:36.184334 (Thread-1): finished collecting timing info
+2021-05-31 04:53:36.184548 (Thread-1): On model.demo_dbt.stg_customers: ROLLBACK
+2021-05-31 04:53:36.594043 (Thread-1): On model.demo_dbt.stg_customers: Close
+2021-05-31 04:53:37.209631 (Thread-1): Database Error in model stg_customers (models/stg_customers.sql)
+  002003 (42S02): SQL compilation error:
+  Object 'CUSTOMERS' does not exist or not authorized.
+  compiled SQL at target/run/demo_dbt/models/stg_customers.sql
+Traceback (most recent call last):
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 162, in exception_handler
+    yield
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 80, in add_query
+    cursor.execute(sql, bindings)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/cursor.py", line 603, in execute
+    Error.errorhandler_wrapper(self.connection, self,
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/errors.py", line 125, in errorhandler_wrapper
+    cursor.errorhandler(connection, cursor, error_class, error_value)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/errors.py", line 85, in default_errorhandler
+    raise error_class(
+snowflake.connector.errors.ProgrammingError: 002003 (42S02): SQL compilation error:
+Object 'CUSTOMERS' does not exist or not authorized.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/task/base.py", line 344, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/task/base.py", line 287, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/task/base.py", line 389, in run
+    return self.execute(compiled_node, manifest)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/task/run.py", line 248, in execute
+    result = MacroGenerator(materialization_macro, context)()
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 332, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 259, in call_macro
+    return macro(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 67, in macro
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 332, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 259, in call_macro
+    return macro(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 41, in macro
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/base/impl.py", line 227, in execute
+    return self.connections.execute(
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 124, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 314, in add_query
+    connection, cursor = super().add_query(
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 87, in add_query
+    return connection, cursor
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 179, in exception_handler
+    raise DatabaseException(msg)
+dbt.exceptions.DatabaseException: Database Error in model stg_customers (models/stg_customers.sql)
+  002003 (42S02): SQL compilation error:
+  Object 'CUSTOMERS' does not exist or not authorized.
+  compiled SQL at target/run/demo_dbt/models/stg_customers.sql
+2021-05-31 04:53:37.212589 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e838fed3-8b02-4510-b5a2-fffef7822c6a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd274893c40>]}
+2021-05-31 04:53:37.212967 (Thread-1): 10:23:37 | 1 of 2 ERROR creating table model PUBLIC.stg_customers............... [ERROR in 2.66s]
+2021-05-31 04:53:37.213135 (Thread-1): Finished running node model.demo_dbt.stg_customers
+2021-05-31 04:53:37.213741 (Thread-3): Began running node model.demo_dbt.customers
+2021-05-31 04:53:37.213922 (Thread-3): 10:23:37 | 2 of 2 SKIP relation PUBLIC.customers................................ [SKIP]
+2021-05-31 04:53:37.214181 (Thread-3): Finished running node model.demo_dbt.customers
+2021-05-31 04:53:37.215472 (MainThread): Acquiring new snowflake connection "master".
+2021-05-31 04:53:37.215694 (MainThread): Using snowflake connection "master".
+2021-05-31 04:53:37.215803 (MainThread): On master: BEGIN
+2021-05-31 04:53:37.215903 (MainThread): Opening a new connection, currently in state closed
+2021-05-31 04:53:38.334608 (MainThread): SQL status: SUCCESS 1 in 1.12 seconds
+2021-05-31 04:53:38.334881 (MainThread): On master: COMMIT
+2021-05-31 04:53:38.335114 (MainThread): Using snowflake connection "master".
+2021-05-31 04:53:38.335252 (MainThread): On master: COMMIT
+2021-05-31 04:53:38.747554 (MainThread): SQL status: SUCCESS 1 in 0.41 seconds
+2021-05-31 04:53:38.747840 (MainThread): On master: Close
+2021-05-31 04:53:39.565357 (MainThread): 10:23:39 | 
+2021-05-31 04:53:39.565600 (MainThread): 10:23:39 | Finished running 2 table models in 12.04s.
+2021-05-31 04:53:39.565752 (MainThread): Connection 'master' was properly closed.
+2021-05-31 04:53:39.565864 (MainThread): Connection 'model.demo_dbt.stg_customers' was properly closed.
+2021-05-31 04:53:39.570320 (MainThread): 
+2021-05-31 04:53:39.570491 (MainThread): Completed with 1 error and 0 warnings:
+2021-05-31 04:53:39.570630 (MainThread): 
+2021-05-31 04:53:39.570760 (MainThread): Database Error in model stg_customers (models/stg_customers.sql)
+2021-05-31 04:53:39.570874 (MainThread):   002003 (42S02): SQL compilation error:
+2021-05-31 04:53:39.570979 (MainThread):   Object 'CUSTOMERS' does not exist or not authorized.
+2021-05-31 04:53:39.571084 (MainThread):   compiled SQL at target/run/demo_dbt/models/stg_customers.sql
+2021-05-31 04:53:39.571198 (MainThread): 
+Done. PASS=0 WARN=0 ERROR=1 SKIP=1 TOTAL=2
+2021-05-31 04:53:39.571380 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd27467e4c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd2748b0700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd2748b0e80>]}
+2021-05-31 04:53:39.571601 (MainThread): Flushing usage events
+2021-05-31 04:54:17.634997 (MainThread): Running with dbt=0.19.1
+2021-05-31 04:54:18.516096 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=True, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/dhirajpatra/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-05-31 04:54:18.517517 (MainThread): Tracking: tracking
+2021-05-31 04:54:18.518052 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f83252cbdc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8329a4f6a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8329a4f730>]}
+2021-05-31 04:54:18.529642 (MainThread): Partial parsing not enabled
+2021-05-31 04:54:18.530857 (MainThread): Parsing macros/catalog.sql
+2021-05-31 04:54:18.533536 (MainThread): Parsing macros/adapters.sql
+2021-05-31 04:54:18.562961 (MainThread): Parsing macros/materializations/merge.sql
+2021-05-31 04:54:18.564746 (MainThread): Parsing macros/materializations/view.sql
+2021-05-31 04:54:18.566045 (MainThread): Parsing macros/materializations/table.sql
+2021-05-31 04:54:18.569786 (MainThread): Parsing macros/materializations/incremental.sql
+2021-05-31 04:54:18.578778 (MainThread): Parsing macros/core.sql
+2021-05-31 04:54:18.582163 (MainThread): Parsing macros/materializations/helpers.sql
+2021-05-31 04:54:18.589968 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-05-31 04:54:18.591509 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-05-31 04:54:18.608069 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-05-31 04:54:18.640092 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-05-31 04:54:18.659480 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-05-31 04:54:18.661146 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-05-31 04:54:18.666529 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-05-31 04:54:18.679364 (MainThread): Parsing macros/materializations/table/table.sql
+2021-05-31 04:54:18.685476 (MainThread): Parsing macros/materializations/view/view.sql
+2021-05-31 04:54:18.691148 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-05-31 04:54:18.695498 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-05-31 04:54:18.696329 (MainThread): Parsing macros/etc/query.sql
+2021-05-31 04:54:18.697242 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-05-31 04:54:18.698665 (MainThread): Parsing macros/etc/datetime.sql
+2021-05-31 04:54:18.706590 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-05-31 04:54:18.708405 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-05-31 04:54:18.709924 (MainThread): Parsing macros/adapters/common.sql
+2021-05-31 04:54:18.749189 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-05-31 04:54:18.750889 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-05-31 04:54:18.752245 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-05-31 04:54:18.753746 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-05-31 04:54:18.760368 (MainThread): Partial parsing not enabled
+2021-05-31 04:54:18.779406 (MainThread): Acquiring new snowflake connection "model.demo_dbt.stg_customers".
+2021-05-31 04:54:18.786873 (MainThread): Acquiring new snowflake connection "model.demo_dbt.customers".
+2021-05-31 04:54:18.822400 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b87cac03-e0d0-43a4-bac6-0ed2d22f973f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8329b98880>]}
+2021-05-31 04:54:18.825871 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b87cac03-e0d0-43a4-bac6-0ed2d22f973f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8329c82f40>]}
+2021-05-31 04:54:18.826051 (MainThread): Found 2 models, 0 tests, 0 snapshots, 0 analyses, 143 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-05-31 04:54:18.826635 (MainThread): 
+2021-05-31 04:54:18.826861 (MainThread): Acquiring new snowflake connection "master".
+2021-05-31 04:54:18.827520 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_DEMO_DB".
+2021-05-31 04:54:18.899210 (ThreadPoolExecutor-0_0): Using snowflake connection "list_DEMO_DB".
+2021-05-31 04:54:18.899393 (ThreadPoolExecutor-0_0): On list_DEMO_DB: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_DEMO_DB"} */
+
+    show terse schemas in database DEMO_DB
+    limit 10000
+2021-05-31 04:54:18.899503 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-05-31 04:54:20.401531 (ThreadPoolExecutor-0_0): SQL status: SUCCESS 2 in 1.50 seconds
+2021-05-31 04:54:20.405572 (ThreadPoolExecutor-0_0): On list_DEMO_DB: Close
+2021-05-31 04:54:20.957454 (ThreadPoolExecutor-1_0): Acquiring new snowflake connection "list_DEMO_DB_PUBLIC".
+2021-05-31 04:54:20.965339 (ThreadPoolExecutor-1_0): Using snowflake connection "list_DEMO_DB_PUBLIC".
+2021-05-31 04:54:20.965470 (ThreadPoolExecutor-1_0): On list_DEMO_DB_PUBLIC: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_DEMO_DB_PUBLIC"} */
+
+    show terse objects in DEMO_DB.PUBLIC
+2021-05-31 04:54:20.965572 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2021-05-31 04:54:22.262154 (ThreadPoolExecutor-1_0): SQL status: SUCCESS 2 in 1.30 seconds
+2021-05-31 04:54:22.263315 (ThreadPoolExecutor-1_0): On list_DEMO_DB_PUBLIC: Close
+2021-05-31 04:54:22.815827 (MainThread): Using snowflake connection "master".
+2021-05-31 04:54:22.816013 (MainThread): On master: BEGIN
+2021-05-31 04:54:22.816127 (MainThread): Opening a new connection, currently in state init
+2021-05-31 04:54:24.003414 (MainThread): SQL status: SUCCESS 1 in 1.19 seconds
+2021-05-31 04:54:24.003707 (MainThread): On master: COMMIT
+2021-05-31 04:54:24.003911 (MainThread): Using snowflake connection "master".
+2021-05-31 04:54:24.004023 (MainThread): On master: COMMIT
+2021-05-31 04:54:24.343067 (MainThread): SQL status: SUCCESS 1 in 0.34 seconds
+2021-05-31 04:54:24.343348 (MainThread): On master: Close
+2021-05-31 04:54:24.923606 (MainThread): 10:24:24 | Concurrency: 10 threads (target='dev')
+2021-05-31 04:54:24.923837 (MainThread): 10:24:24 | 
+2021-05-31 04:54:24.926028 (Thread-1): Began running node model.demo_dbt.stg_customers
+2021-05-31 04:54:24.926358 (Thread-1): 10:24:24 | 1 of 2 START table model PUBLIC.stg_customers........................ [RUN]
+2021-05-31 04:54:24.926688 (Thread-1): Acquiring new snowflake connection "model.demo_dbt.stg_customers".
+2021-05-31 04:54:24.926852 (Thread-1): Compiling model.demo_dbt.stg_customers
+2021-05-31 04:54:24.928393 (Thread-1): Writing injected SQL for node "model.demo_dbt.stg_customers"
+2021-05-31 04:54:24.928894 (Thread-1): finished collecting timing info
+2021-05-31 04:54:24.959254 (Thread-1): Writing runtime SQL for node "model.demo_dbt.stg_customers"
+2021-05-31 04:54:24.960105 (Thread-1): Using snowflake connection "model.demo_dbt.stg_customers".
+2021-05-31 04:54:24.960216 (Thread-1): On model.demo_dbt.stg_customers: BEGIN
+2021-05-31 04:54:24.960306 (Thread-1): Opening a new connection, currently in state closed
+2021-05-31 04:54:26.149618 (Thread-1): SQL status: SUCCESS 1 in 1.19 seconds
+2021-05-31 04:54:26.149869 (Thread-1): Using snowflake connection "model.demo_dbt.stg_customers".
+2021-05-31 04:54:26.150005 (Thread-1): On model.demo_dbt.stg_customers: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.demo_dbt.stg_customers"} */
+
+
+      create or replace transient table DEMO_DB.PUBLIC.stg_customers  as
+      (select 
+    id as customer_id,
+    first_name,
+    last_name
+
+from customers
+      );
+2021-05-31 04:54:26.559299 (Thread-1): Snowflake query id: 019c9b66-0000-43dd-0000-b0b10001a04e
+2021-05-31 04:54:26.559520 (Thread-1): Snowflake error: 002003 (42S02): SQL compilation error:
+Object 'CUSTOMERS' does not exist or not authorized.
+2021-05-31 04:54:26.559741 (Thread-1): finished collecting timing info
+2021-05-31 04:54:26.559945 (Thread-1): On model.demo_dbt.stg_customers: ROLLBACK
+2021-05-31 04:54:26.989540 (Thread-1): On model.demo_dbt.stg_customers: Close
+2021-05-31 04:54:27.563629 (Thread-1): Database Error in model stg_customers (models/stg_customers.sql)
+  002003 (42S02): SQL compilation error:
+  Object 'CUSTOMERS' does not exist or not authorized.
+  compiled SQL at target/run/demo_dbt/models/stg_customers.sql
+Traceback (most recent call last):
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 162, in exception_handler
+    yield
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 80, in add_query
+    cursor.execute(sql, bindings)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/cursor.py", line 603, in execute
+    Error.errorhandler_wrapper(self.connection, self,
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/errors.py", line 125, in errorhandler_wrapper
+    cursor.errorhandler(connection, cursor, error_class, error_value)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/errors.py", line 85, in default_errorhandler
+    raise error_class(
+snowflake.connector.errors.ProgrammingError: 002003 (42S02): SQL compilation error:
+Object 'CUSTOMERS' does not exist or not authorized.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/task/base.py", line 344, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/task/base.py", line 287, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/task/base.py", line 389, in run
+    return self.execute(compiled_node, manifest)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/task/run.py", line 248, in execute
+    result = MacroGenerator(materialization_macro, context)()
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 332, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 259, in call_macro
+    return macro(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 67, in macro
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 332, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 259, in call_macro
+    return macro(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 41, in macro
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/base/impl.py", line 227, in execute
+    return self.connections.execute(
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 124, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 314, in add_query
+    connection, cursor = super().add_query(
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 87, in add_query
+    return connection, cursor
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 179, in exception_handler
+    raise DatabaseException(msg)
+dbt.exceptions.DatabaseException: Database Error in model stg_customers (models/stg_customers.sql)
+  002003 (42S02): SQL compilation error:
+  Object 'CUSTOMERS' does not exist or not authorized.
+  compiled SQL at target/run/demo_dbt/models/stg_customers.sql
+2021-05-31 04:54:27.566704 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b87cac03-e0d0-43a4-bac6-0ed2d22f973f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f832a101b50>]}
+2021-05-31 04:54:27.567122 (Thread-1): 10:24:27 | 1 of 2 ERROR creating table model PUBLIC.stg_customers............... [ERROR in 2.64s]
+2021-05-31 04:54:27.567304 (Thread-1): Finished running node model.demo_dbt.stg_customers
+2021-05-31 04:54:27.567971 (Thread-3): Began running node model.demo_dbt.customers
+2021-05-31 04:54:27.568166 (Thread-3): 10:24:27 | 2 of 2 SKIP relation PUBLIC.customers................................ [SKIP]
+2021-05-31 04:54:27.568332 (Thread-3): Finished running node model.demo_dbt.customers
+2021-05-31 04:54:27.569806 (MainThread): Acquiring new snowflake connection "master".
+2021-05-31 04:54:27.570051 (MainThread): Using snowflake connection "master".
+2021-05-31 04:54:27.570167 (MainThread): On master: BEGIN
+2021-05-31 04:54:27.570274 (MainThread): Opening a new connection, currently in state closed
+2021-05-31 04:54:29.155676 (MainThread): SQL status: SUCCESS 1 in 1.59 seconds
+2021-05-31 04:54:29.155949 (MainThread): On master: COMMIT
+2021-05-31 04:54:29.156180 (MainThread): Using snowflake connection "master".
+2021-05-31 04:54:29.156314 (MainThread): On master: COMMIT
+2021-05-31 04:54:29.532393 (MainThread): SQL status: SUCCESS 1 in 0.38 seconds
+2021-05-31 04:54:29.532669 (MainThread): On master: Close
+2021-05-31 04:54:30.149631 (MainThread): 10:24:30 | 
+2021-05-31 04:54:30.149862 (MainThread): 10:24:30 | Finished running 2 table models in 11.32s.
+2021-05-31 04:54:30.150004 (MainThread): Connection 'master' was properly closed.
+2021-05-31 04:54:30.150106 (MainThread): Connection 'model.demo_dbt.stg_customers' was properly closed.
+2021-05-31 04:54:30.154518 (MainThread): 
+2021-05-31 04:54:30.154682 (MainThread): Completed with 1 error and 0 warnings:
+2021-05-31 04:54:30.154817 (MainThread): 
+2021-05-31 04:54:30.154944 (MainThread): Database Error in model stg_customers (models/stg_customers.sql)
+2021-05-31 04:54:30.155058 (MainThread):   002003 (42S02): SQL compilation error:
+2021-05-31 04:54:30.155163 (MainThread):   Object 'CUSTOMERS' does not exist or not authorized.
+2021-05-31 04:54:30.155264 (MainThread):   compiled SQL at target/run/demo_dbt/models/stg_customers.sql
+2021-05-31 04:54:30.155375 (MainThread): 
+Done. PASS=0 WARN=0 ERROR=1 SKIP=1 TOTAL=2
+2021-05-31 04:54:30.155555 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8329be2640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8329cf6940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8329cf6160>]}
+2021-05-31 04:54:30.155784 (MainThread): Flushing usage events
+2021-05-31 04:55:25.242777 (MainThread): Running with dbt=0.19.1
+2021-05-31 04:55:26.013528 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=True, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/dhirajpatra/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-05-31 04:55:26.015005 (MainThread): Tracking: tracking
+2021-05-31 04:55:26.015528 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc007fc8c70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc00d94e670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc00d94e700>]}
+2021-05-31 04:55:26.024913 (MainThread): Partial parsing not enabled
+2021-05-31 04:55:26.025883 (MainThread): Parsing macros/catalog.sql
+2021-05-31 04:55:26.028131 (MainThread): Parsing macros/adapters.sql
+2021-05-31 04:55:26.054156 (MainThread): Parsing macros/materializations/merge.sql
+2021-05-31 04:55:26.055915 (MainThread): Parsing macros/materializations/view.sql
+2021-05-31 04:55:26.057157 (MainThread): Parsing macros/materializations/table.sql
+2021-05-31 04:55:26.060623 (MainThread): Parsing macros/materializations/incremental.sql
+2021-05-31 04:55:26.069254 (MainThread): Parsing macros/core.sql
+2021-05-31 04:55:26.072469 (MainThread): Parsing macros/materializations/helpers.sql
+2021-05-31 04:55:26.079931 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-05-31 04:55:26.081420 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-05-31 04:55:26.096785 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-05-31 04:55:26.126863 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-05-31 04:55:26.145879 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-05-31 04:55:26.147463 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-05-31 04:55:26.152635 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-05-31 04:55:26.165149 (MainThread): Parsing macros/materializations/table/table.sql
+2021-05-31 04:55:26.171305 (MainThread): Parsing macros/materializations/view/view.sql
+2021-05-31 04:55:26.176736 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-05-31 04:55:26.180872 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-05-31 04:55:26.181671 (MainThread): Parsing macros/etc/query.sql
+2021-05-31 04:55:26.182552 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-05-31 04:55:26.183918 (MainThread): Parsing macros/etc/datetime.sql
+2021-05-31 04:55:26.191412 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-05-31 04:55:26.193054 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-05-31 04:55:26.194466 (MainThread): Parsing macros/adapters/common.sql
+2021-05-31 04:55:26.232513 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-05-31 04:55:26.234090 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-05-31 04:55:26.235367 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-05-31 04:55:26.236796 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-05-31 04:55:26.243044 (MainThread): Partial parsing not enabled
+2021-05-31 04:55:26.261053 (MainThread): Acquiring new snowflake connection "model.demo_dbt.stg_customers".
+2021-05-31 04:55:26.268230 (MainThread): Acquiring new snowflake connection "model.demo_dbt.customers".
+2021-05-31 04:55:26.305723 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '559acf7a-8955-4e03-834b-e2e137671575', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc00da96c40>]}
+2021-05-31 04:55:26.309129 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '559acf7a-8955-4e03-834b-e2e137671575', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc00db84490>]}
+2021-05-31 04:55:26.309301 (MainThread): Found 2 models, 0 tests, 0 snapshots, 0 analyses, 143 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-05-31 04:55:26.309862 (MainThread): 
+2021-05-31 04:55:26.310086 (MainThread): Acquiring new snowflake connection "master".
+2021-05-31 04:55:26.310840 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_DEMO_DB".
+2021-05-31 04:55:26.382653 (ThreadPoolExecutor-0_0): Using snowflake connection "list_DEMO_DB".
+2021-05-31 04:55:26.382840 (ThreadPoolExecutor-0_0): On list_DEMO_DB: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_DEMO_DB"} */
+
+    show terse schemas in database DEMO_DB
+    limit 10000
+2021-05-31 04:55:26.382940 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-05-31 04:55:27.899266 (ThreadPoolExecutor-0_0): SQL status: SUCCESS 2 in 1.52 seconds
+2021-05-31 04:55:27.903765 (ThreadPoolExecutor-0_0): On list_DEMO_DB: Close
+2021-05-31 04:55:28.514262 (ThreadPoolExecutor-1_0): Acquiring new snowflake connection "list_DEMO_DB_PUBLIC".
+2021-05-31 04:55:28.520994 (ThreadPoolExecutor-1_0): Using snowflake connection "list_DEMO_DB_PUBLIC".
+2021-05-31 04:55:28.521124 (ThreadPoolExecutor-1_0): On list_DEMO_DB_PUBLIC: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_DEMO_DB_PUBLIC"} */
+
+    show terse objects in DEMO_DB.PUBLIC
+2021-05-31 04:55:28.521221 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2021-05-31 04:55:29.743601 (ThreadPoolExecutor-1_0): SQL status: SUCCESS 2 in 1.22 seconds
+2021-05-31 04:55:29.744767 (ThreadPoolExecutor-1_0): On list_DEMO_DB_PUBLIC: Close
+2021-05-31 04:55:30.563629 (MainThread): Using snowflake connection "master".
+2021-05-31 04:55:30.563822 (MainThread): On master: BEGIN
+2021-05-31 04:55:30.563940 (MainThread): Opening a new connection, currently in state init
+2021-05-31 04:55:31.824902 (MainThread): SQL status: SUCCESS 1 in 1.26 seconds
+2021-05-31 04:55:31.825203 (MainThread): On master: COMMIT
+2021-05-31 04:55:31.825451 (MainThread): Using snowflake connection "master".
+2021-05-31 04:55:31.825593 (MainThread): On master: COMMIT
+2021-05-31 04:55:32.180289 (MainThread): SQL status: SUCCESS 1 in 0.35 seconds
+2021-05-31 04:55:32.180569 (MainThread): On master: Close
+2021-05-31 04:55:32.814838 (MainThread): 10:25:32 | Concurrency: 10 threads (target='dev')
+2021-05-31 04:55:32.815081 (MainThread): 10:25:32 | 
+2021-05-31 04:55:32.817358 (Thread-1): Began running node model.demo_dbt.stg_customers
+2021-05-31 04:55:32.817700 (Thread-1): 10:25:32 | 1 of 2 START view model PUBLIC.stg_customers......................... [RUN]
+2021-05-31 04:55:32.818058 (Thread-1): Acquiring new snowflake connection "model.demo_dbt.stg_customers".
+2021-05-31 04:55:32.818215 (Thread-1): Compiling model.demo_dbt.stg_customers
+2021-05-31 04:55:32.819850 (Thread-1): Writing injected SQL for node "model.demo_dbt.stg_customers"
+2021-05-31 04:55:32.820355 (Thread-1): finished collecting timing info
+2021-05-31 04:55:32.847657 (Thread-1): Writing runtime SQL for node "model.demo_dbt.stg_customers"
+2021-05-31 04:55:32.848489 (Thread-1): Using snowflake connection "model.demo_dbt.stg_customers".
+2021-05-31 04:55:32.848599 (Thread-1): On model.demo_dbt.stg_customers: BEGIN
+2021-05-31 04:55:32.848691 (Thread-1): Opening a new connection, currently in state closed
+2021-05-31 04:55:34.041463 (Thread-1): SQL status: SUCCESS 1 in 1.19 seconds
+2021-05-31 04:55:34.041720 (Thread-1): Using snowflake connection "model.demo_dbt.stg_customers".
+2021-05-31 04:55:34.041860 (Thread-1): On model.demo_dbt.stg_customers: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.demo_dbt.stg_customers"} */
+
+  create or replace  view DEMO_DB.PUBLIC.stg_customers  as (
+    select 
+    id as customer_id,
+    first_name,
+    last_name
+
+from customers
+  );
+2021-05-31 04:55:34.450583 (Thread-1): Snowflake query id: 019c9b67-0000-43cf-0000-b0b10001c05a
+2021-05-31 04:55:34.450814 (Thread-1): Snowflake error: 002003 (42S02): SQL compilation error:
+Object 'DEMO_DB.PUBLIC.CUSTOMERS' does not exist or not authorized.
+2021-05-31 04:55:34.451055 (Thread-1): finished collecting timing info
+2021-05-31 04:55:34.451272 (Thread-1): On model.demo_dbt.stg_customers: ROLLBACK
+2021-05-31 04:55:35.064804 (Thread-1): On model.demo_dbt.stg_customers: Close
+2021-05-31 04:55:35.682719 (Thread-1): Database Error in model stg_customers (models/stg_customers.sql)
+  002003 (42S02): SQL compilation error:
+  Object 'DEMO_DB.PUBLIC.CUSTOMERS' does not exist or not authorized.
+  compiled SQL at target/run/demo_dbt/models/stg_customers.sql
+Traceback (most recent call last):
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 162, in exception_handler
+    yield
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 80, in add_query
+    cursor.execute(sql, bindings)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/cursor.py", line 603, in execute
+    Error.errorhandler_wrapper(self.connection, self,
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/errors.py", line 125, in errorhandler_wrapper
+    cursor.errorhandler(connection, cursor, error_class, error_value)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/errors.py", line 85, in default_errorhandler
+    raise error_class(
+snowflake.connector.errors.ProgrammingError: 002003 (42S02): SQL compilation error:
+Object 'DEMO_DB.PUBLIC.CUSTOMERS' does not exist or not authorized.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/task/base.py", line 344, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/task/base.py", line 287, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/task/base.py", line 389, in run
+    return self.execute(compiled_node, manifest)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/task/run.py", line 248, in execute
+    result = MacroGenerator(materialization_macro, context)()
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 332, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 259, in call_macro
+    return macro(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 27, in macro
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 332, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 259, in call_macro
+    return macro(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 65, in macro
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 332, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 259, in call_macro
+    return macro(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 41, in macro
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/base/impl.py", line 227, in execute
+    return self.connections.execute(
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 124, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 314, in add_query
+    connection, cursor = super().add_query(
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 87, in add_query
+    return connection, cursor
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 179, in exception_handler
+    raise DatabaseException(msg)
+dbt.exceptions.DatabaseException: Database Error in model stg_customers (models/stg_customers.sql)
+  002003 (42S02): SQL compilation error:
+  Object 'DEMO_DB.PUBLIC.CUSTOMERS' does not exist or not authorized.
+  compiled SQL at target/run/demo_dbt/models/stg_customers.sql
+2021-05-31 04:55:35.685835 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '559acf7a-8955-4e03-834b-e2e137671575', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc00df0a730>]}
+2021-05-31 04:55:35.686239 (Thread-1): 10:25:35 | 1 of 2 ERROR creating view model PUBLIC.stg_customers................ [ERROR in 2.87s]
+2021-05-31 04:55:35.686411 (Thread-1): Finished running node model.demo_dbt.stg_customers
+2021-05-31 04:55:35.687121 (Thread-3): Began running node model.demo_dbt.customers
+2021-05-31 04:55:35.687321 (Thread-3): 10:25:35 | 2 of 2 SKIP relation PUBLIC.customers................................ [SKIP]
+2021-05-31 04:55:35.687491 (Thread-3): Finished running node model.demo_dbt.customers
+2021-05-31 04:55:35.688912 (MainThread): Acquiring new snowflake connection "master".
+2021-05-31 04:55:35.689138 (MainThread): Using snowflake connection "master".
+2021-05-31 04:55:35.689247 (MainThread): On master: BEGIN
+2021-05-31 04:55:35.689347 (MainThread): Opening a new connection, currently in state closed
+2021-05-31 04:55:37.011298 (MainThread): SQL status: SUCCESS 1 in 1.32 seconds
+2021-05-31 04:55:37.011571 (MainThread): On master: COMMIT
+2021-05-31 04:55:37.011801 (MainThread): Using snowflake connection "master".
+2021-05-31 04:55:37.011936 (MainThread): On master: COMMIT
+2021-05-31 04:55:37.420568 (MainThread): SQL status: SUCCESS 1 in 0.41 seconds
+2021-05-31 04:55:37.420851 (MainThread): On master: Close
+2021-05-31 04:55:38.139379 (MainThread): 10:25:38 | 
+2021-05-31 04:55:38.139620 (MainThread): 10:25:38 | Finished running 2 view models in 11.83s.
+2021-05-31 04:55:38.139766 (MainThread): Connection 'master' was properly closed.
+2021-05-31 04:55:38.139870 (MainThread): Connection 'model.demo_dbt.stg_customers' was properly closed.
+2021-05-31 04:55:38.144330 (MainThread): 
+2021-05-31 04:55:38.144518 (MainThread): Completed with 1 error and 0 warnings:
+2021-05-31 04:55:38.144658 (MainThread): 
+2021-05-31 04:55:38.144792 (MainThread): Database Error in model stg_customers (models/stg_customers.sql)
+2021-05-31 04:55:38.144931 (MainThread):   002003 (42S02): SQL compilation error:
+2021-05-31 04:55:38.145043 (MainThread):   Object 'DEMO_DB.PUBLIC.CUSTOMERS' does not exist or not authorized.
+2021-05-31 04:55:38.145157 (MainThread):   compiled SQL at target/run/demo_dbt/models/stg_customers.sql
+2021-05-31 04:55:38.145281 (MainThread): 
+Done. PASS=0 WARN=0 ERROR=1 SKIP=1 TOTAL=2
+2021-05-31 04:55:38.145467 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc00dae2670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc00dfdea90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc00dfded60>]}
+2021-05-31 04:55:38.145709 (MainThread): Flushing usage events
+2021-05-31 04:58:07.901623 (MainThread): Running with dbt=0.19.1
+2021-05-31 04:58:08.711184 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=True, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/dhirajpatra/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-05-31 04:58:08.712655 (MainThread): Tracking: tracking
+2021-05-31 04:58:08.713145 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbdb0edbca0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbdb3152550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbdb31525e0>]}
+2021-05-31 04:58:08.724341 (MainThread): Partial parsing not enabled
+2021-05-31 04:58:08.725640 (MainThread): Parsing macros/catalog.sql
+2021-05-31 04:58:08.728453 (MainThread): Parsing macros/adapters.sql
+2021-05-31 04:58:08.757603 (MainThread): Parsing macros/materializations/merge.sql
+2021-05-31 04:58:08.759388 (MainThread): Parsing macros/materializations/view.sql
+2021-05-31 04:58:08.760680 (MainThread): Parsing macros/materializations/table.sql
+2021-05-31 04:58:08.764166 (MainThread): Parsing macros/materializations/incremental.sql
+2021-05-31 04:58:08.773171 (MainThread): Parsing macros/core.sql
+2021-05-31 04:58:08.776542 (MainThread): Parsing macros/materializations/helpers.sql
+2021-05-31 04:58:08.784462 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-05-31 04:58:08.786041 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-05-31 04:58:08.802292 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-05-31 04:58:08.833429 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-05-31 04:58:08.852604 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-05-31 04:58:08.854255 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-05-31 04:58:08.859620 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-05-31 04:58:08.872796 (MainThread): Parsing macros/materializations/table/table.sql
+2021-05-31 04:58:08.878923 (MainThread): Parsing macros/materializations/view/view.sql
+2021-05-31 04:58:08.884497 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-05-31 04:58:08.888807 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-05-31 04:58:08.889659 (MainThread): Parsing macros/etc/query.sql
+2021-05-31 04:58:08.890579 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-05-31 04:58:08.892010 (MainThread): Parsing macros/etc/datetime.sql
+2021-05-31 04:58:08.900646 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-05-31 04:58:08.902432 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-05-31 04:58:08.904000 (MainThread): Parsing macros/adapters/common.sql
+2021-05-31 04:58:08.943550 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-05-31 04:58:08.945256 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-05-31 04:58:08.946603 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-05-31 04:58:08.948110 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-05-31 04:58:08.954555 (MainThread): Partial parsing not enabled
+2021-05-31 04:58:08.973035 (MainThread): Acquiring new snowflake connection "model.demo_dbt.stg_customers".
+2021-05-31 04:58:08.980176 (MainThread): Acquiring new snowflake connection "model.demo_dbt.customers".
+2021-05-31 04:58:08.983216 (MainThread): Acquiring new snowflake connection "model.demo_dbt.stg_orders".
+2021-05-31 04:58:09.022090 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c93cbc1a-07ab-45b9-918a-99eb86ab4ac2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbdb33951f0>]}
+2021-05-31 04:58:09.083862 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c93cbc1a-07ab-45b9-918a-99eb86ab4ac2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbdb311fbe0>]}
+2021-05-31 04:58:09.084226 (MainThread): Found 3 models, 0 tests, 0 snapshots, 0 analyses, 143 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-05-31 04:58:09.085074 (MainThread): 
+2021-05-31 04:58:09.085470 (MainThread): Acquiring new snowflake connection "master".
+2021-05-31 04:58:09.086584 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_DEMO_DB".
+2021-05-31 04:58:09.101873 (ThreadPoolExecutor-0_0): Using snowflake connection "list_DEMO_DB".
+2021-05-31 04:58:09.102041 (ThreadPoolExecutor-0_0): On list_DEMO_DB: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_DEMO_DB"} */
+
+    show terse schemas in database DEMO_DB
+    limit 10000
+2021-05-31 04:58:09.102145 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-05-31 04:58:10.980060 (ThreadPoolExecutor-0_0): SQL status: SUCCESS 2 in 1.88 seconds
+2021-05-31 04:58:10.984366 (ThreadPoolExecutor-0_0): On list_DEMO_DB: Close
+2021-05-31 04:58:12.083869 (ThreadPoolExecutor-1_0): Acquiring new snowflake connection "list_DEMO_DB_PUBLIC".
+2021-05-31 04:58:12.091518 (ThreadPoolExecutor-1_0): Using snowflake connection "list_DEMO_DB_PUBLIC".
+2021-05-31 04:58:12.091643 (ThreadPoolExecutor-1_0): On list_DEMO_DB_PUBLIC: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_DEMO_DB_PUBLIC"} */
+
+    show terse objects in DEMO_DB.PUBLIC
+2021-05-31 04:58:12.091743 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2021-05-31 04:58:13.676088 (ThreadPoolExecutor-1_0): SQL status: SUCCESS 2 in 1.58 seconds
+2021-05-31 04:58:13.677267 (ThreadPoolExecutor-1_0): On list_DEMO_DB_PUBLIC: Close
+2021-05-31 04:58:14.701673 (MainThread): Using snowflake connection "master".
+2021-05-31 04:58:14.701860 (MainThread): On master: BEGIN
+2021-05-31 04:58:14.701976 (MainThread): Opening a new connection, currently in state init
+2021-05-31 04:58:16.133034 (MainThread): SQL status: SUCCESS 1 in 1.43 seconds
+2021-05-31 04:58:16.133280 (MainThread): On master: COMMIT
+2021-05-31 04:58:16.133494 (MainThread): Using snowflake connection "master".
+2021-05-31 04:58:16.133610 (MainThread): On master: COMMIT
+2021-05-31 04:58:16.543251 (MainThread): SQL status: SUCCESS 1 in 0.41 seconds
+2021-05-31 04:58:16.543534 (MainThread): On master: Close
+2021-05-31 04:58:17.262131 (MainThread): 10:28:17 | Concurrency: 10 threads (target='dev')
+2021-05-31 04:58:17.262367 (MainThread): 10:28:17 | 
+2021-05-31 04:58:17.264704 (Thread-1): Began running node model.demo_dbt.stg_customers
+2021-05-31 04:58:17.264949 (Thread-2): Began running node model.demo_dbt.stg_orders
+2021-05-31 04:58:17.265351 (Thread-1): 10:28:17 | 1 of 3 START view model PUBLIC.stg_customers......................... [RUN]
+2021-05-31 04:58:17.265697 (Thread-2): 10:28:17 | 2 of 3 START view model PUBLIC.stg_orders............................ [RUN]
+2021-05-31 04:58:17.266452 (Thread-1): Acquiring new snowflake connection "model.demo_dbt.stg_customers".
+2021-05-31 04:58:17.266755 (Thread-2): Acquiring new snowflake connection "model.demo_dbt.stg_orders".
+2021-05-31 04:58:17.266921 (Thread-1): Compiling model.demo_dbt.stg_customers
+2021-05-31 04:58:17.267085 (Thread-2): Compiling model.demo_dbt.stg_orders
+2021-05-31 04:58:17.268451 (Thread-1): Writing injected SQL for node "model.demo_dbt.stg_customers"
+2021-05-31 04:58:17.269745 (Thread-2): Writing injected SQL for node "model.demo_dbt.stg_orders"
+2021-05-31 04:58:17.270269 (Thread-1): finished collecting timing info
+2021-05-31 04:58:17.281019 (Thread-2): finished collecting timing info
+2021-05-31 04:58:17.315499 (Thread-1): Writing runtime SQL for node "model.demo_dbt.stg_customers"
+2021-05-31 04:58:17.317713 (Thread-2): Writing runtime SQL for node "model.demo_dbt.stg_orders"
+2021-05-31 04:58:17.318554 (Thread-1): Using snowflake connection "model.demo_dbt.stg_customers".
+2021-05-31 04:58:17.318655 (Thread-1): On model.demo_dbt.stg_customers: BEGIN
+2021-05-31 04:58:17.318745 (Thread-1): Opening a new connection, currently in state closed
+2021-05-31 04:58:17.320291 (Thread-2): Using snowflake connection "model.demo_dbt.stg_orders".
+2021-05-31 04:58:17.320397 (Thread-2): On model.demo_dbt.stg_orders: BEGIN
+2021-05-31 04:58:17.320507 (Thread-2): Opening a new connection, currently in state init
+2021-05-31 04:58:18.563542 (Thread-2): SQL status: SUCCESS 1 in 1.24 seconds
+2021-05-31 04:58:18.563748 (Thread-2): Using snowflake connection "model.demo_dbt.stg_orders".
+2021-05-31 04:58:18.563856 (Thread-2): On model.demo_dbt.stg_orders: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.demo_dbt.stg_orders"} */
+
+  create or replace  view DEMO_DB.PUBLIC.stg_orders  as (
+    select
+        id as order_id,
+        user_id as customer_id,
+        order_date,
+        status
+
+from orders
+  );
+2021-05-31 04:58:18.835951 (Thread-1): SQL status: SUCCESS 1 in 1.52 seconds
+2021-05-31 04:58:18.836167 (Thread-1): Using snowflake connection "model.demo_dbt.stg_customers".
+2021-05-31 04:58:18.836273 (Thread-1): On model.demo_dbt.stg_customers: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.demo_dbt.stg_customers"} */
+
+  create or replace  view DEMO_DB.PUBLIC.stg_customers  as (
+    select 
+    id as customer_id,
+    first_name,
+    last_name
+
+from customers
+  );
+2021-05-31 04:58:18.874856 (Thread-2): Snowflake query id: 019c9b6a-0000-43cf-0000-b0b10001c072
+2021-05-31 04:58:18.875072 (Thread-2): Snowflake error: 002003 (42S02): SQL compilation error:
+Object 'DEMO_DB.PUBLIC.ORDERS' does not exist or not authorized.
+2021-05-31 04:58:18.875299 (Thread-2): finished collecting timing info
+2021-05-31 04:58:18.875504 (Thread-2): On model.demo_dbt.stg_orders: ROLLBACK
+2021-05-31 04:58:19.219015 (Thread-2): On model.demo_dbt.stg_orders: Close
+2021-05-31 04:58:19.473225 (Thread-1): Snowflake query id: 019c9b6a-0000-43db-0000-b0b10001b072
+2021-05-31 04:58:19.473441 (Thread-1): Snowflake error: 002003 (42S02): SQL compilation error:
+Object 'DEMO_DB.PUBLIC.CUSTOMERS' does not exist or not authorized.
+2021-05-31 04:58:19.473647 (Thread-1): finished collecting timing info
+2021-05-31 04:58:19.473843 (Thread-1): On model.demo_dbt.stg_customers: ROLLBACK
+2021-05-31 04:58:19.781715 (Thread-2): Database Error in model stg_orders (models/stg_orders.sql)
+  002003 (42S02): SQL compilation error:
+  Object 'DEMO_DB.PUBLIC.ORDERS' does not exist or not authorized.
+  compiled SQL at target/run/demo_dbt/models/stg_orders.sql
+Traceback (most recent call last):
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 162, in exception_handler
+    yield
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 80, in add_query
+    cursor.execute(sql, bindings)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/cursor.py", line 603, in execute
+    Error.errorhandler_wrapper(self.connection, self,
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/errors.py", line 125, in errorhandler_wrapper
+    cursor.errorhandler(connection, cursor, error_class, error_value)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/errors.py", line 85, in default_errorhandler
+    raise error_class(
+snowflake.connector.errors.ProgrammingError: 002003 (42S02): SQL compilation error:
+Object 'DEMO_DB.PUBLIC.ORDERS' does not exist or not authorized.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/task/base.py", line 344, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/task/base.py", line 287, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/task/base.py", line 389, in run
+    return self.execute(compiled_node, manifest)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/task/run.py", line 248, in execute
+    result = MacroGenerator(materialization_macro, context)()
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 332, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 259, in call_macro
+    return macro(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 27, in macro
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 332, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 259, in call_macro
+    return macro(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 65, in macro
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 332, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 259, in call_macro
+    return macro(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 41, in macro
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/base/impl.py", line 227, in execute
+    return self.connections.execute(
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 124, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 314, in add_query
+    connection, cursor = super().add_query(
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 87, in add_query
+    return connection, cursor
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 179, in exception_handler
+    raise DatabaseException(msg)
+dbt.exceptions.DatabaseException: Database Error in model stg_orders (models/stg_orders.sql)
+  002003 (42S02): SQL compilation error:
+  Object 'DEMO_DB.PUBLIC.ORDERS' does not exist or not authorized.
+  compiled SQL at target/run/demo_dbt/models/stg_orders.sql
+2021-05-31 04:58:19.784700 (Thread-2): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c93cbc1a-07ab-45b9-918a-99eb86ab4ac2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbdb35d7610>]}
+2021-05-31 04:58:19.785105 (Thread-2): 10:28:19 | 2 of 3 ERROR creating view model PUBLIC.stg_orders................... [ERROR in 2.52s]
+2021-05-31 04:58:19.785263 (Thread-2): Finished running node model.demo_dbt.stg_orders
+2021-05-31 04:58:19.819358 (Thread-1): On model.demo_dbt.stg_customers: Close
+2021-05-31 04:58:20.435398 (Thread-1): Database Error in model stg_customers (models/stg_customers.sql)
+  002003 (42S02): SQL compilation error:
+  Object 'DEMO_DB.PUBLIC.CUSTOMERS' does not exist or not authorized.
+  compiled SQL at target/run/demo_dbt/models/stg_customers.sql
+Traceback (most recent call last):
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 162, in exception_handler
+    yield
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 80, in add_query
+    cursor.execute(sql, bindings)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/cursor.py", line 603, in execute
+    Error.errorhandler_wrapper(self.connection, self,
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/errors.py", line 125, in errorhandler_wrapper
+    cursor.errorhandler(connection, cursor, error_class, error_value)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/errors.py", line 85, in default_errorhandler
+    raise error_class(
+snowflake.connector.errors.ProgrammingError: 002003 (42S02): SQL compilation error:
+Object 'DEMO_DB.PUBLIC.CUSTOMERS' does not exist or not authorized.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/task/base.py", line 344, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/task/base.py", line 287, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/task/base.py", line 389, in run
+    return self.execute(compiled_node, manifest)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/task/run.py", line 248, in execute
+    result = MacroGenerator(materialization_macro, context)()
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 332, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 259, in call_macro
+    return macro(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 27, in macro
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 332, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 259, in call_macro
+    return macro(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 65, in macro
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 332, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 259, in call_macro
+    return macro(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 41, in macro
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/base/impl.py", line 227, in execute
+    return self.connections.execute(
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 124, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 314, in add_query
+    connection, cursor = super().add_query(
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 87, in add_query
+    return connection, cursor
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 179, in exception_handler
+    raise DatabaseException(msg)
+dbt.exceptions.DatabaseException: Database Error in model stg_customers (models/stg_customers.sql)
+  002003 (42S02): SQL compilation error:
+  Object 'DEMO_DB.PUBLIC.CUSTOMERS' does not exist or not authorized.
+  compiled SQL at target/run/demo_dbt/models/stg_customers.sql
+2021-05-31 04:58:20.436209 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c93cbc1a-07ab-45b9-918a-99eb86ab4ac2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbdb35d7610>]}
+2021-05-31 04:58:20.436586 (Thread-1): 10:28:20 | 1 of 3 ERROR creating view model PUBLIC.stg_customers................ [ERROR in 3.17s]
+2021-05-31 04:58:20.436742 (Thread-1): Finished running node model.demo_dbt.stg_customers
+2021-05-31 04:58:20.437352 (Thread-4): Began running node model.demo_dbt.customers
+2021-05-31 04:58:20.437537 (Thread-4): 10:28:20 | 3 of 3 SKIP relation PUBLIC.customers................................ [SKIP]
+2021-05-31 04:58:20.437691 (Thread-4): Finished running node model.demo_dbt.customers
+2021-05-31 04:58:20.439063 (MainThread): Acquiring new snowflake connection "master".
+2021-05-31 04:58:20.439256 (MainThread): Using snowflake connection "master".
+2021-05-31 04:58:20.439346 (MainThread): On master: BEGIN
+2021-05-31 04:58:20.439428 (MainThread): Opening a new connection, currently in state closed
+2021-05-31 04:58:21.870347 (MainThread): SQL status: SUCCESS 1 in 1.43 seconds
+2021-05-31 04:58:21.870618 (MainThread): On master: COMMIT
+2021-05-31 04:58:21.870855 (MainThread): Using snowflake connection "master".
+2021-05-31 04:58:21.870986 (MainThread): On master: COMMIT
+2021-05-31 04:58:22.332896 (MainThread): SQL status: SUCCESS 1 in 0.46 seconds
+2021-05-31 04:58:22.333175 (MainThread): On master: Close
+2021-05-31 04:58:22.996092 (MainThread): 10:28:22 | 
+2021-05-31 04:58:22.996317 (MainThread): 10:28:22 | Finished running 3 view models in 13.91s.
+2021-05-31 04:58:22.996458 (MainThread): Connection 'master' was properly closed.
+2021-05-31 04:58:22.996557 (MainThread): Connection 'model.demo_dbt.stg_customers' was properly closed.
+2021-05-31 04:58:22.996646 (MainThread): Connection 'model.demo_dbt.stg_orders' was properly closed.
+2021-05-31 04:58:23.001124 (MainThread): 
+2021-05-31 04:58:23.001295 (MainThread): Completed with 2 errors and 0 warnings:
+2021-05-31 04:58:23.001424 (MainThread): 
+2021-05-31 04:58:23.001546 (MainThread): Database Error in model stg_orders (models/stg_orders.sql)
+2021-05-31 04:58:23.001652 (MainThread):   002003 (42S02): SQL compilation error:
+2021-05-31 04:58:23.001747 (MainThread):   Object 'DEMO_DB.PUBLIC.ORDERS' does not exist or not authorized.
+2021-05-31 04:58:23.001840 (MainThread):   compiled SQL at target/run/demo_dbt/models/stg_orders.sql
+2021-05-31 04:58:23.001938 (MainThread): 
+2021-05-31 04:58:23.002046 (MainThread): Database Error in model stg_customers (models/stg_customers.sql)
+2021-05-31 04:58:23.002202 (MainThread):   002003 (42S02): SQL compilation error:
+2021-05-31 04:58:23.002355 (MainThread):   Object 'DEMO_DB.PUBLIC.CUSTOMERS' does not exist or not authorized.
+2021-05-31 04:58:23.002468 (MainThread):   compiled SQL at target/run/demo_dbt/models/stg_customers.sql
+2021-05-31 04:58:23.002583 (MainThread): 
+Done. PASS=0 WARN=0 ERROR=2 SKIP=1 TOTAL=3
+2021-05-31 04:58:23.002766 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbdb490c040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbdb490c430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbdb490ccd0>]}
+2021-05-31 04:58:23.002988 (MainThread): Flushing usage events
+2021-05-31 05:26:49.551231 (MainThread): Running with dbt=0.19.1
+2021-05-31 05:26:50.592902 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=True, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/dhirajpatra/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-05-31 05:26:50.594319 (MainThread): Tracking: tracking
+2021-05-31 05:26:50.594768 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd27f6c5d30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd282a0e730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd282a0e7c0>]}
+2021-05-31 05:26:50.604487 (MainThread): Partial parsing not enabled
+2021-05-31 05:26:50.605470 (MainThread): Parsing macros/catalog.sql
+2021-05-31 05:26:50.607731 (MainThread): Parsing macros/adapters.sql
+2021-05-31 05:26:50.633742 (MainThread): Parsing macros/materializations/merge.sql
+2021-05-31 05:26:50.635480 (MainThread): Parsing macros/materializations/view.sql
+2021-05-31 05:26:50.636773 (MainThread): Parsing macros/materializations/table.sql
+2021-05-31 05:26:50.640194 (MainThread): Parsing macros/materializations/incremental.sql
+2021-05-31 05:26:50.649058 (MainThread): Parsing macros/core.sql
+2021-05-31 05:26:50.652473 (MainThread): Parsing macros/materializations/helpers.sql
+2021-05-31 05:26:50.660041 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-05-31 05:26:50.661553 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-05-31 05:26:50.677320 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-05-31 05:26:50.707490 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-05-31 05:26:50.726504 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-05-31 05:26:50.728123 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-05-31 05:26:50.733407 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-05-31 05:26:50.746175 (MainThread): Parsing macros/materializations/table/table.sql
+2021-05-31 05:26:50.752161 (MainThread): Parsing macros/materializations/view/view.sql
+2021-05-31 05:26:50.757623 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-05-31 05:26:50.761789 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-05-31 05:26:50.762607 (MainThread): Parsing macros/etc/query.sql
+2021-05-31 05:26:50.763491 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-05-31 05:26:50.764864 (MainThread): Parsing macros/etc/datetime.sql
+2021-05-31 05:26:50.772466 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-05-31 05:26:50.774133 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-05-31 05:26:50.775819 (MainThread): Parsing macros/adapters/common.sql
+2021-05-31 05:26:50.813989 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-05-31 05:26:50.815592 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-05-31 05:26:50.816896 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-05-31 05:26:50.818357 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-05-31 05:26:50.824647 (MainThread): Partial parsing not enabled
+2021-05-31 05:26:50.843127 (MainThread): Acquiring new snowflake connection "model.demo_dbt.stg_customers".
+2021-05-31 05:26:50.850395 (MainThread): Acquiring new snowflake connection "model.demo_dbt.customers".
+2021-05-31 05:26:50.853325 (MainThread): Acquiring new snowflake connection "model.demo_dbt.stg_orders".
+2021-05-31 05:26:50.886586 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'cc9b51b1-9668-4ed2-b66b-d0629aad8ea3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd282c541f0>]}
+2021-05-31 05:26:50.945442 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'cc9b51b1-9668-4ed2-b66b-d0629aad8ea3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd2828dedf0>]}
+2021-05-31 05:26:50.945772 (MainThread): Found 3 models, 0 tests, 0 snapshots, 0 analyses, 143 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-05-31 05:26:50.946567 (MainThread): 
+2021-05-31 05:26:50.946940 (MainThread): Acquiring new snowflake connection "master".
+2021-05-31 05:26:50.948013 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_DEMO_DB".
+2021-05-31 05:26:50.966473 (ThreadPoolExecutor-0_0): Using snowflake connection "list_DEMO_DB".
+2021-05-31 05:26:50.966636 (ThreadPoolExecutor-0_0): On list_DEMO_DB: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_DEMO_DB"} */
+
+    show terse schemas in database DEMO_DB
+    limit 10000
+2021-05-31 05:26:50.966741 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-05-31 05:26:52.796660 (ThreadPoolExecutor-0_0): SQL status: SUCCESS 2 in 1.83 seconds
+2021-05-31 05:26:52.801118 (ThreadPoolExecutor-0_0): On list_DEMO_DB: Close
+2021-05-31 05:26:53.595326 (ThreadPoolExecutor-1_0): Acquiring new snowflake connection "list_DEMO_DB_PUBLIC".
+2021-05-31 05:26:53.603368 (ThreadPoolExecutor-1_0): Using snowflake connection "list_DEMO_DB_PUBLIC".
+2021-05-31 05:26:53.603499 (ThreadPoolExecutor-1_0): On list_DEMO_DB_PUBLIC: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_DEMO_DB_PUBLIC"} */
+
+    show terse objects in DEMO_DB.PUBLIC
+2021-05-31 05:26:53.603604 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2021-05-31 05:26:54.843349 (ThreadPoolExecutor-1_0): SQL status: SUCCESS 2 in 1.24 seconds
+2021-05-31 05:26:54.844511 (ThreadPoolExecutor-1_0): On list_DEMO_DB_PUBLIC: Close
+2021-05-31 05:26:55.460563 (MainThread): Using snowflake connection "master".
+2021-05-31 05:26:55.460757 (MainThread): On master: BEGIN
+2021-05-31 05:26:55.460877 (MainThread): Opening a new connection, currently in state init
+2021-05-31 05:26:56.683724 (MainThread): SQL status: SUCCESS 1 in 1.22 seconds
+2021-05-31 05:26:56.684004 (MainThread): On master: COMMIT
+2021-05-31 05:26:56.684242 (MainThread): Using snowflake connection "master".
+2021-05-31 05:26:56.684376 (MainThread): On master: COMMIT
+2021-05-31 05:26:57.028399 (MainThread): SQL status: SUCCESS 1 in 0.34 seconds
+2021-05-31 05:26:57.028675 (MainThread): On master: Close
+2021-05-31 05:26:57.627612 (MainThread): 10:56:57 | Concurrency: 10 threads (target='dev')
+2021-05-31 05:26:57.627841 (MainThread): 10:56:57 | 
+2021-05-31 05:26:57.630082 (Thread-1): Began running node model.demo_dbt.stg_customers
+2021-05-31 05:26:57.630408 (Thread-1): 10:56:57 | 1 of 3 START view model PUBLIC.stg_customers......................... [RUN]
+2021-05-31 05:26:57.630615 (Thread-2): Began running node model.demo_dbt.stg_orders
+2021-05-31 05:26:57.631298 (Thread-2): 10:56:57 | 2 of 3 START view model PUBLIC.stg_orders............................ [RUN]
+2021-05-31 05:26:57.631509 (Thread-1): Acquiring new snowflake connection "model.demo_dbt.stg_customers".
+2021-05-31 05:26:57.631797 (Thread-2): Acquiring new snowflake connection "model.demo_dbt.stg_orders".
+2021-05-31 05:26:57.631938 (Thread-1): Compiling model.demo_dbt.stg_customers
+2021-05-31 05:26:57.632050 (Thread-2): Compiling model.demo_dbt.stg_orders
+2021-05-31 05:26:57.633248 (Thread-1): Writing injected SQL for node "model.demo_dbt.stg_customers"
+2021-05-31 05:26:57.634383 (Thread-2): Writing injected SQL for node "model.demo_dbt.stg_orders"
+2021-05-31 05:26:57.634906 (Thread-1): finished collecting timing info
+2021-05-31 05:26:57.635045 (Thread-2): finished collecting timing info
+2021-05-31 05:26:57.669264 (Thread-2): Writing runtime SQL for node "model.demo_dbt.stg_orders"
+2021-05-31 05:26:57.671554 (Thread-1): Writing runtime SQL for node "model.demo_dbt.stg_customers"
+2021-05-31 05:26:57.672434 (Thread-1): Using snowflake connection "model.demo_dbt.stg_customers".
+2021-05-31 05:26:57.672537 (Thread-1): On model.demo_dbt.stg_customers: BEGIN
+2021-05-31 05:26:57.672628 (Thread-1): Opening a new connection, currently in state closed
+2021-05-31 05:26:57.674246 (Thread-2): Using snowflake connection "model.demo_dbt.stg_orders".
+2021-05-31 05:26:57.674425 (Thread-2): On model.demo_dbt.stg_orders: BEGIN
+2021-05-31 05:26:57.674536 (Thread-2): Opening a new connection, currently in state init
+2021-05-31 05:26:58.898653 (Thread-1): SQL status: SUCCESS 1 in 1.23 seconds
+2021-05-31 05:26:58.898904 (Thread-1): Using snowflake connection "model.demo_dbt.stg_customers".
+2021-05-31 05:26:58.899040 (Thread-1): On model.demo_dbt.stg_customers: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.demo_dbt.stg_customers"} */
+
+  create or replace  view DEMO_DB.PUBLIC.stg_customers  as (
+    select 
+    id as customer_id,
+    first_name,
+    last_name
+
+from customers
+  );
+2021-05-31 05:26:59.193116 (Thread-2): SQL status: SUCCESS 1 in 1.52 seconds
+2021-05-31 05:26:59.193361 (Thread-2): Using snowflake connection "model.demo_dbt.stg_orders".
+2021-05-31 05:26:59.193495 (Thread-2): On model.demo_dbt.stg_orders: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.demo_dbt.stg_orders"} */
+
+  create or replace  view DEMO_DB.PUBLIC.stg_orders  as (
+    select
+        id as order_id,
+        user_id as customer_id,
+        order_date,
+        status
+
+from orders
+  );
+2021-05-31 05:26:59.209843 (Thread-1): Snowflake query id: 019c9b86-0000-43cf-0000-b0b10001c082
+2021-05-31 05:26:59.210061 (Thread-1): Snowflake error: 002003 (42S02): SQL compilation error:
+Object 'DEMO_DB.PUBLIC.CUSTOMERS' does not exist or not authorized.
+2021-05-31 05:26:59.210291 (Thread-1): finished collecting timing info
+2021-05-31 05:26:59.210506 (Thread-1): On model.demo_dbt.stg_customers: ROLLBACK
+2021-05-31 05:26:59.502262 (Thread-2): Snowflake query id: 019c9b86-0000-43dc-0000-b0b10001d01a
+2021-05-31 05:26:59.502480 (Thread-2): Snowflake error: 002003 (42S02): SQL compilation error:
+Object 'DEMO_DB.PUBLIC.ORDERS' does not exist or not authorized.
+2021-05-31 05:26:59.502690 (Thread-2): finished collecting timing info
+2021-05-31 05:26:59.502890 (Thread-2): On model.demo_dbt.stg_orders: ROLLBACK
+2021-05-31 05:26:59.612001 (Thread-1): On model.demo_dbt.stg_customers: Close
+2021-05-31 05:26:59.967761 (Thread-2): On model.demo_dbt.stg_orders: Close
+2021-05-31 05:27:00.288084 (Thread-1): Database Error in model stg_customers (models/stg_customers.sql)
+  002003 (42S02): SQL compilation error:
+  Object 'DEMO_DB.PUBLIC.CUSTOMERS' does not exist or not authorized.
+  compiled SQL at target/run/demo_dbt/models/stg_customers.sql
+Traceback (most recent call last):
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 162, in exception_handler
+    yield
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 80, in add_query
+    cursor.execute(sql, bindings)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/cursor.py", line 603, in execute
+    Error.errorhandler_wrapper(self.connection, self,
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/errors.py", line 125, in errorhandler_wrapper
+    cursor.errorhandler(connection, cursor, error_class, error_value)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/errors.py", line 85, in default_errorhandler
+    raise error_class(
+snowflake.connector.errors.ProgrammingError: 002003 (42S02): SQL compilation error:
+Object 'DEMO_DB.PUBLIC.CUSTOMERS' does not exist or not authorized.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/task/base.py", line 344, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/task/base.py", line 287, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/task/base.py", line 389, in run
+    return self.execute(compiled_node, manifest)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/task/run.py", line 248, in execute
+    result = MacroGenerator(materialization_macro, context)()
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 332, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 259, in call_macro
+    return macro(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 27, in macro
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 332, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 259, in call_macro
+    return macro(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 65, in macro
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 332, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 259, in call_macro
+    return macro(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 41, in macro
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/base/impl.py", line 227, in execute
+    return self.connections.execute(
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 124, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 314, in add_query
+    connection, cursor = super().add_query(
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 87, in add_query
+    return connection, cursor
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 179, in exception_handler
+    raise DatabaseException(msg)
+dbt.exceptions.DatabaseException: Database Error in model stg_customers (models/stg_customers.sql)
+  002003 (42S02): SQL compilation error:
+  Object 'DEMO_DB.PUBLIC.CUSTOMERS' does not exist or not authorized.
+  compiled SQL at target/run/demo_dbt/models/stg_customers.sql
+2021-05-31 05:27:00.291348 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'cc9b51b1-9668-4ed2-b66b-d0629aad8ea3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd282edc1f0>]}
+2021-05-31 05:27:00.291737 (Thread-1): 10:57:00 | 1 of 3 ERROR creating view model PUBLIC.stg_customers................ [ERROR in 2.66s]
+2021-05-31 05:27:00.291910 (Thread-1): Finished running node model.demo_dbt.stg_customers
+2021-05-31 05:27:00.746330 (Thread-2): Database Error in model stg_orders (models/stg_orders.sql)
+  002003 (42S02): SQL compilation error:
+  Object 'DEMO_DB.PUBLIC.ORDERS' does not exist or not authorized.
+  compiled SQL at target/run/demo_dbt/models/stg_orders.sql
+Traceback (most recent call last):
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 162, in exception_handler
+    yield
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 80, in add_query
+    cursor.execute(sql, bindings)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/cursor.py", line 603, in execute
+    Error.errorhandler_wrapper(self.connection, self,
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/errors.py", line 125, in errorhandler_wrapper
+    cursor.errorhandler(connection, cursor, error_class, error_value)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/errors.py", line 85, in default_errorhandler
+    raise error_class(
+snowflake.connector.errors.ProgrammingError: 002003 (42S02): SQL compilation error:
+Object 'DEMO_DB.PUBLIC.ORDERS' does not exist or not authorized.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/task/base.py", line 344, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/task/base.py", line 287, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/task/base.py", line 389, in run
+    return self.execute(compiled_node, manifest)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/task/run.py", line 248, in execute
+    result = MacroGenerator(materialization_macro, context)()
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 332, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 259, in call_macro
+    return macro(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 27, in macro
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 332, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 259, in call_macro
+    return macro(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 65, in macro
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 332, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 259, in call_macro
+    return macro(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 41, in macro
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/base/impl.py", line 227, in execute
+    return self.connections.execute(
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 124, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 314, in add_query
+    connection, cursor = super().add_query(
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 87, in add_query
+    return connection, cursor
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 179, in exception_handler
+    raise DatabaseException(msg)
+dbt.exceptions.DatabaseException: Database Error in model stg_orders (models/stg_orders.sql)
+  002003 (42S02): SQL compilation error:
+  Object 'DEMO_DB.PUBLIC.ORDERS' does not exist or not authorized.
+  compiled SQL at target/run/demo_dbt/models/stg_orders.sql
+2021-05-31 05:27:00.747054 (Thread-2): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'cc9b51b1-9668-4ed2-b66b-d0629aad8ea3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd282edc5b0>]}
+2021-05-31 05:27:00.747377 (Thread-2): 10:57:00 | 2 of 3 ERROR creating view model PUBLIC.stg_orders................... [ERROR in 3.12s]
+2021-05-31 05:27:00.747518 (Thread-2): Finished running node model.demo_dbt.stg_orders
+2021-05-31 05:27:00.748065 (Thread-4): Began running node model.demo_dbt.customers
+2021-05-31 05:27:00.748232 (Thread-4): 10:57:00 | 3 of 3 SKIP relation PUBLIC.customers................................ [SKIP]
+2021-05-31 05:27:00.748458 (Thread-4): Finished running node model.demo_dbt.customers
+2021-05-31 05:27:00.749622 (MainThread): Acquiring new snowflake connection "master".
+2021-05-31 05:27:00.749824 (MainThread): Using snowflake connection "master".
+2021-05-31 05:27:00.749920 (MainThread): On master: BEGIN
+2021-05-31 05:27:00.750008 (MainThread): Opening a new connection, currently in state closed
+2021-05-31 05:27:02.320039 (MainThread): SQL status: SUCCESS 1 in 1.57 seconds
+2021-05-31 05:27:02.320307 (MainThread): On master: COMMIT
+2021-05-31 05:27:02.320535 (MainThread): Using snowflake connection "master".
+2021-05-31 05:27:02.320669 (MainThread): On master: COMMIT
+2021-05-31 05:27:02.725569 (MainThread): SQL status: SUCCESS 1 in 0.40 seconds
+2021-05-31 05:27:02.725843 (MainThread): On master: Close
+2021-05-31 05:27:03.426424 (MainThread): 10:57:03 | 
+2021-05-31 05:27:03.426657 (MainThread): 10:57:03 | Finished running 3 view models in 12.48s.
+2021-05-31 05:27:03.426799 (MainThread): Connection 'master' was properly closed.
+2021-05-31 05:27:03.426901 (MainThread): Connection 'model.demo_dbt.stg_customers' was properly closed.
+2021-05-31 05:27:03.426995 (MainThread): Connection 'model.demo_dbt.stg_orders' was properly closed.
+2021-05-31 05:27:03.431531 (MainThread): 
+2021-05-31 05:27:03.431698 (MainThread): Completed with 2 errors and 0 warnings:
+2021-05-31 05:27:03.431840 (MainThread): 
+2021-05-31 05:27:03.431974 (MainThread): Database Error in model stg_customers (models/stg_customers.sql)
+2021-05-31 05:27:03.432094 (MainThread):   002003 (42S02): SQL compilation error:
+2021-05-31 05:27:03.432205 (MainThread):   Object 'DEMO_DB.PUBLIC.CUSTOMERS' does not exist or not authorized.
+2021-05-31 05:27:03.432313 (MainThread):   compiled SQL at target/run/demo_dbt/models/stg_customers.sql
+2021-05-31 05:27:03.432427 (MainThread): 
+2021-05-31 05:27:03.432551 (MainThread): Database Error in model stg_orders (models/stg_orders.sql)
+2021-05-31 05:27:03.432668 (MainThread):   002003 (42S02): SQL compilation error:
+2021-05-31 05:27:03.432773 (MainThread):   Object 'DEMO_DB.PUBLIC.ORDERS' does not exist or not authorized.
+2021-05-31 05:27:03.432876 (MainThread):   compiled SQL at target/run/demo_dbt/models/stg_orders.sql
+2021-05-31 05:27:03.432990 (MainThread): 
+Done. PASS=0 WARN=0 ERROR=2 SKIP=1 TOTAL=3
+2021-05-31 05:27:03.433180 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd282e01b20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd282ba2730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd282e39c70>]}
+2021-05-31 05:27:03.433439 (MainThread): Flushing usage events
+2021-05-31 05:44:52.967276 (MainThread): Running with dbt=0.19.1
+2021-05-31 05:44:54.525245 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=True, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/dhirajpatra/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-05-31 05:44:54.527603 (MainThread): Tracking: tracking
+2021-05-31 05:44:54.528506 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f98ea805f70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f98ec34e640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f98ec34e6d0>]}
+2021-05-31 05:44:54.542723 (MainThread): Partial parsing not enabled
+2021-05-31 05:44:54.544824 (MainThread): Parsing macros/catalog.sql
+2021-05-31 05:44:54.548433 (MainThread): Parsing macros/adapters.sql
+2021-05-31 05:44:54.586073 (MainThread): Parsing macros/materializations/merge.sql
+2021-05-31 05:44:54.588871 (MainThread): Parsing macros/materializations/view.sql
+2021-05-31 05:44:54.591017 (MainThread): Parsing macros/materializations/table.sql
+2021-05-31 05:44:54.596272 (MainThread): Parsing macros/materializations/incremental.sql
+2021-05-31 05:44:54.609217 (MainThread): Parsing macros/core.sql
+2021-05-31 05:44:54.614249 (MainThread): Parsing macros/materializations/helpers.sql
+2021-05-31 05:44:54.625752 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-05-31 05:44:54.628403 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-05-31 05:44:54.651474 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-05-31 05:44:54.697193 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-05-31 05:44:54.724894 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-05-31 05:44:54.727679 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-05-31 05:44:54.735516 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-05-31 05:44:54.756082 (MainThread): Parsing macros/materializations/table/table.sql
+2021-05-31 05:44:54.765588 (MainThread): Parsing macros/materializations/view/view.sql
+2021-05-31 05:44:54.773629 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-05-31 05:44:54.779956 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-05-31 05:44:54.781624 (MainThread): Parsing macros/etc/query.sql
+2021-05-31 05:44:54.783339 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-05-31 05:44:54.785559 (MainThread): Parsing macros/etc/datetime.sql
+2021-05-31 05:44:54.797261 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-05-31 05:44:54.800442 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-05-31 05:44:54.802755 (MainThread): Parsing macros/adapters/common.sql
+2021-05-31 05:44:54.857919 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-05-31 05:44:54.860792 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-05-31 05:44:54.863208 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-05-31 05:44:54.865437 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-05-31 05:44:54.873943 (MainThread): Partial parsing not enabled
+2021-05-31 05:44:54.900251 (MainThread): Acquiring new snowflake connection "model.demo_dbt.stg_customers".
+2021-05-31 05:44:54.911551 (MainThread): Acquiring new snowflake connection "model.demo_dbt.customers".
+2021-05-31 05:44:54.916616 (MainThread): Acquiring new snowflake connection "model.demo_dbt.stg_orders".
+2021-05-31 05:44:54.967159 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e30375dc-2b4f-4d9f-939a-4ca3f7cd2541', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f98ec594130>]}
+2021-05-31 05:44:55.046006 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e30375dc-2b4f-4d9f-939a-4ca3f7cd2541', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f98ec31ecd0>]}
+2021-05-31 05:44:55.046390 (MainThread): Found 3 models, 0 tests, 0 snapshots, 0 analyses, 143 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-05-31 05:44:55.047288 (MainThread): 
+2021-05-31 05:44:55.047821 (MainThread): Acquiring new snowflake connection "master".
+2021-05-31 05:44:55.049011 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_DEMO_DB".
+2021-05-31 05:44:55.068212 (ThreadPoolExecutor-0_0): Using snowflake connection "list_DEMO_DB".
+2021-05-31 05:44:55.068378 (ThreadPoolExecutor-0_0): On list_DEMO_DB: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_DEMO_DB"} */
+
+    show terse schemas in database DEMO_DB
+    limit 10000
+2021-05-31 05:44:55.068486 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-05-31 05:44:56.689432 (ThreadPoolExecutor-0_0): SQL status: SUCCESS 2 in 1.62 seconds
+2021-05-31 05:44:56.693229 (ThreadPoolExecutor-0_0): On list_DEMO_DB: Close
+2021-05-31 05:44:57.269774 (ThreadPoolExecutor-1_0): Acquiring new snowflake connection "list_DEMO_DB_PUBLIC".
+2021-05-31 05:44:57.277807 (ThreadPoolExecutor-1_0): Using snowflake connection "list_DEMO_DB_PUBLIC".
+2021-05-31 05:44:57.278031 (ThreadPoolExecutor-1_0): On list_DEMO_DB_PUBLIC: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_DEMO_DB_PUBLIC"} */
+
+    show terse objects in DEMO_DB.PUBLIC
+2021-05-31 05:44:57.278157 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2021-05-31 05:44:58.566817 (ThreadPoolExecutor-1_0): SQL status: SUCCESS 2 in 1.29 seconds
+2021-05-31 05:44:58.567713 (ThreadPoolExecutor-1_0): On list_DEMO_DB_PUBLIC: Close
+2021-05-31 05:44:59.147938 (MainThread): Using snowflake connection "master".
+2021-05-31 05:44:59.148109 (MainThread): On master: BEGIN
+2021-05-31 05:44:59.148215 (MainThread): Opening a new connection, currently in state init
+2021-05-31 05:45:00.445703 (MainThread): SQL status: SUCCESS 1 in 1.30 seconds
+2021-05-31 05:45:00.445948 (MainThread): On master: COMMIT
+2021-05-31 05:45:00.446146 (MainThread): Using snowflake connection "master".
+2021-05-31 05:45:00.446251 (MainThread): On master: COMMIT
+2021-05-31 05:45:00.825221 (MainThread): SQL status: SUCCESS 1 in 0.38 seconds
+2021-05-31 05:45:00.825470 (MainThread): On master: Close
+2021-05-31 05:45:01.476743 (MainThread): 11:15:01 | Concurrency: 10 threads (target='dev')
+2021-05-31 05:45:01.476971 (MainThread): 11:15:01 | 
+2021-05-31 05:45:01.478692 (Thread-1): Began running node model.demo_dbt.stg_customers
+2021-05-31 05:45:01.478919 (Thread-2): Began running node model.demo_dbt.stg_orders
+2021-05-31 05:45:01.479235 (Thread-1): 11:15:01 | 1 of 3 START view model PUBLIC.stg_customers......................... [RUN]
+2021-05-31 05:45:01.479490 (Thread-2): 11:15:01 | 2 of 3 START view model PUBLIC.stg_orders............................ [RUN]
+2021-05-31 05:45:01.480256 (Thread-2): Acquiring new snowflake connection "model.demo_dbt.stg_orders".
+2021-05-31 05:45:01.480515 (Thread-1): Acquiring new snowflake connection "model.demo_dbt.stg_customers".
+2021-05-31 05:45:01.480677 (Thread-2): Compiling model.demo_dbt.stg_orders
+2021-05-31 05:45:01.480820 (Thread-1): Compiling model.demo_dbt.stg_customers
+2021-05-31 05:45:01.482024 (Thread-2): Writing injected SQL for node "model.demo_dbt.stg_orders"
+2021-05-31 05:45:01.483194 (Thread-1): Writing injected SQL for node "model.demo_dbt.stg_customers"
+2021-05-31 05:45:01.483777 (Thread-2): finished collecting timing info
+2021-05-31 05:45:01.512171 (Thread-1): finished collecting timing info
+2021-05-31 05:45:01.512035 (Thread-2): Writing runtime SQL for node "model.demo_dbt.stg_orders"
+2021-05-31 05:45:01.514593 (Thread-1): Writing runtime SQL for node "model.demo_dbt.stg_customers"
+2021-05-31 05:45:01.515701 (Thread-2): Using snowflake connection "model.demo_dbt.stg_orders".
+2021-05-31 05:45:01.516212 (Thread-1): Using snowflake connection "model.demo_dbt.stg_customers".
+2021-05-31 05:45:01.516300 (Thread-2): On model.demo_dbt.stg_orders: BEGIN
+2021-05-31 05:45:01.516418 (Thread-1): On model.demo_dbt.stg_customers: BEGIN
+2021-05-31 05:45:01.516564 (Thread-2): Opening a new connection, currently in state init
+2021-05-31 05:45:01.516701 (Thread-1): Opening a new connection, currently in state closed
+2021-05-31 05:45:02.774069 (Thread-1): SQL status: SUCCESS 1 in 1.26 seconds
+2021-05-31 05:45:02.774265 (Thread-1): Using snowflake connection "model.demo_dbt.stg_customers".
+2021-05-31 05:45:02.774369 (Thread-1): On model.demo_dbt.stg_customers: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.demo_dbt.stg_customers"} */
+
+  create or replace  view DEMO_DB.PUBLIC.stg_customers  as (
+    select 
+    id as customer_id,
+    first_name,
+    last_name
+
+from customers
+  );
+2021-05-31 05:45:03.111532 (Thread-1): Snowflake query id: 019c9b99-0000-43cf-0000-b0b10001c0ca
+2021-05-31 05:45:03.111709 (Thread-1): Snowflake error: 002003 (42S02): SQL compilation error:
+Object 'DEMO_DB.PUBLIC.CUSTOMERS' does not exist or not authorized.
+2021-05-31 05:45:03.111881 (Thread-1): finished collecting timing info
+2021-05-31 05:45:03.112033 (Thread-1): On model.demo_dbt.stg_customers: ROLLBACK
+2021-05-31 05:45:03.123854 (Thread-2): SQL status: SUCCESS 1 in 1.61 seconds
+2021-05-31 05:45:03.124046 (Thread-2): Using snowflake connection "model.demo_dbt.stg_orders".
+2021-05-31 05:45:03.124145 (Thread-2): On model.demo_dbt.stg_orders: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.demo_dbt.stg_orders"} */
+
+  create or replace  view DEMO_DB.PUBLIC.stg_orders  as (
+    select
+        id as order_id,
+        user_id as customer_id,
+        order_date,
+        status
+
+from orders
+  );
+2021-05-31 05:45:03.455647 (Thread-1): On model.demo_dbt.stg_customers: Close
+2021-05-31 05:45:03.633336 (Thread-2): Snowflake query id: 019c9b99-0000-43dd-0000-b0b10001a10a
+2021-05-31 05:45:03.633499 (Thread-2): Snowflake error: 002003 (42S02): SQL compilation error:
+Object 'DEMO_DB.PUBLIC.ORDERS' does not exist or not authorized.
+2021-05-31 05:45:03.633648 (Thread-2): finished collecting timing info
+2021-05-31 05:45:03.633787 (Thread-2): On model.demo_dbt.stg_orders: ROLLBACK
+2021-05-31 05:45:04.114481 (Thread-1): Database Error in model stg_customers (models/stg_customers.sql)
+  002003 (42S02): SQL compilation error:
+  Object 'DEMO_DB.PUBLIC.CUSTOMERS' does not exist or not authorized.
+  compiled SQL at target/run/demo_dbt/models/stg_customers.sql
+Traceback (most recent call last):
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 162, in exception_handler
+    yield
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 80, in add_query
+    cursor.execute(sql, bindings)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/cursor.py", line 603, in execute
+    Error.errorhandler_wrapper(self.connection, self,
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/errors.py", line 125, in errorhandler_wrapper
+    cursor.errorhandler(connection, cursor, error_class, error_value)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/errors.py", line 85, in default_errorhandler
+    raise error_class(
+snowflake.connector.errors.ProgrammingError: 002003 (42S02): SQL compilation error:
+Object 'DEMO_DB.PUBLIC.CUSTOMERS' does not exist or not authorized.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/task/base.py", line 344, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/task/base.py", line 287, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/task/base.py", line 389, in run
+    return self.execute(compiled_node, manifest)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/task/run.py", line 248, in execute
+    result = MacroGenerator(materialization_macro, context)()
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 332, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 259, in call_macro
+    return macro(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 27, in macro
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 332, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 259, in call_macro
+    return macro(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 65, in macro
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 332, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 259, in call_macro
+    return macro(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 41, in macro
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/base/impl.py", line 227, in execute
+    return self.connections.execute(
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 124, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 314, in add_query
+    connection, cursor = super().add_query(
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 87, in add_query
+    return connection, cursor
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 179, in exception_handler
+    raise DatabaseException(msg)
+dbt.exceptions.DatabaseException: Database Error in model stg_customers (models/stg_customers.sql)
+  002003 (42S02): SQL compilation error:
+  Object 'DEMO_DB.PUBLIC.CUSTOMERS' does not exist or not authorized.
+  compiled SQL at target/run/demo_dbt/models/stg_customers.sql
+2021-05-31 05:45:04.125084 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e30375dc-2b4f-4d9f-939a-4ca3f7cd2541', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f98ec6abd60>]}
+2021-05-31 05:45:04.125484 (Thread-1): 11:15:04 | 1 of 3 ERROR creating view model PUBLIC.stg_customers................ [ERROR in 2.65s]
+2021-05-31 05:45:04.125644 (Thread-1): Finished running node model.demo_dbt.stg_customers
+2021-05-31 05:45:04.143216 (Thread-2): On model.demo_dbt.stg_orders: Close
+2021-05-31 05:45:04.755251 (Thread-2): Database Error in model stg_orders (models/stg_orders.sql)
+  002003 (42S02): SQL compilation error:
+  Object 'DEMO_DB.PUBLIC.ORDERS' does not exist or not authorized.
+  compiled SQL at target/run/demo_dbt/models/stg_orders.sql
+Traceback (most recent call last):
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 162, in exception_handler
+    yield
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 80, in add_query
+    cursor.execute(sql, bindings)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/cursor.py", line 603, in execute
+    Error.errorhandler_wrapper(self.connection, self,
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/errors.py", line 125, in errorhandler_wrapper
+    cursor.errorhandler(connection, cursor, error_class, error_value)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/errors.py", line 85, in default_errorhandler
+    raise error_class(
+snowflake.connector.errors.ProgrammingError: 002003 (42S02): SQL compilation error:
+Object 'DEMO_DB.PUBLIC.ORDERS' does not exist or not authorized.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/task/base.py", line 344, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/task/base.py", line 287, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/task/base.py", line 389, in run
+    return self.execute(compiled_node, manifest)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/task/run.py", line 248, in execute
+    result = MacroGenerator(materialization_macro, context)()
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 332, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 259, in call_macro
+    return macro(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 27, in macro
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 332, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 259, in call_macro
+    return macro(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 65, in macro
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 332, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 259, in call_macro
+    return macro(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 41, in macro
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/base/impl.py", line 227, in execute
+    return self.connections.execute(
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 124, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 314, in add_query
+    connection, cursor = super().add_query(
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 87, in add_query
+    return connection, cursor
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 179, in exception_handler
+    raise DatabaseException(msg)
+dbt.exceptions.DatabaseException: Database Error in model stg_orders (models/stg_orders.sql)
+  002003 (42S02): SQL compilation error:
+  Object 'DEMO_DB.PUBLIC.ORDERS' does not exist or not authorized.
+  compiled SQL at target/run/demo_dbt/models/stg_orders.sql
+2021-05-31 05:45:04.756162 (Thread-2): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e30375dc-2b4f-4d9f-939a-4ca3f7cd2541', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f98ec6ab730>]}
+2021-05-31 05:45:04.756566 (Thread-2): 11:15:04 | 2 of 3 ERROR creating view model PUBLIC.stg_orders................... [ERROR in 3.28s]
+2021-05-31 05:45:04.757285 (Thread-2): Finished running node model.demo_dbt.stg_orders
+2021-05-31 05:45:04.757994 (Thread-4): Began running node model.demo_dbt.customers
+2021-05-31 05:45:04.758290 (Thread-4): 11:15:04 | 3 of 3 SKIP relation PUBLIC.customers................................ [SKIP]
+2021-05-31 05:45:04.758471 (Thread-4): Finished running node model.demo_dbt.customers
+2021-05-31 05:45:04.760120 (MainThread): Acquiring new snowflake connection "master".
+2021-05-31 05:45:04.760375 (MainThread): Using snowflake connection "master".
+2021-05-31 05:45:04.760478 (MainThread): On master: BEGIN
+2021-05-31 05:45:04.760570 (MainThread): Opening a new connection, currently in state closed
+2021-05-31 05:45:06.192396 (MainThread): SQL status: SUCCESS 1 in 1.43 seconds
+2021-05-31 05:45:06.192595 (MainThread): On master: COMMIT
+2021-05-31 05:45:06.192761 (MainThread): Using snowflake connection "master".
+2021-05-31 05:45:06.192851 (MainThread): On master: COMMIT
+2021-05-31 05:45:06.572303 (MainThread): SQL status: SUCCESS 1 in 0.38 seconds
+2021-05-31 05:45:06.572575 (MainThread): On master: Close
+2021-05-31 05:45:07.323672 (MainThread): 11:15:07 | 
+2021-05-31 05:45:07.323884 (MainThread): 11:15:07 | Finished running 3 view models in 12.28s.
+2021-05-31 05:45:07.324008 (MainThread): Connection 'master' was properly closed.
+2021-05-31 05:45:07.324091 (MainThread): Connection 'model.demo_dbt.stg_customers' was properly closed.
+2021-05-31 05:45:07.324166 (MainThread): Connection 'model.demo_dbt.stg_orders' was properly closed.
+2021-05-31 05:45:07.328310 (MainThread): 
+2021-05-31 05:45:07.328495 (MainThread): Completed with 2 errors and 0 warnings:
+2021-05-31 05:45:07.328618 (MainThread): 
+2021-05-31 05:45:07.328728 (MainThread): Database Error in model stg_customers (models/stg_customers.sql)
+2021-05-31 05:45:07.328836 (MainThread):   002003 (42S02): SQL compilation error:
+2021-05-31 05:45:07.329021 (MainThread):   Object 'DEMO_DB.PUBLIC.CUSTOMERS' does not exist or not authorized.
+2021-05-31 05:45:07.329144 (MainThread):   compiled SQL at target/run/demo_dbt/models/stg_customers.sql
+2021-05-31 05:45:07.329253 (MainThread): 
+2021-05-31 05:45:07.329365 (MainThread): Database Error in model stg_orders (models/stg_orders.sql)
+2021-05-31 05:45:07.329464 (MainThread):   002003 (42S02): SQL compilation error:
+2021-05-31 05:45:07.329550 (MainThread):   Object 'DEMO_DB.PUBLIC.ORDERS' does not exist or not authorized.
+2021-05-31 05:45:07.329633 (MainThread):   compiled SQL at target/run/demo_dbt/models/stg_orders.sql
+2021-05-31 05:45:07.329726 (MainThread): 
+Done. PASS=0 WARN=0 ERROR=2 SKIP=1 TOTAL=3
+2021-05-31 05:45:07.329893 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f98ec4e26a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f98ec674a30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f98ec674af0>]}
+2021-05-31 05:45:07.330119 (MainThread): Flushing usage events
