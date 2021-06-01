@@ -1,4 +1,8 @@
-{%  set payment_method  =  get_payment_methods() %}
+-- {%  set payment_method  =  get_payment_methods() %}
+{%  set payment_method  =  dbt_utils.get_column_values(
+  table=ref('raw_payments'),
+  column='payment_method'
+) %}
 
 select
 order_id,

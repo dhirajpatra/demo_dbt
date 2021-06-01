@@ -19687,3 +19687,1372 @@ select * from final
 Done. PASS=4 WARN=0 ERROR=0 SKIP=0 TOTAL=4
 2021-05-31 16:06:29.010030 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee64137970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee63ce58e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee63e5ba60>]}
 2021-05-31 16:06:29.010257 (MainThread): Flushing usage events
+2021-06-01 07:46:11.922640 (MainThread): Running with dbt=0.19.1
+2021-06-01 07:46:13.512499 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/dhirajpatra/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-06-01 07:46:13.514044 (MainThread): Tracking: tracking
+2021-06-01 07:46:13.514660 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9909fd0be0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f990c215640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f990c2156d0>]}
+2021-06-01 07:46:13.527094 (MainThread): Partial parsing not enabled
+2021-06-01 07:46:13.528026 (MainThread): Parsing macros/get_payment_methods.sql
+2021-06-01 07:46:13.533172 (MainThread): Parsing macros/catalog.sql
+2021-06-01 07:46:13.535688 (MainThread): Parsing macros/adapters.sql
+2021-06-01 07:46:13.563752 (MainThread): Parsing macros/materializations/merge.sql
+2021-06-01 07:46:13.565769 (MainThread): Parsing macros/materializations/view.sql
+2021-06-01 07:46:13.567434 (MainThread): Parsing macros/materializations/table.sql
+2021-06-01 07:46:13.571640 (MainThread): Parsing macros/materializations/incremental.sql
+2021-06-01 07:46:13.583970 (MainThread): Parsing macros/core.sql
+2021-06-01 07:46:13.589700 (MainThread): Parsing macros/materializations/helpers.sql
+2021-06-01 07:46:13.600169 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-06-01 07:46:13.602407 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-06-01 07:46:13.622599 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-06-01 07:46:13.656206 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-06-01 07:46:13.675795 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-06-01 07:46:13.677607 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-06-01 07:46:13.683309 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-06-01 07:46:13.696721 (MainThread): Parsing macros/materializations/table/table.sql
+2021-06-01 07:46:13.703870 (MainThread): Parsing macros/materializations/view/view.sql
+2021-06-01 07:46:13.710836 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-06-01 07:46:13.716225 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-06-01 07:46:13.717406 (MainThread): Parsing macros/etc/query.sql
+2021-06-01 07:46:13.718731 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-06-01 07:46:13.720388 (MainThread): Parsing macros/etc/datetime.sql
+2021-06-01 07:46:13.728917 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-06-01 07:46:13.731044 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-06-01 07:46:13.732925 (MainThread): Parsing macros/adapters/common.sql
+2021-06-01 07:46:13.773300 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-06-01 07:46:13.775193 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-06-01 07:46:13.776716 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-06-01 07:46:13.778449 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-06-01 07:46:13.784973 (MainThread): Partial parsing not enabled
+2021-06-01 07:46:13.803688 (MainThread): Acquiring new snowflake connection "model.demo_dbt.stg_customers".
+2021-06-01 07:46:13.810904 (MainThread): Acquiring new snowflake connection "model.demo_dbt.order_payment_method_amounts".
+2021-06-01 07:46:13.824155 (MainThread): Acquiring new snowflake connection "model.demo_dbt.customers".
+2021-06-01 07:46:13.829513 (MainThread): Acquiring new snowflake connection "model.demo_dbt.stg_orders".
+2021-06-01 07:46:13.964423 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '01e6810f-08b3-4d0b-86d0-07636817c4c6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f990c4abf40>]}
+2021-06-01 07:46:13.971136 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '01e6810f-08b3-4d0b-86d0-07636817c4c6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f990c612700>]}
+2021-06-01 07:46:13.971439 (MainThread): Found 4 models, 7 tests, 0 snapshots, 0 analyses, 145 macros, 0 operations, 1 seed file, 0 sources, 0 exposures
+2021-06-01 07:46:13.972744 (MainThread): 
+2021-06-01 07:46:13.973233 (MainThread): Acquiring new snowflake connection "master".
+2021-06-01 07:46:13.974348 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_DEMO_DB".
+2021-06-01 07:46:13.983505 (ThreadPoolExecutor-0_0): Using snowflake connection "list_DEMO_DB".
+2021-06-01 07:46:13.983696 (ThreadPoolExecutor-0_0): On list_DEMO_DB: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_DEMO_DB"} */
+
+    show terse schemas in database DEMO_DB
+    limit 10000
+2021-06-01 07:46:13.983801 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-06-01 07:46:16.512825 (ThreadPoolExecutor-0_0): SQL status: SUCCESS 2 in 2.53 seconds
+2021-06-01 07:46:16.516431 (ThreadPoolExecutor-0_0): On list_DEMO_DB: Close
+2021-06-01 07:46:17.194913 (ThreadPoolExecutor-1_0): Acquiring new snowflake connection "list_DEMO_DB_PUBLIC".
+2021-06-01 07:46:17.200920 (ThreadPoolExecutor-1_0): Using snowflake connection "list_DEMO_DB_PUBLIC".
+2021-06-01 07:46:17.201050 (ThreadPoolExecutor-1_0): On list_DEMO_DB_PUBLIC: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_DEMO_DB_PUBLIC"} */
+
+    show terse objects in DEMO_DB.PUBLIC
+2021-06-01 07:46:17.201137 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2021-06-01 07:46:18.980602 (ThreadPoolExecutor-1_0): SQL status: SUCCESS 8 in 1.78 seconds
+2021-06-01 07:46:18.997224 (ThreadPoolExecutor-1_0): On list_DEMO_DB_PUBLIC: Close
+2021-06-01 07:46:20.075015 (MainThread): Using snowflake connection "master".
+2021-06-01 07:46:20.075191 (MainThread): On master: BEGIN
+2021-06-01 07:46:20.075303 (MainThread): Opening a new connection, currently in state init
+2021-06-01 07:46:22.259401 (MainThread): SQL status: SUCCESS 1 in 2.18 seconds
+2021-06-01 07:46:22.259652 (MainThread): On master: COMMIT
+2021-06-01 07:46:22.259894 (MainThread): Using snowflake connection "master".
+2021-06-01 07:46:22.260032 (MainThread): On master: COMMIT
+2021-06-01 07:46:23.558811 (MainThread): SQL status: SUCCESS 1 in 1.30 seconds
+2021-06-01 07:46:23.559080 (MainThread): On master: Close
+2021-06-01 07:46:24.150102 (MainThread): 13:16:24 | Concurrency: 10 threads (target='dev')
+2021-06-01 07:46:24.150326 (MainThread): 13:16:24 | 
+2021-06-01 07:46:24.152562 (Thread-1): Began running node model.demo_dbt.stg_customers
+2021-06-01 07:46:24.152860 (Thread-1): 13:16:24 | 1 of 4 START table model PUBLIC.stg_customers........................ [RUN]
+2021-06-01 07:46:24.153036 (Thread-2): Began running node model.demo_dbt.stg_orders
+2021-06-01 07:46:24.153268 (Thread-2): 13:16:24 | 2 of 4 START table model PUBLIC.stg_orders........................... [RUN]
+2021-06-01 07:46:24.153411 (Thread-3): Began running node model.demo_dbt.order_payment_method_amounts
+2021-06-01 07:46:24.153933 (Thread-1): Acquiring new snowflake connection "model.demo_dbt.stg_customers".
+2021-06-01 07:46:24.154076 (Thread-1): Compiling model.demo_dbt.stg_customers
+2021-06-01 07:46:24.155282 (Thread-1): Writing injected SQL for node "model.demo_dbt.stg_customers"
+2021-06-01 07:46:24.155623 (Thread-3): 13:16:24 | 3 of 4 START table model PUBLIC.order_payment_method_amounts......... [RUN]
+2021-06-01 07:46:24.155936 (Thread-2): Acquiring new snowflake connection "model.demo_dbt.stg_orders".
+2021-06-01 07:46:24.156050 (Thread-2): Compiling model.demo_dbt.stg_orders
+2021-06-01 07:46:24.157191 (Thread-2): Writing injected SQL for node "model.demo_dbt.stg_orders"
+2021-06-01 07:46:24.157517 (Thread-3): Acquiring new snowflake connection "model.demo_dbt.order_payment_method_amounts".
+2021-06-01 07:46:24.157632 (Thread-3): Compiling model.demo_dbt.order_payment_method_amounts
+2021-06-01 07:46:24.161272 (Thread-3): Using snowflake connection "model.demo_dbt.order_payment_method_amounts".
+2021-06-01 07:46:24.161389 (Thread-3): On model.demo_dbt.order_payment_method_amounts: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.demo_dbt.order_payment_method_amounts"} */
+
+    
+select distinct
+payment_method
+from DEMO_DB.PUBLIC.raw_payments
+order by 1
+2021-06-01 07:46:24.161490 (Thread-3): Opening a new connection, currently in state init
+2021-06-01 07:46:24.163069 (Thread-1): finished collecting timing info
+2021-06-01 07:46:24.163210 (Thread-2): finished collecting timing info
+2021-06-01 07:46:24.209366 (Thread-1): Writing runtime SQL for node "model.demo_dbt.stg_customers"
+2021-06-01 07:46:24.209793 (Thread-2): Writing runtime SQL for node "model.demo_dbt.stg_orders"
+2021-06-01 07:46:24.210706 (Thread-2): Using snowflake connection "model.demo_dbt.stg_orders".
+2021-06-01 07:46:24.210808 (Thread-2): On model.demo_dbt.stg_orders: BEGIN
+2021-06-01 07:46:24.210897 (Thread-2): Opening a new connection, currently in state init
+2021-06-01 07:46:24.211935 (Thread-1): Using snowflake connection "model.demo_dbt.stg_customers".
+2021-06-01 07:46:24.212039 (Thread-1): On model.demo_dbt.stg_customers: BEGIN
+2021-06-01 07:46:24.212125 (Thread-1): Opening a new connection, currently in state closed
+2021-06-01 07:46:25.937451 (Thread-2): SQL status: SUCCESS 1 in 1.73 seconds
+2021-06-01 07:46:25.937699 (Thread-2): Using snowflake connection "model.demo_dbt.stg_orders".
+2021-06-01 07:46:25.937843 (Thread-2): On model.demo_dbt.stg_orders: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.demo_dbt.stg_orders"} */
+
+
+      create or replace transient table DEMO_DB.PUBLIC.stg_orders  as
+      (select
+        id as order_id,
+        user_id as customer_id,
+        order_date,
+        status
+
+from orders
+      );
+2021-06-01 07:46:26.127334 (Thread-1): SQL status: SUCCESS 1 in 1.92 seconds
+2021-06-01 07:46:26.127575 (Thread-1): Using snowflake connection "model.demo_dbt.stg_customers".
+2021-06-01 07:46:26.127719 (Thread-1): On model.demo_dbt.stg_customers: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.demo_dbt.stg_customers"} */
+
+
+      create or replace transient table DEMO_DB.PUBLIC.stg_customers  as
+      (select 
+    id as customer_id,
+    first_name,
+    last_name
+
+from customers
+      );
+2021-06-01 07:46:26.257164 (Thread-3): SQL status: SUCCESS 4 in 2.10 seconds
+2021-06-01 07:46:26.258034 (Thread-3): Writing injected SQL for node "model.demo_dbt.order_payment_method_amounts"
+2021-06-01 07:46:26.259302 (Thread-3): finished collecting timing info
+2021-06-01 07:46:26.262148 (Thread-3): Writing runtime SQL for node "model.demo_dbt.order_payment_method_amounts"
+2021-06-01 07:46:26.263182 (Thread-3): Using snowflake connection "model.demo_dbt.order_payment_method_amounts".
+2021-06-01 07:46:26.263308 (Thread-3): On model.demo_dbt.order_payment_method_amounts: BEGIN
+2021-06-01 07:46:26.496845 (Thread-1): Snowflake query id: 019ca1b2-0000-43ef-0000-b0b100025022
+2021-06-01 07:46:26.497059 (Thread-1): Snowflake error: 000904 (42000): SQL compilation error: error line 3 at position 4
+invalid identifier 'ID'
+2021-06-01 07:46:26.497273 (Thread-1): finished collecting timing info
+2021-06-01 07:46:26.497479 (Thread-1): On model.demo_dbt.stg_customers: ROLLBACK
+2021-06-01 07:46:27.035573 (Thread-1): On model.demo_dbt.stg_customers: Close
+2021-06-01 07:46:27.038157 (Thread-3): SQL status: SUCCESS 1 in 0.77 seconds
+2021-06-01 07:46:27.038497 (Thread-3): Using snowflake connection "model.demo_dbt.order_payment_method_amounts".
+2021-06-01 07:46:27.038634 (Thread-3): On model.demo_dbt.order_payment_method_amounts: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.demo_dbt.order_payment_method_amounts"} */
+
+
+      create or replace transient table DEMO_DB.PUBLIC.order_payment_method_amounts  as
+      (
+
+select
+order_id,
+
+
+
+sum(amount) as total_amount
+
+from DEMO_DB.PUBLIC.raw_payments
+group by 1
+      );
+2021-06-01 07:46:27.727627 (Thread-1): Database Error in model stg_customers (models/stg_customers.sql)
+  000904 (42000): SQL compilation error: error line 3 at position 4
+  invalid identifier 'ID'
+  compiled SQL at target/run/demo_dbt/models/stg_customers.sql
+Traceback (most recent call last):
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 162, in exception_handler
+    yield
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 80, in add_query
+    cursor.execute(sql, bindings)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/cursor.py", line 603, in execute
+    Error.errorhandler_wrapper(self.connection, self,
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/errors.py", line 125, in errorhandler_wrapper
+    cursor.errorhandler(connection, cursor, error_class, error_value)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/errors.py", line 85, in default_errorhandler
+    raise error_class(
+snowflake.connector.errors.ProgrammingError: 000904 (42000): SQL compilation error: error line 3 at position 4
+invalid identifier 'ID'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/task/base.py", line 344, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/task/base.py", line 287, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/task/base.py", line 389, in run
+    return self.execute(compiled_node, manifest)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/task/run.py", line 248, in execute
+    result = MacroGenerator(materialization_macro, context)()
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 332, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 259, in call_macro
+    return macro(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 67, in macro
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 332, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 259, in call_macro
+    return macro(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 41, in macro
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/base/impl.py", line 227, in execute
+    return self.connections.execute(
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 124, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 314, in add_query
+    connection, cursor = super().add_query(
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 87, in add_query
+    return connection, cursor
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 179, in exception_handler
+    raise DatabaseException(msg)
+dbt.exceptions.DatabaseException: Database Error in model stg_customers (models/stg_customers.sql)
+  000904 (42000): SQL compilation error: error line 3 at position 4
+  invalid identifier 'ID'
+  compiled SQL at target/run/demo_dbt/models/stg_customers.sql
+2021-06-01 07:46:27.738736 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '01e6810f-08b3-4d0b-86d0-07636817c4c6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f990c89fd30>]}
+2021-06-01 07:46:27.739097 (Thread-1): 13:16:27 | 1 of 4 ERROR creating table model PUBLIC.stg_customers............... [ERROR in 3.58s]
+2021-06-01 07:46:27.739268 (Thread-1): Finished running node model.demo_dbt.stg_customers
+2021-06-01 07:46:30.619403 (Thread-2): SQL status: SUCCESS 1 in 4.68 seconds
+2021-06-01 07:46:30.620805 (Thread-2): On model.demo_dbt.stg_orders: COMMIT
+2021-06-01 07:46:30.621002 (Thread-2): Using snowflake connection "model.demo_dbt.stg_orders".
+2021-06-01 07:46:30.621114 (Thread-2): On model.demo_dbt.stg_orders: COMMIT
+2021-06-01 07:46:30.944317 (Thread-2): SQL status: SUCCESS 1 in 0.32 seconds
+2021-06-01 07:46:30.954760 (Thread-2): finished collecting timing info
+2021-06-01 07:46:30.954924 (Thread-2): On model.demo_dbt.stg_orders: Close
+2021-06-01 07:46:31.524559 (Thread-3): SQL status: SUCCESS 1 in 4.49 seconds
+2021-06-01 07:46:31.526015 (Thread-3): On model.demo_dbt.order_payment_method_amounts: COMMIT
+2021-06-01 07:46:31.526253 (Thread-3): Using snowflake connection "model.demo_dbt.order_payment_method_amounts".
+2021-06-01 07:46:31.526368 (Thread-3): On model.demo_dbt.order_payment_method_amounts: COMMIT
+2021-06-01 07:46:31.736665 (Thread-2): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '01e6810f-08b3-4d0b-86d0-07636817c4c6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f990c3a6940>]}
+2021-06-01 07:46:31.737093 (Thread-2): 13:16:31 | 2 of 4 OK created table model PUBLIC.stg_orders...................... [SUCCESS 1 in 7.58s]
+2021-06-01 07:46:31.737261 (Thread-2): Finished running node model.demo_dbt.stg_orders
+2021-06-01 07:46:31.737621 (Thread-5): Began running node model.demo_dbt.customers
+2021-06-01 07:46:31.737800 (Thread-5): 13:16:31 | 4 of 4 SKIP relation PUBLIC.customers................................ [SKIP]
+2021-06-01 07:46:31.738033 (Thread-5): Finished running node model.demo_dbt.customers
+2021-06-01 07:46:31.843844 (Thread-3): SQL status: SUCCESS 1 in 0.32 seconds
+2021-06-01 07:46:31.844710 (Thread-3): finished collecting timing info
+2021-06-01 07:46:31.844892 (Thread-3): On model.demo_dbt.order_payment_method_amounts: Close
+2021-06-01 07:46:32.456142 (Thread-3): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '01e6810f-08b3-4d0b-86d0-07636817c4c6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f990c86fd00>]}
+2021-06-01 07:46:32.456579 (Thread-3): 13:16:32 | 3 of 4 OK created table model PUBLIC.order_payment_method_amounts.... [SUCCESS 1 in 8.30s]
+2021-06-01 07:46:32.456749 (Thread-3): Finished running node model.demo_dbt.order_payment_method_amounts
+2021-06-01 07:46:32.458278 (MainThread): Acquiring new snowflake connection "master".
+2021-06-01 07:46:32.458519 (MainThread): Using snowflake connection "master".
+2021-06-01 07:46:32.458635 (MainThread): On master: BEGIN
+2021-06-01 07:46:32.458741 (MainThread): Opening a new connection, currently in state closed
+2021-06-01 07:46:34.305930 (MainThread): SQL status: SUCCESS 1 in 1.85 seconds
+2021-06-01 07:46:34.306203 (MainThread): On master: COMMIT
+2021-06-01 07:46:34.306435 (MainThread): Using snowflake connection "master".
+2021-06-01 07:46:34.306572 (MainThread): On master: COMMIT
+2021-06-01 07:46:36.968335 (MainThread): SQL status: SUCCESS 1 in 2.66 seconds
+2021-06-01 07:46:36.968603 (MainThread): On master: Close
+2021-06-01 07:46:37.732917 (MainThread): 13:16:37 | 
+2021-06-01 07:46:37.736903 (MainThread): 13:16:37 | Finished running 4 table models in 23.76s.
+2021-06-01 07:46:37.737474 (MainThread): Connection 'master' was properly closed.
+2021-06-01 07:46:37.737770 (MainThread): Connection 'model.demo_dbt.stg_customers' was properly closed.
+2021-06-01 07:46:37.737967 (MainThread): Connection 'model.demo_dbt.stg_orders' was properly closed.
+2021-06-01 07:46:37.738654 (MainThread): Connection 'model.demo_dbt.order_payment_method_amounts' was properly closed.
+2021-06-01 07:46:37.759235 (MainThread): 
+2021-06-01 07:46:37.759478 (MainThread): Completed with 1 error and 0 warnings:
+2021-06-01 07:46:37.759655 (MainThread): 
+2021-06-01 07:46:37.759821 (MainThread): Database Error in model stg_customers (models/stg_customers.sql)
+2021-06-01 07:46:37.759969 (MainThread):   000904 (42000): SQL compilation error: error line 3 at position 4
+2021-06-01 07:46:37.760105 (MainThread):   invalid identifier 'ID'
+2021-06-01 07:46:37.760240 (MainThread):   compiled SQL at target/run/demo_dbt/models/stg_customers.sql
+2021-06-01 07:46:37.760361 (MainThread): 
+Done. PASS=2 WARN=0 ERROR=1 SKIP=1 TOTAL=4
+2021-06-01 07:46:37.760552 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f990c80f3a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f990c6a7820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f990c897040>]}
+2021-06-01 07:46:37.760785 (MainThread): Flushing usage events
+2021-06-01 07:46:57.206281 (MainThread): Running with dbt=0.19.1
+2021-06-01 07:46:57.964563 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/dhirajpatra/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-06-01 07:46:57.965899 (MainThread): Tracking: tracking
+2021-06-01 07:46:57.966361 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fedfdf11f70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee022565b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee02256640>]}
+2021-06-01 07:46:57.975966 (MainThread): Partial parsing not enabled
+2021-06-01 07:46:57.976729 (MainThread): Parsing macros/get_payment_methods.sql
+2021-06-01 07:46:57.979808 (MainThread): Parsing macros/catalog.sql
+2021-06-01 07:46:57.981594 (MainThread): Parsing macros/adapters.sql
+2021-06-01 07:46:58.007938 (MainThread): Parsing macros/materializations/merge.sql
+2021-06-01 07:46:58.009687 (MainThread): Parsing macros/materializations/view.sql
+2021-06-01 07:46:58.010907 (MainThread): Parsing macros/materializations/table.sql
+2021-06-01 07:46:58.014582 (MainThread): Parsing macros/materializations/incremental.sql
+2021-06-01 07:46:58.023543 (MainThread): Parsing macros/core.sql
+2021-06-01 07:46:58.027223 (MainThread): Parsing macros/materializations/helpers.sql
+2021-06-01 07:46:58.035144 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-06-01 07:46:58.036652 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-06-01 07:46:58.053846 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-06-01 07:46:58.087299 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-06-01 07:46:58.106820 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-06-01 07:46:58.108436 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-06-01 07:46:58.114101 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-06-01 07:46:58.127543 (MainThread): Parsing macros/materializations/table/table.sql
+2021-06-01 07:46:58.133625 (MainThread): Parsing macros/materializations/view/view.sql
+2021-06-01 07:46:58.139376 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-06-01 07:46:58.143677 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-06-01 07:46:58.144504 (MainThread): Parsing macros/etc/query.sql
+2021-06-01 07:46:58.145425 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-06-01 07:46:58.146841 (MainThread): Parsing macros/etc/datetime.sql
+2021-06-01 07:46:58.154776 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-06-01 07:46:58.156620 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-06-01 07:46:58.158135 (MainThread): Parsing macros/adapters/common.sql
+2021-06-01 07:46:58.198014 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-06-01 07:46:58.199690 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-06-01 07:46:58.201048 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-06-01 07:46:58.202582 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-06-01 07:46:58.209203 (MainThread): Partial parsing not enabled
+2021-06-01 07:46:58.228151 (MainThread): Acquiring new snowflake connection "model.demo_dbt.stg_customers".
+2021-06-01 07:46:58.235462 (MainThread): Acquiring new snowflake connection "model.demo_dbt.order_payment_method_amounts".
+2021-06-01 07:46:58.247865 (MainThread): Acquiring new snowflake connection "model.demo_dbt.customers".
+2021-06-01 07:46:58.251429 (MainThread): Acquiring new snowflake connection "model.demo_dbt.stg_orders".
+2021-06-01 07:46:58.376685 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'fd3e00b7-c5ed-4498-a69d-1b38d29e1f62', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee027519d0>]}
+2021-06-01 07:46:58.381397 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'fd3e00b7-c5ed-4498-a69d-1b38d29e1f62', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee0275a640>]}
+2021-06-01 07:46:58.381624 (MainThread): Found 4 models, 7 tests, 0 snapshots, 0 analyses, 145 macros, 0 operations, 1 seed file, 0 sources, 0 exposures
+2021-06-01 07:46:58.382535 (MainThread): 
+2021-06-01 07:46:58.382843 (MainThread): Acquiring new snowflake connection "master".
+2021-06-01 07:46:58.383741 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_DEMO_DB".
+2021-06-01 07:46:58.390559 (ThreadPoolExecutor-0_0): Using snowflake connection "list_DEMO_DB".
+2021-06-01 07:46:58.390684 (ThreadPoolExecutor-0_0): On list_DEMO_DB: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_DEMO_DB"} */
+
+    show terse schemas in database DEMO_DB
+    limit 10000
+2021-06-01 07:46:58.390782 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-06-01 07:47:00.579596 (ThreadPoolExecutor-0_0): SQL status: SUCCESS 2 in 2.19 seconds
+2021-06-01 07:47:00.583958 (ThreadPoolExecutor-0_0): On list_DEMO_DB: Close
+2021-06-01 07:47:01.431137 (ThreadPoolExecutor-1_0): Acquiring new snowflake connection "list_DEMO_DB_PUBLIC".
+2021-06-01 07:47:01.438582 (ThreadPoolExecutor-1_0): Using snowflake connection "list_DEMO_DB_PUBLIC".
+2021-06-01 07:47:01.438704 (ThreadPoolExecutor-1_0): On list_DEMO_DB_PUBLIC: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_DEMO_DB_PUBLIC"} */
+
+    show terse objects in DEMO_DB.PUBLIC
+2021-06-01 07:47:01.438802 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2021-06-01 07:47:03.181847 (ThreadPoolExecutor-1_0): SQL status: SUCCESS 8 in 1.74 seconds
+2021-06-01 07:47:03.183334 (ThreadPoolExecutor-1_0): On list_DEMO_DB_PUBLIC: Close
+2021-06-01 07:47:04.208404 (MainThread): Using snowflake connection "master".
+2021-06-01 07:47:04.208583 (MainThread): On master: BEGIN
+2021-06-01 07:47:04.208697 (MainThread): Opening a new connection, currently in state init
+2021-06-01 07:47:06.356370 (MainThread): SQL status: SUCCESS 1 in 2.15 seconds
+2021-06-01 07:47:06.356636 (MainThread): On master: COMMIT
+2021-06-01 07:47:06.356875 (MainThread): Using snowflake connection "master".
+2021-06-01 07:47:06.357014 (MainThread): On master: COMMIT
+2021-06-01 07:47:06.970262 (MainThread): SQL status: SUCCESS 1 in 0.61 seconds
+2021-06-01 07:47:06.970531 (MainThread): On master: Close
+2021-06-01 07:47:07.995727 (MainThread): 13:17:07 | Concurrency: 10 threads (target='dev')
+2021-06-01 07:47:07.995954 (MainThread): 13:17:07 | 
+2021-06-01 07:47:07.998174 (Thread-1): Began running node model.demo_dbt.stg_customers
+2021-06-01 07:47:07.998389 (Thread-2): Began running node model.demo_dbt.stg_orders
+2021-06-01 07:47:07.998645 (Thread-1): 13:17:07 | 1 of 4 START table model PUBLIC.stg_customers........................ [RUN]
+2021-06-01 07:47:07.998742 (Thread-3): Began running node model.demo_dbt.order_payment_method_amounts
+2021-06-01 07:47:07.999259 (Thread-2): 13:17:07 | 2 of 4 START table model PUBLIC.stg_orders........................... [RUN]
+2021-06-01 07:47:07.999512 (Thread-1): Acquiring new snowflake connection "model.demo_dbt.stg_customers".
+2021-06-01 07:47:07.999705 (Thread-3): 13:17:07 | 3 of 4 START table model PUBLIC.order_payment_method_amounts......... [RUN]
+2021-06-01 07:47:07.999965 (Thread-2): Acquiring new snowflake connection "model.demo_dbt.stg_orders".
+2021-06-01 07:47:08.000114 (Thread-1): Compiling model.demo_dbt.stg_customers
+2021-06-01 07:47:08.000308 (Thread-2): Compiling model.demo_dbt.stg_orders
+2021-06-01 07:47:08.000526 (Thread-3): Acquiring new snowflake connection "model.demo_dbt.order_payment_method_amounts".
+2021-06-01 07:47:08.001642 (Thread-1): Writing injected SQL for node "model.demo_dbt.stg_customers"
+2021-06-01 07:47:08.002723 (Thread-2): Writing injected SQL for node "model.demo_dbt.stg_orders"
+2021-06-01 07:47:08.002846 (Thread-3): Compiling model.demo_dbt.order_payment_method_amounts
+2021-06-01 07:47:08.006975 (Thread-3): Using snowflake connection "model.demo_dbt.order_payment_method_amounts".
+2021-06-01 07:47:08.007101 (Thread-3): On model.demo_dbt.order_payment_method_amounts: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.demo_dbt.order_payment_method_amounts"} */
+
+    
+select distinct
+payment_method
+from DEMO_DB.PUBLIC.raw_payments
+order by 1
+2021-06-01 07:47:08.007205 (Thread-3): Opening a new connection, currently in state init
+2021-06-01 07:47:08.007897 (Thread-1): finished collecting timing info
+2021-06-01 07:47:08.019759 (Thread-2): finished collecting timing info
+2021-06-01 07:47:08.039346 (Thread-2): Writing runtime SQL for node "model.demo_dbt.stg_orders"
+2021-06-01 07:47:08.043522 (Thread-1): Writing runtime SQL for node "model.demo_dbt.stg_customers"
+2021-06-01 07:47:08.044972 (Thread-2): Using snowflake connection "model.demo_dbt.stg_orders".
+2021-06-01 07:47:08.045142 (Thread-2): On model.demo_dbt.stg_orders: BEGIN
+2021-06-01 07:47:08.045528 (Thread-2): Opening a new connection, currently in state init
+2021-06-01 07:47:08.046346 (Thread-1): Using snowflake connection "model.demo_dbt.stg_customers".
+2021-06-01 07:47:08.047035 (Thread-1): On model.demo_dbt.stg_customers: BEGIN
+2021-06-01 07:47:08.047821 (Thread-1): Opening a new connection, currently in state closed
+2021-06-01 07:47:09.754295 (Thread-1): SQL status: SUCCESS 1 in 1.71 seconds
+2021-06-01 07:47:09.754546 (Thread-1): Using snowflake connection "model.demo_dbt.stg_customers".
+2021-06-01 07:47:09.754688 (Thread-1): On model.demo_dbt.stg_customers: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.demo_dbt.stg_customers"} */
+
+
+      create or replace transient table DEMO_DB.PUBLIC.stg_customers  as
+      (select 
+    id as customer_id,
+    first_name,
+    last_name
+
+from customers
+      );
+2021-06-01 07:47:09.813500 (Thread-2): SQL status: SUCCESS 1 in 1.77 seconds
+2021-06-01 07:47:09.813733 (Thread-2): Using snowflake connection "model.demo_dbt.stg_orders".
+2021-06-01 07:47:09.813872 (Thread-2): On model.demo_dbt.stg_orders: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.demo_dbt.stg_orders"} */
+
+
+      create or replace transient table DEMO_DB.PUBLIC.stg_orders  as
+      (select
+        id as order_id,
+        user_id as customer_id,
+        order_date,
+        status
+
+from orders
+      );
+2021-06-01 07:47:09.883756 (Thread-3): SQL status: SUCCESS 4 in 1.88 seconds
+2021-06-01 07:47:09.884823 (Thread-3): Writing injected SQL for node "model.demo_dbt.order_payment_method_amounts"
+2021-06-01 07:47:09.885402 (Thread-3): finished collecting timing info
+2021-06-01 07:47:09.887903 (Thread-3): Writing runtime SQL for node "model.demo_dbt.order_payment_method_amounts"
+2021-06-01 07:47:09.888875 (Thread-3): Using snowflake connection "model.demo_dbt.order_payment_method_amounts".
+2021-06-01 07:47:09.888975 (Thread-3): On model.demo_dbt.order_payment_method_amounts: BEGIN
+2021-06-01 07:47:10.353252 (Thread-3): SQL status: SUCCESS 1 in 0.46 seconds
+2021-06-01 07:47:10.353495 (Thread-3): Using snowflake connection "model.demo_dbt.order_payment_method_amounts".
+2021-06-01 07:47:10.353632 (Thread-3): On model.demo_dbt.order_payment_method_amounts: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.demo_dbt.order_payment_method_amounts"} */
+
+
+      create or replace transient table DEMO_DB.PUBLIC.order_payment_method_amounts  as
+      (
+
+select
+order_id,
+
+
+
+sum(amount) as total_amount
+
+from DEMO_DB.PUBLIC.raw_payments
+group by 1
+      );
+2021-06-01 07:47:10.833012 (Thread-1): SQL status: SUCCESS 1 in 1.08 seconds
+2021-06-01 07:47:10.834555 (Thread-1): On model.demo_dbt.stg_customers: COMMIT
+2021-06-01 07:47:10.834813 (Thread-1): Using snowflake connection "model.demo_dbt.stg_customers".
+2021-06-01 07:47:10.834925 (Thread-1): On model.demo_dbt.stg_customers: COMMIT
+2021-06-01 07:47:11.182639 (Thread-1): SQL status: SUCCESS 1 in 0.35 seconds
+2021-06-01 07:47:11.193435 (Thread-1): finished collecting timing info
+2021-06-01 07:47:11.193567 (Thread-1): On model.demo_dbt.stg_customers: Close
+2021-06-01 07:47:11.532409 (Thread-2): SQL status: SUCCESS 1 in 1.72 seconds
+2021-06-01 07:47:11.533799 (Thread-2): On model.demo_dbt.stg_orders: COMMIT
+2021-06-01 07:47:11.534044 (Thread-2): Using snowflake connection "model.demo_dbt.stg_orders".
+2021-06-01 07:47:11.534186 (Thread-2): On model.demo_dbt.stg_orders: COMMIT
+2021-06-01 07:47:11.886473 (Thread-2): SQL status: SUCCESS 1 in 0.35 seconds
+2021-06-01 07:47:11.887549 (Thread-2): finished collecting timing info
+2021-06-01 07:47:11.887746 (Thread-2): On model.demo_dbt.stg_orders: Close
+2021-06-01 07:47:11.889325 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fd3e00b7-c5ed-4498-a69d-1b38d29e1f62', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee0288b1c0>]}
+2021-06-01 07:47:11.889833 (Thread-1): 13:17:11 | 1 of 4 OK created table model PUBLIC.stg_customers................... [SUCCESS 1 in 3.89s]
+2021-06-01 07:47:11.890022 (Thread-1): Finished running node model.demo_dbt.stg_customers
+2021-06-01 07:47:12.232368 (Thread-3): SQL status: SUCCESS 1 in 1.88 seconds
+2021-06-01 07:47:12.233749 (Thread-3): On model.demo_dbt.order_payment_method_amounts: COMMIT
+2021-06-01 07:47:12.234000 (Thread-3): Using snowflake connection "model.demo_dbt.order_payment_method_amounts".
+2021-06-01 07:47:12.234114 (Thread-3): On model.demo_dbt.order_payment_method_amounts: COMMIT
+2021-06-01 07:47:12.705551 (Thread-3): SQL status: SUCCESS 1 in 0.47 seconds
+2021-06-01 07:47:12.706590 (Thread-3): finished collecting timing info
+2021-06-01 07:47:12.706764 (Thread-3): On model.demo_dbt.order_payment_method_amounts: Close
+2021-06-01 07:47:12.707795 (Thread-2): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fd3e00b7-c5ed-4498-a69d-1b38d29e1f62', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee02792100>]}
+2021-06-01 07:47:12.708179 (Thread-2): 13:17:12 | 2 of 4 OK created table model PUBLIC.stg_orders...................... [SUCCESS 1 in 4.71s]
+2021-06-01 07:47:12.708957 (Thread-2): Finished running node model.demo_dbt.stg_orders
+2021-06-01 07:47:12.709467 (Thread-5): Began running node model.demo_dbt.customers
+2021-06-01 07:47:12.709947 (Thread-5): 13:17:12 | 4 of 4 START table model PUBLIC.customers............................ [RUN]
+2021-06-01 07:47:12.710642 (Thread-5): Acquiring new snowflake connection "model.demo_dbt.customers".
+2021-06-01 07:47:12.710766 (Thread-5): Compiling model.demo_dbt.customers
+2021-06-01 07:47:12.713040 (Thread-5): Writing injected SQL for node "model.demo_dbt.customers"
+2021-06-01 07:47:12.714489 (Thread-5): finished collecting timing info
+2021-06-01 07:47:12.716863 (Thread-5): Writing runtime SQL for node "model.demo_dbt.customers"
+2021-06-01 07:47:12.718476 (Thread-5): Using snowflake connection "model.demo_dbt.customers".
+2021-06-01 07:47:12.718563 (Thread-5): On model.demo_dbt.customers: BEGIN
+2021-06-01 07:47:12.718641 (Thread-5): Opening a new connection, currently in state init
+2021-06-01 07:47:13.730425 (Thread-3): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fd3e00b7-c5ed-4498-a69d-1b38d29e1f62', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee027929a0>]}
+2021-06-01 07:47:13.730892 (Thread-3): 13:17:13 | 3 of 4 OK created table model PUBLIC.order_payment_method_amounts.... [SUCCESS 1 in 5.73s]
+2021-06-01 07:47:13.731068 (Thread-3): Finished running node model.demo_dbt.order_payment_method_amounts
+2021-06-01 07:47:14.855101 (Thread-5): SQL status: SUCCESS 1 in 2.14 seconds
+2021-06-01 07:47:14.855352 (Thread-5): Using snowflake connection "model.demo_dbt.customers".
+2021-06-01 07:47:14.855495 (Thread-5): On model.demo_dbt.customers: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.demo_dbt.customers"} */
+
+
+      create or replace transient table DEMO_DB.PUBLIC.customers  as
+      (with customers as (
+
+    select * from DEMO_DB.PUBLIC.stg_customers
+
+),
+
+orders as (
+
+    select * from DEMO_DB.PUBLIC.stg_orders
+
+),
+
+customer_orders as (
+
+    select
+        customer_id,
+
+        min(order_date) as first_order_date,
+        max(order_date) as most_recent_order_date,
+        count(order_id) as number_of_orders
+
+    from orders
+
+    group by 1
+
+),
+
+
+final as (
+
+    select
+        customers.customer_id,
+        customers.first_name,
+        customers.last_name,
+        customer_orders.first_order_date,
+        customer_orders.most_recent_order_date,
+        coalesce(customer_orders.number_of_orders, 0) as number_of_orders
+
+    from customers
+
+    left join customer_orders using (customer_id)
+
+)
+
+select * from final
+      );
+2021-06-01 07:47:15.776676 (Thread-5): SQL status: SUCCESS 1 in 0.92 seconds
+2021-06-01 07:47:15.778066 (Thread-5): On model.demo_dbt.customers: COMMIT
+2021-06-01 07:47:15.778307 (Thread-5): Using snowflake connection "model.demo_dbt.customers".
+2021-06-01 07:47:15.778448 (Thread-5): On model.demo_dbt.customers: COMMIT
+2021-06-01 07:47:16.186295 (Thread-5): SQL status: SUCCESS 1 in 0.41 seconds
+2021-06-01 07:47:16.187347 (Thread-5): finished collecting timing info
+2021-06-01 07:47:16.187571 (Thread-5): On model.demo_dbt.customers: Close
+2021-06-01 07:47:17.242794 (Thread-5): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fd3e00b7-c5ed-4498-a69d-1b38d29e1f62', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee02792e80>]}
+2021-06-01 07:47:17.243237 (Thread-5): 13:17:17 | 4 of 4 OK created table model PUBLIC.customers....................... [SUCCESS 1 in 4.53s]
+2021-06-01 07:47:17.243404 (Thread-5): Finished running node model.demo_dbt.customers
+2021-06-01 07:47:17.245008 (MainThread): Acquiring new snowflake connection "master".
+2021-06-01 07:47:17.245249 (MainThread): Using snowflake connection "master".
+2021-06-01 07:47:17.245365 (MainThread): On master: BEGIN
+2021-06-01 07:47:17.245475 (MainThread): Opening a new connection, currently in state closed
+2021-06-01 07:47:19.565294 (MainThread): SQL status: SUCCESS 1 in 2.32 seconds
+2021-06-01 07:47:19.565558 (MainThread): On master: COMMIT
+2021-06-01 07:47:19.565791 (MainThread): Using snowflake connection "master".
+2021-06-01 07:47:19.565930 (MainThread): On master: COMMIT
+2021-06-01 07:47:19.957624 (MainThread): SQL status: SUCCESS 1 in 0.39 seconds
+2021-06-01 07:47:19.957889 (MainThread): On master: Close
+2021-06-01 07:47:21.269161 (MainThread): 13:17:21 | 
+2021-06-01 07:47:21.269382 (MainThread): 13:17:21 | Finished running 4 table models in 22.89s.
+2021-06-01 07:47:21.269519 (MainThread): Connection 'master' was properly closed.
+2021-06-01 07:47:21.269619 (MainThread): Connection 'model.demo_dbt.stg_customers' was properly closed.
+2021-06-01 07:47:21.269709 (MainThread): Connection 'model.demo_dbt.stg_orders' was properly closed.
+2021-06-01 07:47:21.269796 (MainThread): Connection 'model.demo_dbt.order_payment_method_amounts' was properly closed.
+2021-06-01 07:47:21.269882 (MainThread): Connection 'model.demo_dbt.customers' was properly closed.
+2021-06-01 07:47:21.274551 (MainThread): 
+2021-06-01 07:47:21.274694 (MainThread): Completed successfully
+2021-06-01 07:47:21.274823 (MainThread): 
+Done. PASS=4 WARN=0 ERROR=0 SKIP=0 TOTAL=4
+2021-06-01 07:47:21.274991 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee024f2160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee024f2610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fee0285a940>]}
+2021-06-01 07:47:21.275202 (MainThread): Flushing usage events
+2021-06-01 08:41:24.254714 (MainThread): Running with dbt=0.19.1
+2021-06-01 08:41:25.439267 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.deps.DepsTask'>, debug=False, defer=None, log_cache_events=False, log_format='default', partial_parse=None, profile=None, profiles_dir='/Users/dhirajpatra/.dbt', project_dir=None, record_timing_info=None, rpc_method='deps', single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, use_cache=True, use_colors=None, vars='{}', warn_error=False, which='deps', write_json=True)
+2021-06-01 08:41:25.439558 (MainThread): Tracking: tracking
+2021-06-01 08:41:25.439680 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe197843b20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe1935d0d30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe1978532b0>]}
+2021-06-01 08:41:25.440815 (MainThread): Set downloads directory='/var/folders/8h/pp_mk1p90rxczqlkb_xlg6f00000gp/T/dbt-downloads-ai7vadyp'
+2021-06-01 08:41:25.441022 (MainThread): Executing "git clone --depth 1 https://github.com/fishtown-analytics/dbt-utils.git 859fd0fa21176efee375a447937f7a46"
+2021-06-01 08:41:27.025240 (MainThread): STDOUT: "b''"
+2021-06-01 08:41:27.025730 (MainThread): STDERR: "b"Cloning into '859fd0fa21176efee375a447937f7a46'...\n""
+2021-06-01 08:41:27.026773 (MainThread): Pulling new dependency 859fd0fa21176efee375a447937f7a46.
+2021-06-01 08:41:27.026912 (MainThread): Executing "git rev-parse HEAD"
+2021-06-01 08:41:27.041567 (MainThread): STDOUT: "b'909f55977f63b4347425a476f8c8d0a014e920cb\n'"
+2021-06-01 08:41:27.042089 (MainThread): STDERR: "b''"
+2021-06-01 08:41:27.042573 (MainThread):   Checking out branch 0.1.21.
+2021-06-01 08:41:27.042658 (MainThread): Executing "git remote set-branches origin 0.1.21"
+2021-06-01 08:41:27.057894 (MainThread): STDOUT: "b''"
+2021-06-01 08:41:27.058894 (MainThread): STDERR: "b''"
+2021-06-01 08:41:27.059029 (MainThread): Executing "git fetch --tags --depth 1 origin 0.1.21"
+2021-06-01 08:41:28.432538 (MainThread): STDOUT: "b''"
+2021-06-01 08:41:28.432983 (MainThread): STDERR: "b'From https://github.com/fishtown-analytics/dbt-utils\n * tag               0.1.21     -> FETCH_HEAD\n * [new tag]         0.0.1      -> 0.0.1\n * [new tag]         0.1.0      -> 0.1.0\n * [new tag]         0.1.1      -> 0.1.1\n * [new tag]         0.1.10     -> 0.1.10\n * [new tag]         0.1.11     -> 0.1.11\n * [new tag]         0.1.12     -> 0.1.12\n * [new tag]         0.1.13     -> 0.1.13\n * [new tag]         0.1.14     -> 0.1.14\n * [new tag]         0.1.15     -> 0.1.15\n * [new tag]         0.1.16     -> 0.1.16\n * [new tag]         0.1.17     -> 0.1.17\n * [new tag]         0.1.18     -> 0.1.18\n * [new tag]         0.1.19     -> 0.1.19\n * [new tag]         0.1.2      -> 0.1.2\n * [new tag]         0.1.20     -> 0.1.20\n * [new tag]         0.1.21     -> 0.1.21\n * [new tag]         0.1.22     -> 0.1.22\n * [new tag]         0.1.23     -> 0.1.23\n * [new tag]         0.1.24     -> 0.1.24\n * [new tag]         0.1.25     -> 0.1.25\n * [new tag]         0.1.3      -> 0.1.3\n * [new tag]         0.1.4      -> 0.1.4\n * [new tag]         0.1.5      -> 0.1.5\n * [new tag]         0.1.6      -> 0.1.6\n * [new tag]         0.1.7      -> 0.1.7\n * [new tag]         0.1.8      -> 0.1.8\n * [new tag]         0.1.9      -> 0.1.9\n * [new tag]         0.2.0      -> 0.2.0\n * [new tag]         0.2.1      -> 0.2.1\n * [new tag]         0.2.2      -> 0.2.2\n * [new tag]         0.2.3      -> 0.2.3\n * [new tag]         0.2.4      -> 0.2.4\n * [new tag]         0.2.5      -> 0.2.5\n * [new tag]         0.3.0      -> 0.3.0\n * [new tag]         0.4.0      -> 0.4.0\n * [new tag]         0.4.1      -> 0.4.1\n * [new tag]         0.5.0      -> 0.5.0\n * [new tag]         0.5.1      -> 0.5.1\n * [new tag]         0.6.0      -> 0.6.0\n * [new tag]         0.6.1      -> 0.6.1\n * [new tag]         0.6.2      -> 0.6.2\n * [new tag]         0.6.3      -> 0.6.3\n * [new tag]         0.6.4      -> 0.6.4\n'"
+2021-06-01 08:41:28.433465 (MainThread): Executing "git tag --list"
+2021-06-01 08:41:28.450382 (MainThread): STDOUT: "b'0.0.1\n0.1.0\n0.1.1\n0.1.10\n0.1.11\n0.1.12\n0.1.13\n0.1.14\n0.1.15\n0.1.16\n0.1.17\n0.1.18\n0.1.19\n0.1.2\n0.1.20\n0.1.21\n0.1.22\n0.1.23\n0.1.24\n0.1.25\n0.1.3\n0.1.4\n0.1.5\n0.1.6\n0.1.7\n0.1.8\n0.1.9\n0.2.0\n0.2.1\n0.2.2\n0.2.3\n0.2.4\n0.2.5\n0.3.0\n0.4.0\n0.4.1\n0.5.0\n0.5.1\n0.6.0\n0.6.1\n0.6.2\n0.6.3\n0.6.4\n0.6.5\n'"
+2021-06-01 08:41:28.450888 (MainThread): STDERR: "b''"
+2021-06-01 08:41:28.451359 (MainThread): Executing "git reset --hard tags/0.1.21"
+2021-06-01 08:41:28.492913 (MainThread): STDOUT: "b'HEAD is now at eeea5cc Merge pull request #113 from fishtown-analytics/fix/cast-in-union-tables\n'"
+2021-06-01 08:41:28.493680 (MainThread): STDERR: "b''"
+2021-06-01 08:41:28.494129 (MainThread): Executing "git rev-parse HEAD"
+2021-06-01 08:41:28.508696 (MainThread): STDOUT: "b'eeea5cccc8c6f135345af819df4604f97df814ad\n'"
+2021-06-01 08:41:28.509216 (MainThread): STDERR: "b''"
+2021-06-01 08:41:28.509866 (MainThread):   Checked out at eeea5cc.
+2021-06-01 08:41:28.511766 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe1935d0d30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe197843e20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe1978436a0>]}
+2021-06-01 08:41:28.512184 (MainThread): Flushing usage events
+2021-06-01 08:41:30.005534 (MainThread): Encountered an error:
+2021-06-01 08:41:30.005827 (MainThread): Runtime Error
+  Invalid config version: 1, expected 2
+
+Error encountered in /var/folders/8h/pp_mk1p90rxczqlkb_xlg6f00000gp/T/dbt-downloads-ai7vadyp/859fd0fa21176efee375a447937f7a46/dbt_project.yml
+2021-06-01 08:41:30.012768 (MainThread): Traceback (most recent call last):
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/main.py", line 125, in main
+    results, succeeded = handle_and_check(args)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/main.py", line 203, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/main.py", line 256, in run_from_args
+    results = task.run()
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/task/deps.py", line 53, in run
+    final_deps = resolve_packages(packages, self.config)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/deps/resolver.py", line 137, in resolve_packages
+    target = final[package].resolved().fetch_metadata(config, renderer)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/deps/base.py", line 85, in fetch_metadata
+    self._cached_metadata = self._fetch_metadata(project, renderer)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/deps/git.py", line 82, in _fetch_metadata
+    loaded = Project.from_project_root(path, renderer)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/config/project.py", line 632, in from_project_root
+    partial = cls.partial_load(project_root, verify_version=verify_version)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/config/project.py", line 599, in partial_load
+    return PartialProject.from_project_root(
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/config/project.py", line 452, in from_project_root
+    raise DbtProjectError(
+dbt.exceptions.DbtProjectError: Runtime Error
+  Invalid config version: 1, expected 2
+
+Error encountered in /var/folders/8h/pp_mk1p90rxczqlkb_xlg6f00000gp/T/dbt-downloads-ai7vadyp/859fd0fa21176efee375a447937f7a46/dbt_project.yml
+
+2021-06-01 08:43:03.415260 (MainThread): Running with dbt=0.19.1
+2021-06-01 08:43:04.253830 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.deps.DepsTask'>, debug=False, defer=None, log_cache_events=False, log_format='default', partial_parse=None, profile=None, profiles_dir='/Users/dhirajpatra/.dbt', project_dir=None, record_timing_info=None, rpc_method='deps', single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, use_cache=True, use_colors=None, vars='{}', warn_error=False, which='deps', write_json=True)
+2021-06-01 08:43:04.254099 (MainThread): Tracking: tracking
+2021-06-01 08:43:04.254218 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff5b6583ac0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff5b4c51f70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff5b6592190>]}
+2021-06-01 08:43:04.255101 (MainThread): Set downloads directory='/var/folders/8h/pp_mk1p90rxczqlkb_xlg6f00000gp/T/dbt-downloads-0c8lazuk'
+2021-06-01 08:43:04.255301 (MainThread): Making package registry request: GET https://hub.getdbt.com/api/v1/index.json
+2021-06-01 08:43:04.750005 (MainThread): Response from registry: GET https://hub.getdbt.com/api/v1/index.json 200
+2021-06-01 08:43:04.750324 (MainThread): Making package registry request: GET https://hub.getdbt.com/api/v1/fishtown-analytics/dbt_utils.json
+2021-06-01 08:43:05.130554 (MainThread): Response from registry: GET https://hub.getdbt.com/api/v1/fishtown-analytics/dbt_utils.json 200
+2021-06-01 08:43:05.132503 (MainThread): Making package registry request: GET https://hub.getdbt.com/api/v1/fishtown-analytics/dbt_utils/0.6.5.json
+2021-06-01 08:43:05.510006 (MainThread): Response from registry: GET https://hub.getdbt.com/api/v1/fishtown-analytics/dbt_utils/0.6.5.json 200
+2021-06-01 08:43:05.510330 (MainThread): Making package registry request: GET https://hub.getdbt.com/api/v1/fishtown-analytics/dbt_utils.json
+2021-06-01 08:43:05.879980 (MainThread): Response from registry: GET https://hub.getdbt.com/api/v1/fishtown-analytics/dbt_utils.json 200
+2021-06-01 08:43:05.881894 (MainThread): Making package registry request: GET https://hub.getdbt.com/api/v1/fishtown-analytics/dbt_utils/0.6.5.json
+2021-06-01 08:43:06.249042 (MainThread): Response from registry: GET https://hub.getdbt.com/api/v1/fishtown-analytics/dbt_utils/0.6.5.json 200
+2021-06-01 08:43:06.249403 (MainThread): Installing fishtown-analytics/dbt_utils@0.6.5
+2021-06-01 08:43:07.090854 (MainThread):   Installed from version 0.6.5
+
+2021-06-01 08:43:07.091149 (MainThread): Sending event: {'category': 'dbt', 'action': 'package', 'label': 'a57300ee-b55f-44bd-a2e4-f6f0c0e9e7de', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff5aefa65b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff5b6b27670>]}
+2021-06-01 08:43:07.092181 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff5b65f64c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff5b4c51f70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff5aefa65b0>]}
+2021-06-01 08:43:07.092464 (MainThread): Flushing usage events
+2021-06-01 08:45:51.306860 (MainThread): Running with dbt=0.19.1
+2021-06-01 08:45:52.047244 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/dhirajpatra/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-06-01 08:45:52.048635 (MainThread): Tracking: tracking
+2021-06-01 08:45:52.049184 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc2ba410be0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc2bc1536d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc2bc153760>]}
+2021-06-01 08:45:52.063642 (MainThread): Partial parsing not enabled
+2021-06-01 08:45:52.064411 (MainThread): Parsing macros/get_payment_methods.sql
+2021-06-01 08:45:52.067991 (MainThread): Parsing macros/catalog.sql
+2021-06-01 08:45:52.069767 (MainThread): Parsing macros/adapters.sql
+2021-06-01 08:45:52.095394 (MainThread): Parsing macros/materializations/merge.sql
+2021-06-01 08:45:52.097056 (MainThread): Parsing macros/materializations/view.sql
+2021-06-01 08:45:52.098271 (MainThread): Parsing macros/materializations/table.sql
+2021-06-01 08:45:52.101481 (MainThread): Parsing macros/materializations/incremental.sql
+2021-06-01 08:45:52.111350 (MainThread): Parsing macros/core.sql
+2021-06-01 08:45:52.115141 (MainThread): Parsing macros/materializations/helpers.sql
+2021-06-01 08:45:52.124085 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-06-01 08:45:52.125661 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-06-01 08:45:52.141055 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-06-01 08:45:52.171911 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-06-01 08:45:52.190440 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-06-01 08:45:52.192050 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-06-01 08:45:52.197217 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-06-01 08:45:52.209735 (MainThread): Parsing macros/materializations/table/table.sql
+2021-06-01 08:45:52.215571 (MainThread): Parsing macros/materializations/view/view.sql
+2021-06-01 08:45:52.220931 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-06-01 08:45:52.225250 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-06-01 08:45:52.226065 (MainThread): Parsing macros/etc/query.sql
+2021-06-01 08:45:52.226964 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-06-01 08:45:52.228353 (MainThread): Parsing macros/etc/datetime.sql
+2021-06-01 08:45:52.236258 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-06-01 08:45:52.237932 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-06-01 08:45:52.239438 (MainThread): Parsing macros/adapters/common.sql
+2021-06-01 08:45:52.277482 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-06-01 08:45:52.279073 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-06-01 08:45:52.280371 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-06-01 08:45:52.281820 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-06-01 08:45:52.285374 (MainThread): Parsing macros/cross_db_utils/except.sql
+2021-06-01 08:45:52.286429 (MainThread): Parsing macros/cross_db_utils/replace.sql
+2021-06-01 08:45:52.287654 (MainThread): Parsing macros/cross_db_utils/concat.sql
+2021-06-01 08:45:52.289896 (MainThread): Parsing macros/cross_db_utils/datatypes.sql
+2021-06-01 08:45:52.295550 (MainThread): Parsing macros/cross_db_utils/_is_relation.sql
+2021-06-01 08:45:52.296582 (MainThread): Parsing macros/cross_db_utils/length.sql
+2021-06-01 08:45:52.298080 (MainThread): Parsing macros/cross_db_utils/dateadd.sql
+2021-06-01 08:45:52.300261 (MainThread): Parsing macros/cross_db_utils/intersect.sql
+2021-06-01 08:45:52.301315 (MainThread): Parsing macros/cross_db_utils/right.sql
+2021-06-01 08:45:52.303459 (MainThread): Parsing macros/cross_db_utils/datediff.sql
+2021-06-01 08:45:52.312426 (MainThread): Parsing macros/cross_db_utils/safe_cast.sql
+2021-06-01 08:45:52.314199 (MainThread): Parsing macros/cross_db_utils/hash.sql
+2021-06-01 08:45:52.315567 (MainThread): Parsing macros/cross_db_utils/cast_bool_to_text.sql
+2021-06-01 08:45:52.317072 (MainThread): Parsing macros/cross_db_utils/identifier.sql
+2021-06-01 08:45:52.318654 (MainThread): Parsing macros/cross_db_utils/position.sql
+2021-06-01 08:45:52.320147 (MainThread): Parsing macros/cross_db_utils/literal.sql
+2021-06-01 08:45:52.321097 (MainThread): Parsing macros/cross_db_utils/current_timestamp.sql
+2021-06-01 08:45:52.324205 (MainThread): Parsing macros/cross_db_utils/width_bucket.sql
+2021-06-01 08:45:52.328969 (MainThread): Parsing macros/cross_db_utils/_get_utils_namespaces.sql
+2021-06-01 08:45:52.329699 (MainThread): Parsing macros/cross_db_utils/last_day.sql
+2021-06-01 08:45:52.332452 (MainThread): Parsing macros/cross_db_utils/split_part.sql
+2021-06-01 08:45:52.334154 (MainThread): Parsing macros/cross_db_utils/date_trunc.sql
+2021-06-01 08:45:52.335545 (MainThread): Parsing macros/cross_db_utils/_is_ephemeral.sql
+2021-06-01 08:45:52.337368 (MainThread): Parsing macros/materializations/insert_by_period_materialization.sql
+2021-06-01 08:45:52.360717 (MainThread): Parsing macros/logger/pretty_log_format.sql
+2021-06-01 08:45:52.361821 (MainThread): Parsing macros/logger/pretty_time.sql
+2021-06-01 08:45:52.363158 (MainThread): Parsing macros/logger/log_info.sql
+2021-06-01 08:45:52.364256 (MainThread): Parsing macros/web/get_url_host.sql
+2021-06-01 08:45:52.365885 (MainThread): Parsing macros/web/get_url_path.sql
+2021-06-01 08:45:52.368194 (MainThread): Parsing macros/web/get_url_parameter.sql
+2021-06-01 08:45:52.369661 (MainThread): Parsing macros/schema_tests/fewer_rows_than.sql
+2021-06-01 08:45:52.371350 (MainThread): Parsing macros/schema_tests/equal_rowcount.sql
+2021-06-01 08:45:52.373119 (MainThread): Parsing macros/schema_tests/relationships_where.sql
+2021-06-01 08:45:52.375785 (MainThread): Parsing macros/schema_tests/recency.sql
+2021-06-01 08:45:52.377453 (MainThread): Parsing macros/schema_tests/not_constant.sql
+2021-06-01 08:45:52.378975 (MainThread): Parsing macros/schema_tests/accepted_range.sql
+2021-06-01 08:45:52.380832 (MainThread): Parsing macros/schema_tests/not_accepted_values.sql
+2021-06-01 08:45:52.382477 (MainThread): Parsing macros/schema_tests/test_unique_where.sql
+2021-06-01 08:45:52.384336 (MainThread): Parsing macros/schema_tests/at_least_one.sql
+2021-06-01 08:45:52.386425 (MainThread): Parsing macros/schema_tests/unique_combination_of_columns.sql
+2021-06-01 08:45:52.390760 (MainThread): Parsing macros/schema_tests/cardinality_equality.sql
+2021-06-01 08:45:52.394520 (MainThread): Parsing macros/schema_tests/expression_is_true.sql
+2021-06-01 08:45:52.397173 (MainThread): Parsing macros/schema_tests/sequential_values.sql
+2021-06-01 08:45:52.400189 (MainThread): Parsing macros/schema_tests/test_not_null_where.sql
+2021-06-01 08:45:52.402414 (MainThread): Parsing macros/schema_tests/equality.sql
+2021-06-01 08:45:52.406355 (MainThread): Parsing macros/schema_tests/mutually_exclusive_ranges.sql
+2021-06-01 08:45:52.417057 (MainThread): Parsing macros/sql/date_spine.sql
+2021-06-01 08:45:52.422610 (MainThread): Parsing macros/sql/nullcheck_table.sql
+2021-06-01 08:45:52.424594 (MainThread): Parsing macros/sql/get_relations_by_pattern.sql
+2021-06-01 08:45:52.428490 (MainThread): Parsing macros/sql/generate_series.sql
+2021-06-01 08:45:52.433049 (MainThread): Parsing macros/sql/get_relations_by_prefix.sql
+2021-06-01 08:45:52.436268 (MainThread): Parsing macros/sql/get_tables_by_prefix_sql.sql
+2021-06-01 08:45:52.438008 (MainThread): Parsing macros/sql/star.sql
+2021-06-01 08:45:52.441340 (MainThread): Parsing macros/sql/unpivot.sql
+2021-06-01 08:45:52.448808 (MainThread): Parsing macros/sql/union.sql
+2021-06-01 08:45:52.456504 (MainThread): Parsing macros/sql/groupby.sql
+2021-06-01 08:45:52.457837 (MainThread): Parsing macros/sql/surrogate_key.sql
+2021-06-01 08:45:52.461036 (MainThread): Parsing macros/sql/safe_add.sql
+2021-06-01 08:45:52.462665 (MainThread): Parsing macros/sql/nullcheck.sql
+2021-06-01 08:45:52.464278 (MainThread): Parsing macros/sql/get_tables_by_pattern_sql.sql
+2021-06-01 08:45:52.470279 (MainThread): Parsing macros/sql/get_column_values.sql
+2021-06-01 08:45:52.474613 (MainThread): Parsing macros/sql/pivot.sql
+2021-06-01 08:45:52.478302 (MainThread): Parsing macros/sql/get_query_results_as_dict.sql
+2021-06-01 08:45:52.480458 (MainThread): Parsing macros/sql/haversine_distance.sql
+2021-06-01 08:45:52.490287 (MainThread): Partial parsing not enabled
+2021-06-01 08:45:52.515273 (MainThread): Acquiring new snowflake connection "model.demo_dbt.stg_customers".
+2021-06-01 08:45:52.522836 (MainThread): Acquiring new snowflake connection "model.demo_dbt.order_payment_method_amounts".
+2021-06-01 08:45:52.544434 (MainThread): Acquiring new snowflake connection "model.demo_dbt.customers".
+2021-06-01 08:45:52.548266 (MainThread): Acquiring new snowflake connection "model.demo_dbt.stg_orders".
+2021-06-01 08:45:52.725598 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b6ad4efc-0327-4108-aa60-d429f09b8a1d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc2bc7c2190>]}
+2021-06-01 08:45:52.733635 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b6ad4efc-0327-4108-aa60-d429f09b8a1d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc2bc44b0d0>]}
+2021-06-01 08:45:52.733853 (MainThread): Found 4 models, 7 tests, 0 snapshots, 0 analyses, 327 macros, 0 operations, 1 seed file, 0 sources, 0 exposures
+2021-06-01 08:45:52.734648 (MainThread): 
+2021-06-01 08:45:52.734977 (MainThread): Acquiring new snowflake connection "master".
+2021-06-01 08:45:52.735649 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_DEMO_DB".
+2021-06-01 08:45:52.741000 (ThreadPoolExecutor-0_0): Using snowflake connection "list_DEMO_DB".
+2021-06-01 08:45:52.741087 (ThreadPoolExecutor-0_0): On list_DEMO_DB: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_DEMO_DB"} */
+
+    show terse schemas in database DEMO_DB
+    limit 10000
+2021-06-01 08:45:52.741236 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-06-01 08:45:54.665903 (ThreadPoolExecutor-0_0): SQL status: SUCCESS 2 in 1.92 seconds
+2021-06-01 08:45:54.670229 (ThreadPoolExecutor-0_0): On list_DEMO_DB: Close
+2021-06-01 08:45:55.486533 (ThreadPoolExecutor-1_0): Acquiring new snowflake connection "list_DEMO_DB_PUBLIC".
+2021-06-01 08:45:55.495873 (ThreadPoolExecutor-1_0): Using snowflake connection "list_DEMO_DB_PUBLIC".
+2021-06-01 08:45:55.496056 (ThreadPoolExecutor-1_0): On list_DEMO_DB_PUBLIC: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_DEMO_DB_PUBLIC"} */
+
+    show terse objects in DEMO_DB.PUBLIC
+2021-06-01 08:45:55.496170 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2021-06-01 08:45:57.036600 (ThreadPoolExecutor-1_0): SQL status: SUCCESS 8 in 1.54 seconds
+2021-06-01 08:45:57.037888 (ThreadPoolExecutor-1_0): On list_DEMO_DB_PUBLIC: Close
+2021-06-01 08:45:58.011211 (MainThread): Using snowflake connection "master".
+2021-06-01 08:45:58.011409 (MainThread): On master: BEGIN
+2021-06-01 08:45:58.011527 (MainThread): Opening a new connection, currently in state init
+2021-06-01 08:46:00.026024 (MainThread): SQL status: SUCCESS 1 in 2.01 seconds
+2021-06-01 08:46:00.026249 (MainThread): On master: COMMIT
+2021-06-01 08:46:00.026456 (MainThread): Using snowflake connection "master".
+2021-06-01 08:46:00.026569 (MainThread): On master: COMMIT
+2021-06-01 08:46:00.397895 (MainThread): SQL status: SUCCESS 1 in 0.37 seconds
+2021-06-01 08:46:00.398114 (MainThread): On master: Close
+2021-06-01 08:46:01.014894 (MainThread): 14:16:01 | Concurrency: 10 threads (target='dev')
+2021-06-01 08:46:01.015124 (MainThread): 14:16:01 | 
+2021-06-01 08:46:01.017508 (Thread-1): Began running node model.demo_dbt.stg_customers
+2021-06-01 08:46:01.017746 (Thread-2): Began running node model.demo_dbt.stg_orders
+2021-06-01 08:46:01.018026 (Thread-1): 14:16:01 | 1 of 4 START table model PUBLIC.stg_customers........................ [RUN]
+2021-06-01 08:46:01.018149 (Thread-3): Began running node model.demo_dbt.order_payment_method_amounts
+2021-06-01 08:46:01.018738 (Thread-2): 14:16:01 | 2 of 4 START table model PUBLIC.stg_orders........................... [RUN]
+2021-06-01 08:46:01.019148 (Thread-1): Acquiring new snowflake connection "model.demo_dbt.stg_customers".
+2021-06-01 08:46:01.019362 (Thread-3): 14:16:01 | 3 of 4 START table model PUBLIC.order_payment_method_amounts......... [RUN]
+2021-06-01 08:46:01.019700 (Thread-2): Acquiring new snowflake connection "model.demo_dbt.stg_orders".
+2021-06-01 08:46:01.019852 (Thread-1): Compiling model.demo_dbt.stg_customers
+2021-06-01 08:46:01.020141 (Thread-3): Acquiring new snowflake connection "model.demo_dbt.order_payment_method_amounts".
+2021-06-01 08:46:01.020273 (Thread-2): Compiling model.demo_dbt.stg_orders
+2021-06-01 08:46:01.022128 (Thread-1): Writing injected SQL for node "model.demo_dbt.stg_customers"
+2021-06-01 08:46:01.022285 (Thread-3): Compiling model.demo_dbt.order_payment_method_amounts
+2021-06-01 08:46:01.024039 (Thread-2): Writing injected SQL for node "model.demo_dbt.stg_orders"
+2021-06-01 08:46:01.029766 (Thread-3): Using snowflake connection "model.demo_dbt.order_payment_method_amounts".
+2021-06-01 08:46:01.030034 (Thread-3): On model.demo_dbt.order_payment_method_amounts: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.demo_dbt.order_payment_method_amounts"} */
+
+    
+select distinct
+payment_method
+from DEMO_DB.PUBLIC.raw_payments
+order by 1
+2021-06-01 08:46:01.030157 (Thread-3): Opening a new connection, currently in state init
+2021-06-01 08:46:01.031781 (Thread-1): finished collecting timing info
+2021-06-01 08:46:01.056065 (Thread-2): finished collecting timing info
+2021-06-01 08:46:01.069795 (Thread-1): Writing runtime SQL for node "model.demo_dbt.stg_customers"
+2021-06-01 08:46:01.076404 (Thread-2): Writing runtime SQL for node "model.demo_dbt.stg_orders"
+2021-06-01 08:46:01.077436 (Thread-1): Using snowflake connection "model.demo_dbt.stg_customers".
+2021-06-01 08:46:01.077627 (Thread-1): On model.demo_dbt.stg_customers: BEGIN
+2021-06-01 08:46:01.077746 (Thread-1): Opening a new connection, currently in state closed
+2021-06-01 08:46:01.079428 (Thread-2): Using snowflake connection "model.demo_dbt.stg_orders".
+2021-06-01 08:46:01.079539 (Thread-2): On model.demo_dbt.stg_orders: BEGIN
+2021-06-01 08:46:01.079627 (Thread-2): Opening a new connection, currently in state init
+2021-06-01 08:46:02.587941 (Thread-3): SQL status: SUCCESS 4 in 1.56 seconds
+2021-06-01 08:46:02.589973 (Thread-3): Using snowflake connection "model.demo_dbt.order_payment_method_amounts".
+2021-06-01 08:46:02.590107 (Thread-3): On model.demo_dbt.order_payment_method_amounts: BEGIN
+2021-06-01 08:46:02.604160 (Thread-1): SQL status: SUCCESS 1 in 1.53 seconds
+2021-06-01 08:46:02.604401 (Thread-1): Using snowflake connection "model.demo_dbt.stg_customers".
+2021-06-01 08:46:02.604568 (Thread-1): On model.demo_dbt.stg_customers: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.demo_dbt.stg_customers"} */
+
+
+      create or replace transient table DEMO_DB.PUBLIC.stg_customers  as
+      (select 
+    id as customer_id,
+    first_name,
+    last_name
+
+from customers
+      );
+2021-06-01 08:46:02.653011 (Thread-2): SQL status: SUCCESS 1 in 1.57 seconds
+2021-06-01 08:46:02.653176 (Thread-2): Using snowflake connection "model.demo_dbt.stg_orders".
+2021-06-01 08:46:02.653269 (Thread-2): On model.demo_dbt.stg_orders: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.demo_dbt.stg_orders"} */
+
+
+      create or replace transient table DEMO_DB.PUBLIC.stg_orders  as
+      (select
+        id as order_id,
+        user_id as customer_id,
+        order_date,
+        status
+
+from orders
+      );
+2021-06-01 08:46:03.060995 (Thread-3): SQL status: SUCCESS 1 in 0.47 seconds
+2021-06-01 08:46:03.061243 (Thread-3): Using snowflake connection "model.demo_dbt.order_payment_method_amounts".
+2021-06-01 08:46:03.061378 (Thread-3): On model.demo_dbt.order_payment_method_amounts: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.demo_dbt.order_payment_method_amounts"} */
+select
+                payment_method as value
+
+            from "DEMO_DB"."PUBLIC"."RAW_PAYMENTS"
+            group by 1
+            order by count(*) desc
+2021-06-01 08:46:03.203180 (Thread-1): Snowflake query id: 019ca1ee-0000-43dc-0000-b0b100026082
+2021-06-01 08:46:03.203401 (Thread-1): Snowflake error: 000904 (42000): SQL compilation error: error line 3 at position 4
+invalid identifier 'ID'
+2021-06-01 08:46:03.203622 (Thread-1): finished collecting timing info
+2021-06-01 08:46:03.203832 (Thread-1): On model.demo_dbt.stg_customers: ROLLBACK
+2021-06-01 08:46:03.592912 (Thread-1): On model.demo_dbt.stg_customers: Close
+2021-06-01 08:46:04.030962 (Thread-2): SQL status: SUCCESS 1 in 1.38 seconds
+2021-06-01 08:46:04.032374 (Thread-2): On model.demo_dbt.stg_orders: COMMIT
+2021-06-01 08:46:04.032606 (Thread-2): Using snowflake connection "model.demo_dbt.stg_orders".
+2021-06-01 08:46:04.032724 (Thread-2): On model.demo_dbt.stg_orders: COMMIT
+2021-06-01 08:46:04.045647 (Thread-3): SQL status: SUCCESS 4 in 0.98 seconds
+2021-06-01 08:46:04.046481 (Thread-3): Writing injected SQL for node "model.demo_dbt.order_payment_method_amounts"
+2021-06-01 08:46:04.046998 (Thread-3): finished collecting timing info
+2021-06-01 08:46:04.050023 (Thread-3): Writing runtime SQL for node "model.demo_dbt.order_payment_method_amounts"
+2021-06-01 08:46:04.051245 (Thread-3): Using snowflake connection "model.demo_dbt.order_payment_method_amounts".
+2021-06-01 08:46:04.051410 (Thread-3): On model.demo_dbt.order_payment_method_amounts: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.demo_dbt.order_payment_method_amounts"} */
+
+
+      create or replace transient table DEMO_DB.PUBLIC.order_payment_method_amounts  as
+      (-- 
+
+
+select
+order_id,
+
+
+
+sum(amount) as total_amount
+
+from DEMO_DB.PUBLIC.raw_payments
+group by 1
+      );
+2021-06-01 08:46:04.205186 (Thread-1): Database Error in model stg_customers (models/stg_customers.sql)
+  000904 (42000): SQL compilation error: error line 3 at position 4
+  invalid identifier 'ID'
+  compiled SQL at target/run/demo_dbt/models/stg_customers.sql
+Traceback (most recent call last):
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 162, in exception_handler
+    yield
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 80, in add_query
+    cursor.execute(sql, bindings)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/cursor.py", line 603, in execute
+    Error.errorhandler_wrapper(self.connection, self,
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/errors.py", line 125, in errorhandler_wrapper
+    cursor.errorhandler(connection, cursor, error_class, error_value)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/snowflake/connector/errors.py", line 85, in default_errorhandler
+    raise error_class(
+snowflake.connector.errors.ProgrammingError: 000904 (42000): SQL compilation error: error line 3 at position 4
+invalid identifier 'ID'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/task/base.py", line 344, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/task/base.py", line 287, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/task/base.py", line 389, in run
+    return self.execute(compiled_node, manifest)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/task/run.py", line 248, in execute
+    result = MacroGenerator(materialization_macro, context)()
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 332, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 259, in call_macro
+    return macro(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 67, in macro
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 332, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/clients/jinja.py", line 259, in call_macro
+    return macro(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 41, in macro
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/base/impl.py", line 227, in execute
+    return self.connections.execute(
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 124, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 314, in add_query
+    connection, cursor = super().add_query(
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/sql/connections.py", line 87, in add_query
+    return connection, cursor
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/Users/dhirajpatra/opt/anaconda3/lib/python3.8/site-packages/dbt/adapters/snowflake/connections.py", line 179, in exception_handler
+    raise DatabaseException(msg)
+dbt.exceptions.DatabaseException: Database Error in model stg_customers (models/stg_customers.sql)
+  000904 (42000): SQL compilation error: error line 3 at position 4
+  invalid identifier 'ID'
+  compiled SQL at target/run/demo_dbt/models/stg_customers.sql
+2021-06-01 08:46:04.211121 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b6ad4efc-0327-4108-aa60-d429f09b8a1d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc2bc7f0a60>]}
+2021-06-01 08:46:04.211547 (Thread-1): 14:16:04 | 1 of 4 ERROR creating table model PUBLIC.stg_customers............... [ERROR in 3.19s]
+2021-06-01 08:46:04.211725 (Thread-1): Finished running node model.demo_dbt.stg_customers
+2021-06-01 08:46:04.372551 (Thread-2): SQL status: SUCCESS 1 in 0.34 seconds
+2021-06-01 08:46:04.384397 (Thread-2): finished collecting timing info
+2021-06-01 08:46:04.384570 (Thread-2): On model.demo_dbt.stg_orders: Close
+2021-06-01 08:46:05.008989 (Thread-2): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b6ad4efc-0327-4108-aa60-d429f09b8a1d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc2bc5600a0>]}
+2021-06-01 08:46:05.009447 (Thread-2): 14:16:05 | 2 of 4 OK created table model PUBLIC.stg_orders...................... [SUCCESS 1 in 3.99s]
+2021-06-01 08:46:05.009621 (Thread-2): Finished running node model.demo_dbt.stg_orders
+2021-06-01 08:46:05.010059 (Thread-5): Began running node model.demo_dbt.customers
+2021-06-01 08:46:05.010280 (Thread-5): 14:16:05 | 4 of 4 SKIP relation PUBLIC.customers................................ [SKIP]
+2021-06-01 08:46:05.010449 (Thread-5): Finished running node model.demo_dbt.customers
+2021-06-01 08:46:05.929985 (Thread-3): SQL status: SUCCESS 1 in 1.88 seconds
+2021-06-01 08:46:05.931831 (Thread-3): On model.demo_dbt.order_payment_method_amounts: COMMIT
+2021-06-01 08:46:05.932053 (Thread-3): Using snowflake connection "model.demo_dbt.order_payment_method_amounts".
+2021-06-01 08:46:05.932166 (Thread-3): On model.demo_dbt.order_payment_method_amounts: COMMIT
+2021-06-01 08:46:06.338540 (Thread-3): SQL status: SUCCESS 1 in 0.41 seconds
+2021-06-01 08:46:06.339614 (Thread-3): finished collecting timing info
+2021-06-01 08:46:06.339843 (Thread-3): On model.demo_dbt.order_payment_method_amounts: Close
+2021-06-01 08:46:06.952882 (Thread-3): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b6ad4efc-0327-4108-aa60-d429f09b8a1d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc2bdd70370>]}
+2021-06-01 08:46:06.953264 (Thread-3): 14:16:06 | 3 of 4 OK created table model PUBLIC.order_payment_method_amounts.... [SUCCESS 1 in 5.93s]
+2021-06-01 08:46:06.953408 (Thread-3): Finished running node model.demo_dbt.order_payment_method_amounts
+2021-06-01 08:46:06.954912 (MainThread): Acquiring new snowflake connection "master".
+2021-06-01 08:46:06.955138 (MainThread): Using snowflake connection "master".
+2021-06-01 08:46:06.955235 (MainThread): On master: BEGIN
+2021-06-01 08:46:06.955325 (MainThread): Opening a new connection, currently in state closed
+2021-06-01 08:46:08.572433 (MainThread): SQL status: SUCCESS 1 in 1.62 seconds
+2021-06-01 08:46:08.572786 (MainThread): On master: COMMIT
+2021-06-01 08:46:08.573030 (MainThread): Using snowflake connection "master".
+2021-06-01 08:46:08.573588 (MainThread): On master: COMMIT
+2021-06-01 08:46:09.010014 (MainThread): SQL status: SUCCESS 1 in 0.44 seconds
+2021-06-01 08:46:09.010289 (MainThread): On master: Close
+2021-06-01 08:46:11.010744 (MainThread): 14:16:11 | 
+2021-06-01 08:46:11.010984 (MainThread): 14:16:11 | Finished running 4 table models in 18.28s.
+2021-06-01 08:46:11.011123 (MainThread): Connection 'master' was properly closed.
+2021-06-01 08:46:11.011222 (MainThread): Connection 'model.demo_dbt.stg_customers' was properly closed.
+2021-06-01 08:46:11.011312 (MainThread): Connection 'model.demo_dbt.stg_orders' was properly closed.
+2021-06-01 08:46:11.011399 (MainThread): Connection 'model.demo_dbt.order_payment_method_amounts' was properly closed.
+2021-06-01 08:46:11.087167 (MainThread): 
+2021-06-01 08:46:11.087404 (MainThread): Completed with 1 error and 0 warnings:
+2021-06-01 08:46:11.087533 (MainThread): 
+2021-06-01 08:46:11.087669 (MainThread): Database Error in model stg_customers (models/stg_customers.sql)
+2021-06-01 08:46:11.087866 (MainThread):   000904 (42000): SQL compilation error: error line 3 at position 4
+2021-06-01 08:46:11.087978 (MainThread):   invalid identifier 'ID'
+2021-06-01 08:46:11.088080 (MainThread):   compiled SQL at target/run/demo_dbt/models/stg_customers.sql
+2021-06-01 08:46:11.088189 (MainThread): 
+Done. PASS=2 WARN=0 ERROR=1 SKIP=1 TOTAL=4
+2021-06-01 08:46:11.088363 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc2bc2605b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc2bc7f4fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc2bc7f4040>]}
+2021-06-01 08:46:11.088580 (MainThread): Flushing usage events
+2021-06-01 08:46:21.096472 (MainThread): Running with dbt=0.19.1
+2021-06-01 08:46:21.849359 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/dhirajpatra/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-06-01 08:46:21.850566 (MainThread): Tracking: tracking
+2021-06-01 08:46:21.850988 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf682d2cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf69e4e640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf69e4e730>]}
+2021-06-01 08:46:21.866056 (MainThread): Partial parsing not enabled
+2021-06-01 08:46:21.866838 (MainThread): Parsing macros/get_payment_methods.sql
+2021-06-01 08:46:21.869980 (MainThread): Parsing macros/catalog.sql
+2021-06-01 08:46:21.871941 (MainThread): Parsing macros/adapters.sql
+2021-06-01 08:46:21.898120 (MainThread): Parsing macros/materializations/merge.sql
+2021-06-01 08:46:21.899881 (MainThread): Parsing macros/materializations/view.sql
+2021-06-01 08:46:21.901153 (MainThread): Parsing macros/materializations/table.sql
+2021-06-01 08:46:21.904694 (MainThread): Parsing macros/materializations/incremental.sql
+2021-06-01 08:46:21.913523 (MainThread): Parsing macros/core.sql
+2021-06-01 08:46:21.916843 (MainThread): Parsing macros/materializations/helpers.sql
+2021-06-01 08:46:21.924541 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-06-01 08:46:21.926032 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-06-01 08:46:21.941495 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-06-01 08:46:21.972072 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-06-01 08:46:21.990257 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-06-01 08:46:21.991982 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-06-01 08:46:21.997407 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-06-01 08:46:22.009685 (MainThread): Parsing macros/materializations/table/table.sql
+2021-06-01 08:46:22.015569 (MainThread): Parsing macros/materializations/view/view.sql
+2021-06-01 08:46:22.020956 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-06-01 08:46:22.025275 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-06-01 08:46:22.026075 (MainThread): Parsing macros/etc/query.sql
+2021-06-01 08:46:22.026960 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-06-01 08:46:22.028321 (MainThread): Parsing macros/etc/datetime.sql
+2021-06-01 08:46:22.036130 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-06-01 08:46:22.037920 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-06-01 08:46:22.039366 (MainThread): Parsing macros/adapters/common.sql
+2021-06-01 08:46:22.077678 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-06-01 08:46:22.079291 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-06-01 08:46:22.080735 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-06-01 08:46:22.082204 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-06-01 08:46:22.086032 (MainThread): Parsing macros/cross_db_utils/except.sql
+2021-06-01 08:46:22.087094 (MainThread): Parsing macros/cross_db_utils/replace.sql
+2021-06-01 08:46:22.088325 (MainThread): Parsing macros/cross_db_utils/concat.sql
+2021-06-01 08:46:22.090783 (MainThread): Parsing macros/cross_db_utils/datatypes.sql
+2021-06-01 08:46:22.096441 (MainThread): Parsing macros/cross_db_utils/_is_relation.sql
+2021-06-01 08:46:22.097479 (MainThread): Parsing macros/cross_db_utils/length.sql
+2021-06-01 08:46:22.098850 (MainThread): Parsing macros/cross_db_utils/dateadd.sql
+2021-06-01 08:46:22.101035 (MainThread): Parsing macros/cross_db_utils/intersect.sql
+2021-06-01 08:46:22.102089 (MainThread): Parsing macros/cross_db_utils/right.sql
+2021-06-01 08:46:22.104488 (MainThread): Parsing macros/cross_db_utils/datediff.sql
+2021-06-01 08:46:22.113126 (MainThread): Parsing macros/cross_db_utils/safe_cast.sql
+2021-06-01 08:46:22.114916 (MainThread): Parsing macros/cross_db_utils/hash.sql
+2021-06-01 08:46:22.116292 (MainThread): Parsing macros/cross_db_utils/cast_bool_to_text.sql
+2021-06-01 08:46:22.117686 (MainThread): Parsing macros/cross_db_utils/identifier.sql
+2021-06-01 08:46:22.119260 (MainThread): Parsing macros/cross_db_utils/position.sql
+2021-06-01 08:46:22.120775 (MainThread): Parsing macros/cross_db_utils/literal.sql
+2021-06-01 08:46:22.121856 (MainThread): Parsing macros/cross_db_utils/current_timestamp.sql
+2021-06-01 08:46:22.125222 (MainThread): Parsing macros/cross_db_utils/width_bucket.sql
+2021-06-01 08:46:22.130080 (MainThread): Parsing macros/cross_db_utils/_get_utils_namespaces.sql
+2021-06-01 08:46:22.130826 (MainThread): Parsing macros/cross_db_utils/last_day.sql
+2021-06-01 08:46:22.133664 (MainThread): Parsing macros/cross_db_utils/split_part.sql
+2021-06-01 08:46:22.135427 (MainThread): Parsing macros/cross_db_utils/date_trunc.sql
+2021-06-01 08:46:22.136877 (MainThread): Parsing macros/cross_db_utils/_is_ephemeral.sql
+2021-06-01 08:46:22.138856 (MainThread): Parsing macros/materializations/insert_by_period_materialization.sql
+2021-06-01 08:46:22.161969 (MainThread): Parsing macros/logger/pretty_log_format.sql
+2021-06-01 08:46:22.163072 (MainThread): Parsing macros/logger/pretty_time.sql
+2021-06-01 08:46:22.164255 (MainThread): Parsing macros/logger/log_info.sql
+2021-06-01 08:46:22.165362 (MainThread): Parsing macros/web/get_url_host.sql
+2021-06-01 08:46:22.167055 (MainThread): Parsing macros/web/get_url_path.sql
+2021-06-01 08:46:22.169452 (MainThread): Parsing macros/web/get_url_parameter.sql
+2021-06-01 08:46:22.171042 (MainThread): Parsing macros/schema_tests/fewer_rows_than.sql
+2021-06-01 08:46:22.172791 (MainThread): Parsing macros/schema_tests/equal_rowcount.sql
+2021-06-01 08:46:22.174434 (MainThread): Parsing macros/schema_tests/relationships_where.sql
+2021-06-01 08:46:22.176906 (MainThread): Parsing macros/schema_tests/recency.sql
+2021-06-01 08:46:22.178593 (MainThread): Parsing macros/schema_tests/not_constant.sql
+2021-06-01 08:46:22.180117 (MainThread): Parsing macros/schema_tests/accepted_range.sql
+2021-06-01 08:46:22.182018 (MainThread): Parsing macros/schema_tests/not_accepted_values.sql
+2021-06-01 08:46:22.183705 (MainThread): Parsing macros/schema_tests/test_unique_where.sql
+2021-06-01 08:46:22.185607 (MainThread): Parsing macros/schema_tests/at_least_one.sql
+2021-06-01 08:46:22.187028 (MainThread): Parsing macros/schema_tests/unique_combination_of_columns.sql
+2021-06-01 08:46:22.190069 (MainThread): Parsing macros/schema_tests/cardinality_equality.sql
+2021-06-01 08:46:22.192150 (MainThread): Parsing macros/schema_tests/expression_is_true.sql
+2021-06-01 08:46:22.194185 (MainThread): Parsing macros/schema_tests/sequential_values.sql
+2021-06-01 08:46:22.196496 (MainThread): Parsing macros/schema_tests/test_not_null_where.sql
+2021-06-01 08:46:22.198201 (MainThread): Parsing macros/schema_tests/equality.sql
+2021-06-01 08:46:22.201596 (MainThread): Parsing macros/schema_tests/mutually_exclusive_ranges.sql
+2021-06-01 08:46:22.209873 (MainThread): Parsing macros/sql/date_spine.sql
+2021-06-01 08:46:22.214145 (MainThread): Parsing macros/sql/nullcheck_table.sql
+2021-06-01 08:46:22.215672 (MainThread): Parsing macros/sql/get_relations_by_pattern.sql
+2021-06-01 08:46:22.218765 (MainThread): Parsing macros/sql/generate_series.sql
+2021-06-01 08:46:22.222854 (MainThread): Parsing macros/sql/get_relations_by_prefix.sql
+2021-06-01 08:46:22.226038 (MainThread): Parsing macros/sql/get_tables_by_prefix_sql.sql
+2021-06-01 08:46:22.227557 (MainThread): Parsing macros/sql/star.sql
+2021-06-01 08:46:22.230488 (MainThread): Parsing macros/sql/unpivot.sql
+2021-06-01 08:46:22.237468 (MainThread): Parsing macros/sql/union.sql
+2021-06-01 08:46:22.244786 (MainThread): Parsing macros/sql/groupby.sql
+2021-06-01 08:46:22.246042 (MainThread): Parsing macros/sql/surrogate_key.sql
+2021-06-01 08:46:22.249059 (MainThread): Parsing macros/sql/safe_add.sql
+2021-06-01 08:46:22.250548 (MainThread): Parsing macros/sql/nullcheck.sql
+2021-06-01 08:46:22.252055 (MainThread): Parsing macros/sql/get_tables_by_pattern_sql.sql
+2021-06-01 08:46:22.258057 (MainThread): Parsing macros/sql/get_column_values.sql
+2021-06-01 08:46:22.262034 (MainThread): Parsing macros/sql/pivot.sql
+2021-06-01 08:46:22.265735 (MainThread): Parsing macros/sql/get_query_results_as_dict.sql
+2021-06-01 08:46:22.267809 (MainThread): Parsing macros/sql/haversine_distance.sql
+2021-06-01 08:46:22.277101 (MainThread): Partial parsing not enabled
+2021-06-01 08:46:22.301247 (MainThread): Acquiring new snowflake connection "model.demo_dbt.stg_customers".
+2021-06-01 08:46:22.308625 (MainThread): Acquiring new snowflake connection "model.demo_dbt.order_payment_method_amounts".
+2021-06-01 08:46:22.329616 (MainThread): Acquiring new snowflake connection "model.demo_dbt.customers".
+2021-06-01 08:46:22.333342 (MainThread): Acquiring new snowflake connection "model.demo_dbt.stg_orders".
+2021-06-01 08:46:22.518277 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'de1ee161-4ce0-414c-952e-ef611c7a3e28', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf6a7c3100>]}
+2021-06-01 08:46:22.526186 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'de1ee161-4ce0-414c-952e-ef611c7a3e28', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf6a7f1fa0>]}
+2021-06-01 08:46:22.526386 (MainThread): Found 4 models, 7 tests, 0 snapshots, 0 analyses, 327 macros, 0 operations, 1 seed file, 0 sources, 0 exposures
+2021-06-01 08:46:22.527140 (MainThread): 
+2021-06-01 08:46:22.527452 (MainThread): Acquiring new snowflake connection "master".
+2021-06-01 08:46:22.528243 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_DEMO_DB".
+2021-06-01 08:46:22.533574 (ThreadPoolExecutor-0_0): Using snowflake connection "list_DEMO_DB".
+2021-06-01 08:46:22.533657 (ThreadPoolExecutor-0_0): On list_DEMO_DB: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_DEMO_DB"} */
+
+    show terse schemas in database DEMO_DB
+    limit 10000
+2021-06-01 08:46:22.533725 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-06-01 08:46:24.565367 (ThreadPoolExecutor-0_0): SQL status: SUCCESS 2 in 2.03 seconds
+2021-06-01 08:46:24.569674 (ThreadPoolExecutor-0_0): On list_DEMO_DB: Close
+2021-06-01 08:46:25.693872 (ThreadPoolExecutor-1_0): Acquiring new snowflake connection "list_DEMO_DB_PUBLIC".
+2021-06-01 08:46:25.702117 (ThreadPoolExecutor-1_0): Using snowflake connection "list_DEMO_DB_PUBLIC".
+2021-06-01 08:46:25.702257 (ThreadPoolExecutor-1_0): On list_DEMO_DB_PUBLIC: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_DEMO_DB_PUBLIC"} */
+
+    show terse objects in DEMO_DB.PUBLIC
+2021-06-01 08:46:25.702354 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2021-06-01 08:46:27.732122 (ThreadPoolExecutor-1_0): SQL status: SUCCESS 8 in 2.03 seconds
+2021-06-01 08:46:27.733601 (ThreadPoolExecutor-1_0): On list_DEMO_DB_PUBLIC: Close
+2021-06-01 08:46:28.764767 (MainThread): Using snowflake connection "master".
+2021-06-01 08:46:28.764954 (MainThread): On master: BEGIN
+2021-06-01 08:46:28.765074 (MainThread): Opening a new connection, currently in state init
+2021-06-01 08:46:30.503337 (MainThread): SQL status: SUCCESS 1 in 1.74 seconds
+2021-06-01 08:46:30.503607 (MainThread): On master: COMMIT
+2021-06-01 08:46:30.503835 (MainThread): Using snowflake connection "master".
+2021-06-01 08:46:30.503969 (MainThread): On master: COMMIT
+2021-06-01 08:46:31.117989 (MainThread): SQL status: SUCCESS 1 in 0.61 seconds
+2021-06-01 08:46:31.118256 (MainThread): On master: Close
+2021-06-01 08:46:32.041990 (MainThread): 14:16:32 | Concurrency: 10 threads (target='dev')
+2021-06-01 08:46:32.042228 (MainThread): 14:16:32 | 
+2021-06-01 08:46:32.044476 (Thread-1): Began running node model.demo_dbt.stg_customers
+2021-06-01 08:46:32.044796 (Thread-1): 14:16:32 | 1 of 4 START table model PUBLIC.stg_customers........................ [RUN]
+2021-06-01 08:46:32.045001 (Thread-2): Began running node model.demo_dbt.stg_orders
+2021-06-01 08:46:32.045290 (Thread-2): 14:16:32 | 2 of 4 START table model PUBLIC.stg_orders........................... [RUN]
+2021-06-01 08:46:32.045489 (Thread-3): Began running node model.demo_dbt.order_payment_method_amounts
+2021-06-01 08:46:32.046127 (Thread-1): Acquiring new snowflake connection "model.demo_dbt.stg_customers".
+2021-06-01 08:46:32.046285 (Thread-1): Compiling model.demo_dbt.stg_customers
+2021-06-01 08:46:32.048015 (Thread-1): Writing injected SQL for node "model.demo_dbt.stg_customers"
+2021-06-01 08:46:32.048398 (Thread-3): 14:16:32 | 3 of 4 START table model PUBLIC.order_payment_method_amounts......... [RUN]
+2021-06-01 08:46:32.048756 (Thread-2): Acquiring new snowflake connection "model.demo_dbt.stg_orders".
+2021-06-01 08:46:32.049200 (Thread-3): Acquiring new snowflake connection "model.demo_dbt.order_payment_method_amounts".
+2021-06-01 08:46:32.049303 (Thread-2): Compiling model.demo_dbt.stg_orders
+2021-06-01 08:46:32.049397 (Thread-1): finished collecting timing info
+2021-06-01 08:46:32.049783 (Thread-3): Compiling model.demo_dbt.order_payment_method_amounts
+2021-06-01 08:46:32.051301 (Thread-2): Writing injected SQL for node "model.demo_dbt.stg_orders"
+2021-06-01 08:46:32.072673 (Thread-3): Using snowflake connection "model.demo_dbt.order_payment_method_amounts".
+2021-06-01 08:46:32.087879 (Thread-1): Writing runtime SQL for node "model.demo_dbt.stg_customers"
+2021-06-01 08:46:32.088192 (Thread-3): On model.demo_dbt.order_payment_method_amounts: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.demo_dbt.order_payment_method_amounts"} */
+
+    
+select distinct
+payment_method
+from DEMO_DB.PUBLIC.raw_payments
+order by 1
+2021-06-01 08:46:32.088524 (Thread-2): finished collecting timing info
+2021-06-01 08:46:32.088790 (Thread-3): Opening a new connection, currently in state init
+2021-06-01 08:46:32.091677 (Thread-2): Writing runtime SQL for node "model.demo_dbt.stg_orders"
+2021-06-01 08:46:32.093787 (Thread-1): Using snowflake connection "model.demo_dbt.stg_customers".
+2021-06-01 08:46:32.094230 (Thread-1): On model.demo_dbt.stg_customers: BEGIN
+2021-06-01 08:46:32.094823 (Thread-2): Using snowflake connection "model.demo_dbt.stg_orders".
+2021-06-01 08:46:32.094949 (Thread-1): Opening a new connection, currently in state closed
+2021-06-01 08:46:32.095253 (Thread-2): On model.demo_dbt.stg_orders: BEGIN
+2021-06-01 08:46:32.097091 (Thread-2): Opening a new connection, currently in state init
+2021-06-01 08:46:34.087736 (Thread-3): SQL status: SUCCESS 4 in 2.00 seconds
+2021-06-01 08:46:34.089780 (Thread-3): Using snowflake connection "model.demo_dbt.order_payment_method_amounts".
+2021-06-01 08:46:34.089917 (Thread-3): On model.demo_dbt.order_payment_method_amounts: BEGIN
+2021-06-01 08:46:34.118629 (Thread-1): SQL status: SUCCESS 1 in 2.02 seconds
+2021-06-01 08:46:34.118975 (Thread-1): Using snowflake connection "model.demo_dbt.stg_customers".
+2021-06-01 08:46:34.119511 (Thread-2): SQL status: SUCCESS 1 in 2.02 seconds
+2021-06-01 08:46:34.119648 (Thread-1): On model.demo_dbt.stg_customers: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.demo_dbt.stg_customers"} */
+
+
+      create or replace transient table DEMO_DB.PUBLIC.stg_customers  as
+      (select 
+    id as customer_id,
+    first_name,
+    last_name
+
+from customers
+      );
+2021-06-01 08:46:34.119787 (Thread-2): Using snowflake connection "model.demo_dbt.stg_orders".
+2021-06-01 08:46:34.120369 (Thread-2): On model.demo_dbt.stg_orders: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.demo_dbt.stg_orders"} */
+
+
+      create or replace transient table DEMO_DB.PUBLIC.stg_orders  as
+      (select
+        id as order_id,
+        user_id as customer_id,
+        order_date,
+        status
+
+from orders
+      );
+2021-06-01 08:46:34.804112 (Thread-3): SQL status: SUCCESS 1 in 0.71 seconds
+2021-06-01 08:46:34.804399 (Thread-3): Using snowflake connection "model.demo_dbt.order_payment_method_amounts".
+2021-06-01 08:46:34.804542 (Thread-3): On model.demo_dbt.order_payment_method_amounts: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.demo_dbt.order_payment_method_amounts"} */
+select
+                payment_method as value
+
+            from "DEMO_DB"."PUBLIC"."RAW_PAYMENTS"
+            group by 1
+            order by count(*) desc
+2021-06-01 08:46:35.520932 (Thread-3): SQL status: SUCCESS 4 in 0.72 seconds
+2021-06-01 08:46:35.521870 (Thread-3): Writing injected SQL for node "model.demo_dbt.order_payment_method_amounts"
+2021-06-01 08:46:35.522538 (Thread-3): finished collecting timing info
+2021-06-01 08:46:35.525382 (Thread-3): Writing runtime SQL for node "model.demo_dbt.order_payment_method_amounts"
+2021-06-01 08:46:35.526370 (Thread-3): Using snowflake connection "model.demo_dbt.order_payment_method_amounts".
+2021-06-01 08:46:35.526498 (Thread-3): On model.demo_dbt.order_payment_method_amounts: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.demo_dbt.order_payment_method_amounts"} */
+
+
+      create or replace transient table DEMO_DB.PUBLIC.order_payment_method_amounts  as
+      (-- 
+
+
+select
+order_id,
+
+
+
+sum(amount) as total_amount
+
+from DEMO_DB.PUBLIC.raw_payments
+group by 1
+      );
+2021-06-01 08:46:36.341047 (Thread-1): SQL status: SUCCESS 1 in 2.22 seconds
+2021-06-01 08:46:36.341662 (Thread-2): SQL status: SUCCESS 1 in 2.22 seconds
+2021-06-01 08:46:36.342970 (Thread-1): On model.demo_dbt.stg_customers: COMMIT
+2021-06-01 08:46:36.343940 (Thread-2): On model.demo_dbt.stg_orders: COMMIT
+2021-06-01 08:46:36.344151 (Thread-1): Using snowflake connection "model.demo_dbt.stg_customers".
+2021-06-01 08:46:36.344333 (Thread-2): Using snowflake connection "model.demo_dbt.stg_orders".
+2021-06-01 08:46:36.344457 (Thread-1): On model.demo_dbt.stg_customers: COMMIT
+2021-06-01 08:46:36.344574 (Thread-2): On model.demo_dbt.stg_orders: COMMIT
+2021-06-01 08:46:36.751475 (Thread-2): SQL status: SUCCESS 1 in 0.41 seconds
+2021-06-01 08:46:36.763064 (Thread-2): finished collecting timing info
+2021-06-01 08:46:36.763224 (Thread-2): On model.demo_dbt.stg_orders: Close
+2021-06-01 08:46:36.785292 (Thread-1): SQL status: SUCCESS 1 in 0.44 seconds
+2021-06-01 08:46:36.786355 (Thread-1): finished collecting timing info
+2021-06-01 08:46:36.786581 (Thread-1): On model.demo_dbt.stg_customers: Close
+2021-06-01 08:46:37.245021 (Thread-3): SQL status: SUCCESS 1 in 1.72 seconds
+2021-06-01 08:46:37.246425 (Thread-3): On model.demo_dbt.order_payment_method_amounts: COMMIT
+2021-06-01 08:46:37.246676 (Thread-3): Using snowflake connection "model.demo_dbt.order_payment_method_amounts".
+2021-06-01 08:46:37.246809 (Thread-3): On model.demo_dbt.order_payment_method_amounts: COMMIT
+2021-06-01 08:46:37.570837 (Thread-2): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'de1ee161-4ce0-414c-952e-ef611c7a3e28', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf6c4fb160>]}
+2021-06-01 08:46:37.571305 (Thread-2): 14:16:37 | 2 of 4 OK created table model PUBLIC.stg_orders...................... [SUCCESS 1 in 5.52s]
+2021-06-01 08:46:37.571490 (Thread-2): Finished running node model.demo_dbt.stg_orders
+2021-06-01 08:46:37.714711 (Thread-3): SQL status: SUCCESS 1 in 0.47 seconds
+2021-06-01 08:46:37.715758 (Thread-3): finished collecting timing info
+2021-06-01 08:46:37.715978 (Thread-3): On model.demo_dbt.order_payment_method_amounts: Close
+2021-06-01 08:46:37.857505 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'de1ee161-4ce0-414c-952e-ef611c7a3e28', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf6a7f1370>]}
+2021-06-01 08:46:37.858199 (Thread-1): 14:16:37 | 1 of 4 OK created table model PUBLIC.stg_customers................... [SUCCESS 1 in 5.81s]
+2021-06-01 08:46:37.858408 (Thread-1): Finished running node model.demo_dbt.stg_customers
+2021-06-01 08:46:37.859059 (Thread-5): Began running node model.demo_dbt.customers
+2021-06-01 08:46:37.859421 (Thread-5): 14:16:37 | 4 of 4 START table model PUBLIC.customers............................ [RUN]
+2021-06-01 08:46:37.859888 (Thread-5): Acquiring new snowflake connection "model.demo_dbt.customers".
+2021-06-01 08:46:37.860099 (Thread-5): Compiling model.demo_dbt.customers
+2021-06-01 08:46:37.931773 (Thread-5): Writing injected SQL for node "model.demo_dbt.customers"
+2021-06-01 08:46:37.932367 (Thread-5): finished collecting timing info
+2021-06-01 08:46:37.934902 (Thread-5): Writing runtime SQL for node "model.demo_dbt.customers"
+2021-06-01 08:46:37.936959 (Thread-5): Using snowflake connection "model.demo_dbt.customers".
+2021-06-01 08:46:37.937079 (Thread-5): On model.demo_dbt.customers: BEGIN
+2021-06-01 08:46:37.937182 (Thread-5): Opening a new connection, currently in state init
+2021-06-01 08:46:38.800807 (Thread-3): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'de1ee161-4ce0-414c-952e-ef611c7a3e28', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf6c6633d0>]}
+2021-06-01 08:46:38.801299 (Thread-3): 14:16:38 | 3 of 4 OK created table model PUBLIC.order_payment_method_amounts.... [SUCCESS 1 in 6.75s]
+2021-06-01 08:46:38.801834 (Thread-3): Finished running node model.demo_dbt.order_payment_method_amounts
+2021-06-01 08:46:39.593643 (Thread-5): SQL status: SUCCESS 1 in 1.66 seconds
+2021-06-01 08:46:39.593888 (Thread-5): Using snowflake connection "model.demo_dbt.customers".
+2021-06-01 08:46:39.594016 (Thread-5): On model.demo_dbt.customers: /* {"app": "dbt", "dbt_version": "0.19.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.demo_dbt.customers"} */
+
+
+      create or replace transient table DEMO_DB.PUBLIC.customers  as
+      (with customers as (
+
+    select * from DEMO_DB.PUBLIC.stg_customers
+
+),
+
+orders as (
+
+    select * from DEMO_DB.PUBLIC.stg_orders
+
+),
+
+customer_orders as (
+
+    select
+        customer_id,
+
+        min(order_date) as first_order_date,
+        max(order_date) as most_recent_order_date,
+        count(order_id) as number_of_orders
+
+    from orders
+
+    group by 1
+
+),
+
+
+final as (
+
+    select
+        customers.customer_id,
+        customers.first_name,
+        customers.last_name,
+        customer_orders.first_order_date,
+        customer_orders.most_recent_order_date,
+        coalesce(customer_orders.number_of_orders, 0) as number_of_orders
+
+    from customers
+
+    left join customer_orders using (customer_id)
+
+)
+
+select * from final
+      );
+2021-06-01 08:46:42.902061 (Thread-5): SQL status: SUCCESS 1 in 3.31 seconds
+2021-06-01 08:46:42.903463 (Thread-5): On model.demo_dbt.customers: COMMIT
+2021-06-01 08:46:42.903705 (Thread-5): Using snowflake connection "model.demo_dbt.customers".
+2021-06-01 08:46:42.903846 (Thread-5): On model.demo_dbt.customers: COMMIT
+2021-06-01 08:46:43.303025 (Thread-5): SQL status: SUCCESS 1 in 0.40 seconds
+2021-06-01 08:46:43.304143 (Thread-5): finished collecting timing info
+2021-06-01 08:46:43.304373 (Thread-5): On model.demo_dbt.customers: Close
+2021-06-01 08:46:44.423783 (Thread-5): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'de1ee161-4ce0-414c-952e-ef611c7a3e28', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf6c663070>]}
+2021-06-01 08:46:44.424246 (Thread-5): 14:16:44 | 4 of 4 OK created table model PUBLIC.customers....................... [SUCCESS 1 in 6.56s]
+2021-06-01 08:46:44.424421 (Thread-5): Finished running node model.demo_dbt.customers
+2021-06-01 08:46:44.426115 (MainThread): Acquiring new snowflake connection "master".
+2021-06-01 08:46:44.426354 (MainThread): Using snowflake connection "master".
+2021-06-01 08:46:44.426468 (MainThread): On master: BEGIN
+2021-06-01 08:46:44.426572 (MainThread): Opening a new connection, currently in state closed
+2021-06-01 08:46:46.067848 (MainThread): SQL status: SUCCESS 1 in 1.64 seconds
+2021-06-01 08:46:46.068115 (MainThread): On master: COMMIT
+2021-06-01 08:46:46.068343 (MainThread): Using snowflake connection "master".
+2021-06-01 08:46:46.068476 (MainThread): On master: COMMIT
+2021-06-01 08:46:46.560063 (MainThread): SQL status: SUCCESS 1 in 0.49 seconds
+2021-06-01 08:46:46.560339 (MainThread): On master: Close
+2021-06-01 08:46:47.605969 (MainThread): 14:16:47 | 
+2021-06-01 08:46:47.606196 (MainThread): 14:16:47 | Finished running 4 table models in 25.08s.
+2021-06-01 08:46:47.606343 (MainThread): Connection 'master' was properly closed.
+2021-06-01 08:46:47.606452 (MainThread): Connection 'model.demo_dbt.stg_customers' was properly closed.
+2021-06-01 08:46:47.606549 (MainThread): Connection 'model.demo_dbt.stg_orders' was properly closed.
+2021-06-01 08:46:47.606641 (MainThread): Connection 'model.demo_dbt.order_payment_method_amounts' was properly closed.
+2021-06-01 08:46:47.606731 (MainThread): Connection 'model.demo_dbt.customers' was properly closed.
+2021-06-01 08:46:47.615073 (MainThread): 
+2021-06-01 08:46:47.615233 (MainThread): Completed successfully
+2021-06-01 08:46:47.615371 (MainThread): 
+Done. PASS=4 WARN=0 ERROR=0 SKIP=0 TOTAL=4
+2021-06-01 08:46:47.615552 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf6c498220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf6c289280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf6c603250>]}
+2021-06-01 08:46:47.615775 (MainThread): Flushing usage events

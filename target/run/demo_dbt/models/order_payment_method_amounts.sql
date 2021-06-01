@@ -1,7 +1,8 @@
 
 
       create or replace transient table DEMO_DB.PUBLIC.order_payment_method_amounts  as
-      (
+      (-- 
+
 
 select
 order_id,
