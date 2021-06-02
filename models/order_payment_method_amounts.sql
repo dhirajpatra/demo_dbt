@@ -1,4 +1,6 @@
+-- by using custom macros
 -- {%  set payment_method  =  get_payment_methods() %}
+-- by using dbt_utils
 {%  set payment_method  =  dbt_utils.get_column_values(
   table=ref('raw_payments'),
   column='payment_method'
