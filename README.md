@@ -4,17 +4,11 @@ Welcome to your new dbt project!
 
 ### Using the starter project
 
-Try running the following commands:
-
-- dbt run
-- dbt test
-
-### From Docker run
-
-- docker run --rm -it \
-    -v $PWD:/dbt \
-    -v "$HOME/.dbt":/root/.dbt \
-    demo-dbt-docker run
+- Update the .env file as per your configuration
+- Update the profiles.yml file in dbt/ folder as per your configuration
+- Copy the dbt/profiles.yml to .dbt/ 
+- Copy .env file to dbt/
+- `docker-compose up --build`
 
 ### Resources
 

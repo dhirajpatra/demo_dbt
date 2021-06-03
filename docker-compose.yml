@@ -8,8 +8,17 @@ services:
     container_name: dbt
     env_file:
       - ./.env
+    # environment:
+    #   ACCOUNT:qm50810.us-central1.gcp
+    #   DBT_USER:DHIRAJPATRA
+    #   DBT_PASSWORD:Ch@ngeMe123
+    #   DBT_ROLE:ACCOUNTADMIN
+    #   DBT_DB:DEMO_DB
+    #   DBT_WH:COMPUTE_WH
+    #   DBT_SCHEMA:PUBLIC
+    #   DBT_THREADS:1
     command: 
-      - debug
+      - run
     restart: unless-stopped
     volumes:
       - ./.dbt/profiles.yml:/root/.dbt/profiles.yml

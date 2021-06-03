@@ -6,7 +6,7 @@ WORKDIR /app
 VOLUME /app
 
 COPY requirements.txt requirements.txt
-COPY profiles.yml profiles.yml
+# COPY profiles.yml profiles.yml
 
 # set environment variables
 ENV PYTHONDONTWRITEBYTECODE 1

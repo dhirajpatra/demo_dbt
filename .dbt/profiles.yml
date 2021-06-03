@@ -3,16 +3,17 @@ snowflake:
   outputs:
     dev:
       type: snowflake
-      account: ACCOUNT
+      account: qm50810.us-central1.gcp
 
       # User/password auth
-      user: DBT_USER
-      password: DBT_PASSWORD
+      user: DHIRAJPATRA
+      password: Ch@ngeMe123
 
-      role: DBT_ROLE
-      database: DBT_DB
-      warehouse: DBT_WH
-      schema: DBT_SCHEMA
+      role: ACCOUNTADMIN
+      database: DEMO_DB
+      warehouse: COMPUTE_WH
+      schema: PUBLIC
       threads: 1
-      client_session_keep_alive: False
+      client_session_keep_alive: True
       query_tag: demo_dbt
+
