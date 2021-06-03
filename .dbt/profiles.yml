@@ -1,0 +1,18 @@
+snowflake:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: ACCOUNT
+
+      # User/password auth
+      user: DBT_USER
+      password: DBT_PASSWORD
+
+      role: DBT_ROLE
+      database: DBT_DB
+      warehouse: DBT_WH
+      schema: DBT_SCHEMA
+      threads: 1
+      client_session_keep_alive: False
+      query_tag: demo_dbt

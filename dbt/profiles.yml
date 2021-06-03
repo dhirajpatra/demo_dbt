@@ -1,0 +1,18 @@
+snowflake:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: qm50810.us-central1.gcp
+
+      # User/password auth
+      user: DHIRAJPATRA
+      password: Ch@ngeMe123
+
+      role: ACCOUNTADMIN
+      database: DEMO_DB
+      warehouse: COMPUTE_WH
+      schema: PUBLIC
+      threads: 1
+      client_session_keep_alive: False
+      query_tag: demo_dbt

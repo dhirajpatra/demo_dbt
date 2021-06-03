@@ -1,13 +1,23 @@
+# title
+
 Welcome to your new dbt project!
 
 ### Using the starter project
 
 Try running the following commands:
+
 - dbt run
 - dbt test
 
+### From Docker run
 
-### Resources:
+- docker run --rm -it \
+    -v $PWD:/dbt \
+    -v "$HOME/.dbt":/root/.dbt \
+    demo-dbt-docker run
+
+### Resources
+
 - Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
 - Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
 - Join the [chat](http://slack.getdbt.com/) on Slack for live discussions and support
