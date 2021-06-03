@@ -8,6 +8,8 @@ Welcome to your new dbt project!
 - Update the profiles.yml file in dbt/ folder as per your configuration
 - Copy the dbt/profiles.yml to .dbt/ 
 - Copy .env file to dbt/
+- Remore all contentes from dbt/ folder except Dockerfile, profiles.yml, .env and requirements.txt
+- Copy your dbt application into dbt/ folder.
 - `docker-compose up --build`
 
 ### Resources
