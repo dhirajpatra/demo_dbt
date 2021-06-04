@@ -11,6 +11,8 @@ Welcome to your new dbt project!
 - Remore all contentes from dbt/ folder except Dockerfile, profiles.yml, .env and requirements.txt
 - Copy your dbt application into dbt/ folder.
 - `docker-compose up --build`
+- you can run any command by `docker-compose run dbt test`
+- or simply `docker-compose start` or other command
 
 ### Resources
 
