@@ -14,6 +14,16 @@ Welcome to your new dbt project!
 - you can run any command by `docker-compose run dbt test`
 - or simply `docker-compose start` or other command
 
+### to run as Docker standalone container
+
+- go to /dbt folder
+- compile with `docker build --tag demo-dbt-docker .`
+- to docker run copy following command as it is and paste into command line after replacing <dbt run or any other dbt command> with say `dbt run`
+- docker run --rm -it \
+    -v $PWD:/dbt \
+    -v profiles.yml:/root/.dbt/profiles.yml \
+    demo-dbt-docker <dbt run or any other dbt command>
+
 ### Resources
 
 - Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)

@@ -35,4 +35,5 @@ RUN dbt deps
 ENV DBT_PROFILES_DIR=/app
 
 # Make dbt an API
-ENTRYPOINT ["dbt"]
+# ENTRYPOINT ["dbt"]
+CMD [ "dbt" ]
