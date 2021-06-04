@@ -6,15 +6,18 @@ Welcome to your new dbt project!
 
 - Update the .env file as per your configuration
 - Update the profiles.yml file in dbt/ folder as per your configuration
-- Copy the dbt/profiles.yml to .dbt/ 
+- Copy the dbt/profiles.yml to .dbt/
 - Copy .env file to dbt/
 - Remore all contentes from dbt/ folder except Dockerfile, profiles.yml, .env and requirements.txt
+
+### need to run as docker-compose
+
 - Copy your dbt application into dbt/ folder.
 - `docker-compose up --build`
 - you can run any command by `docker-compose run dbt test`
 - or simply `docker-compose start` or other command
 
-### to run as Docker standalone container
+### to run as Docker standalone container with dbt commands in cli
 
 - go to /dbt folder
 - compile with `docker build --tag demo-dbt-docker .`
